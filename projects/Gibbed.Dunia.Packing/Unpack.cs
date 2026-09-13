@@ -1,4 +1,4 @@
-﻿/* Copyright (c) 2021 Rick (rick 'at' gibbed 'dot' us)
+/* Copyright (c) 2021 Rick (rick 'at' gibbed 'dot' us)
  *
  * This software is provided 'as-is', without any express or implied
  * warranty. In no event will the authors be held liable for any damages
@@ -62,6 +62,7 @@ namespace Gibbed.Dunia.Packing
                 DifferencePath = null,
                 Verbose = false,
                 CreateSubDirectory = false,
+                Jobs = Environment.ProcessorCount,
             };
 
             var optionSet = new OptionSet()
@@ -74,6 +75,7 @@ namespace Gibbed.Dunia.Packing
                 { "if|invert-filter", "only extract files not using pattern", v => options.InvertFilter = v != null },
                 { "d|difference=", "only extract files aren't in specified archive", v => options.DifferencePath = v },
                 { "sd|subdir", "create a sub-directory per archive", v => options.CreateSubDirectory = v != null },
+                { "j|jobs=", "number of parallel jobs (default: CPU count)", v => options.Jobs = int.Parse(v) },
                 { "v|verbose", "be verbose", v => options.Verbose = v != null },
                 { "h|help", "show this message and exit", v => showHelp = v != null },
             };
@@ -353,9 +355,10 @@ namespace Gibbed.Dunia.Packing
             long excludedCount = 0;
             long existingCount = 0;
 
+            // Phase 1: resolve entry names/paths sequentially.
+            var resolved = new List<(Big.Entry<THash> entry, string path, string name)>();
             using (var input = File.OpenRead(archive.DatPath))
             {
-                var padding = context.TotalEntryCount.ToString(CultureInfo.InvariantCulture).Length;
                 var duplicates = new Dictionary<THash, int>();
                 foreach (var entry in entries)
                 {
@@ -410,26 +413,76 @@ namespace Gibbed.Dunia.Packing
                         continue;
                     }
 
-                    if (options.Verbose == true)
-                    {
-                        Console.WriteLine(
-                            $"[{context.ProcessedEntryCount.ToString(CultureInfo.InvariantCulture).PadLeft(padding)}/{context.TotalEntryCount}] {entryName}");
-                    }
+                    resolved.Add((entry, entryPath, entryName));
+                }
+            }
 
-                    input.Seek(entry.Offset, SeekOrigin.Begin);
+            // Phase 2: extract files (sequential or parallel).
+            var maxJobs = options.Jobs;
+            if (maxJobs > 1)
+            {
+                var toExtract = resolved;
+                var completed = 0L;
+                var totalToExtract = toExtract.Count;
+                var pad = totalToExtract.ToString(CultureInfo.InvariantCulture).Length;
+                var progressLock = new object();
 
-                    var entryParent = Path.GetDirectoryName(entryPath);
+                Parallel.ForEach(toExtract, new ParallelOptions { MaxDegreeOfParallelism = maxJobs }, info =>
+                {
+                    var entryParent = Path.GetDirectoryName(info.path);
                     if (string.IsNullOrEmpty(entryParent) == false)
                     {
                         Directory.CreateDirectory(entryParent);
                     }
 
-                    using var output = File.Create(entryPath);
-                    EntryDecompression.Decompress(archive.Fat, entry, input, output);
-                    extractedCount++;
+                    using (var datStream = File.Open(archive.DatPath, FileMode.Open, FileAccess.Read, FileShare.Read))
+                    {
+                        datStream.Seek(info.entry.Offset, SeekOrigin.Begin);
+                        using (var output = File.Create(info.path))
+                        {
+                            EntryDecompression.Decompress(archive.Fat, info.entry, datStream, output);
+                        }
+                    }
+
+                    if (options.Verbose == true)
+                    {
+                        lock (progressLock)
+                        {
+                            completed++;
+                            Console.WriteLine(
+                                "[{0}/{1}] {2}",
+                                completed.ToString(CultureInfo.InvariantCulture).PadLeft(pad),
+                                totalToExtract,
+                                info.name);
+                        }
+                    }
+                });
+            }
+            else
+            {
+                using (var input = File.OpenRead(archive.DatPath))
+                {
+                    foreach (var info in resolved)
+                    {
+                        if (options.Verbose == true)
+                        {
+                            Console.WriteLine($"[{info.name}]");
+                        }
+
+                        var entryParent = Path.GetDirectoryName(info.path);
+                        if (string.IsNullOrEmpty(entryParent) == false)
+                        {
+                            Directory.CreateDirectory(entryParent);
+                        }
+
+                        input.Seek(info.entry.Offset, SeekOrigin.Begin);
+                        using var output = File.Create(info.path);
+                        EntryDecompression.Decompress(archive.Fat, info.entry, input, output);
+                    }
                 }
             }
 
+            extractedCount = resolved.Count;
             context.Tally(
                 archive.FatPath,
                 archive.Fat.Entries.Count,

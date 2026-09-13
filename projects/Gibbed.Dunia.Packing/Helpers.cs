@@ -28,6 +28,11 @@ namespace Gibbed.Dunia.Packing
     {
         public static string GetExecutablePath()
         {
+            var assemblyPath = System.Reflection.Assembly.GetEntryAssembly()?.Location;
+            if (string.IsNullOrEmpty(assemblyPath) == false)
+            {
+                return Path.GetFullPath(assemblyPath);
+            }
             using var process = System.Diagnostics.Process.GetCurrentProcess();
             var path = Path.GetFullPath(process.MainModule.FileName);
             return Path.GetFullPath(path);

@@ -21,14 +21,57 @@
  */
 
 using System;
+using System.IO;
 
 namespace Gibbed.Dunia.FileFormats
 {
     public static class ProjectHelpers
     {
+        public static ProjectData.Project LoadProject(string projectName = null)
+        {
+            var basePath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+            basePath = basePath != null ? Path.Combine(basePath, "projects") : "projects";
+
+            if (System.IO.Directory.Exists(basePath) == false)
+            {
+                return null;
+            }
+
+            if (string.IsNullOrEmpty(projectName) == false)
+            {
+                var projectBase = Path.Combine(basePath, projectName.Trim());
+                foreach (var ext in new[] { ".json", ".xml" })
+                {
+                    var projectPath = projectBase + ext;
+                    if (System.IO.File.Exists(projectPath) == true)
+                    {
+                        return ProjectData.Project.Load(projectPath);
+                    }
+                }
+                return null;
+            }
+
+            var currentPath = Path.Combine(basePath, "current.txt");
+            if (System.IO.File.Exists(currentPath) == true)
+            {
+                var name = System.IO.File.ReadAllText(currentPath).Trim();
+                var projectBase = Path.Combine(basePath, name);
+                foreach (var ext in new[] { ".json", ".xml" })
+                {
+                    var projectPath = projectBase + ext;
+                    if (System.IO.File.Exists(projectPath) == true)
+                    {
+                        return ProjectData.Project.Load(projectPath);
+                    }
+                }
+            }
+
+            return null;
+        }
+
         public static string Modifier(string s)
         {
-            return s.Replace(@"/", @"\");
+            return s.Replace(@"/", @"\").ToLowerInvariant();
         }
 
         public static void LoadListsFileNames<T>(

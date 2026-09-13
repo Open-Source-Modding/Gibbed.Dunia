@@ -1,10 +1,10 @@
 <Project>
   <PropertyGroup>
-    <GibbedIO_TargetFrameworksToBuild>net48</GibbedIO_TargetFrameworksToBuild>
-    <GibbedPortableExecutable_TargetFrameworksToBuild>net48</GibbedPortableExecutable_TargetFrameworksToBuild>
-    <GibbedProjectData_TargetFrameworksToBuild>net48</GibbedProjectData_TargetFrameworksToBuild>
-    <GibbedSquish_TargetFrameworksToBuild>net48</GibbedSquish_TargetFrameworksToBuild>
-    <NDeskOptions_TargetFrameworksToBuild>net48</NDeskOptions_TargetFrameworksToBuild>
-    <Tommy_TargetFrameworksToBuild>net48</Tommy_TargetFrameworksToBuild>
+    <GibbedIO_TargetFrameworksToBuild>net8.0</GibbedIO_TargetFrameworksToBuild>
+    <GibbedPortableExecutable_TargetFrameworksToBuild>net8.0</GibbedPortableExecutable_TargetFrameworksToBuild>
+    <GibbedProjectData_TargetFrameworksToBuild>net8.0</GibbedProjectData_TargetFrameworksToBuild>
+    <GibbedSquish_TargetFrameworksToBuild>net8.0</GibbedSquish_TargetFrameworksToBuild>
+    <NDeskOptions_TargetFrameworksToBuild>net8.0</NDeskOptions_TargetFrameworksToBuild>
+    <Tommy_TargetFrameworksToBuild>net8.0</Tommy_TargetFrameworksToBuild>
   </PropertyGroup>
 </Project>

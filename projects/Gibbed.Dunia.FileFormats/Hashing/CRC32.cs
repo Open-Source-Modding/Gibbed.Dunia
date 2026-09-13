@@ -47,6 +47,16 @@ namespace Gibbed.Dunia.FileFormats.Hashing
             return ~hash;
         }
 
+        public static uint Hash(string value)
+        {
+            return Compute(value);
+        }
+
+        public static uint Hash(byte[] buffer, int offset, int length)
+        {
+            return Compute(buffer, offset, length);
+        }
+
         private static readonly uint[] _Table =
         {
             0x00000000u, 0x77073096u, 0xEE0E612Cu, 0x990951BAu,

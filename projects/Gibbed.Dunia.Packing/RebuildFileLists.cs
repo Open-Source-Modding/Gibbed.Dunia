@@ -220,6 +220,39 @@ namespace Gibbed.Dunia.Packing
                 output.WriteLine("{0}", totalBreakdown);
                 // TODO(gibbed): breakdown all archives individually
             }
+
+            WriteFailures(listsPath, previousHashes, nameHasher);
+        }
+
+        private static void WriteFailures(
+            string listsPath,
+            HashList<THash> knownHashes,
+            TNameHasher nameHasher)
+        {
+            var failures = knownHashes.GetFailures().ToList();
+            if (failures.Count == 0)
+            {
+                return;
+            }
+
+            string Render(THash hash)
+            {
+                return nameHasher.Render(hash);
+            }
+
+            var failurePath = Path.Combine(listsPath, "files", "failure.txt");
+            using (var output = new StreamWriter(failurePath, false, new UTF8Encoding(false)))
+            {
+                output.WriteLine("; {0} hash collisions (filtered from file lists)", failures.Count);
+                foreach (var failure in failures.OrderBy(f => f.Key.ToString()))
+                {
+                    var names = failure.Value.Distinct().ToArray();
+                    output.WriteLine("{0}: {1}", Render(failure.Key), string.Join(" vs ", names));
+                }
+            }
+
+            Console.WriteLine("Wrote {0} hash collisions to {1}",
+                failures.Count, failurePath);
         }
 
         private static string GetParentListPath(string path)
@@ -351,7 +384,8 @@ namespace Gibbed.Dunia.Packing
 
         private static string GetListPath(string installPath, string inputPath)
         {
-            installPath = installPath.ToLowerInvariant();
+            installPath = installPath.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar)
+                .ToLowerInvariant();
             inputPath = inputPath.ToLowerInvariant();
 
             if (inputPath.StartsWith(installPath) == false)
