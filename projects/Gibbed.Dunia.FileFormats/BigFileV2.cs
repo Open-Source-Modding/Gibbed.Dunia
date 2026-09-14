@@ -113,10 +113,8 @@ namespace Gibbed.Dunia.FileFormats
                 throw new FormatException("unknown version/platform/CV combination");
             }
 
-            if (unknown0C != 0 || unknown10 != 0)
-            {
-                throw new NotImplementedException();
-            }
+            var subFatEntryCount = unknown0C; // v9+: total entries across all sub-FATs
+            var subFatCount = unknown10; // v9+: number of sub-FAT blocks
 
             var entryCount = input.ReadValueS32(endian);
             if (entryCount < 0)
@@ -163,6 +161,35 @@ namespace Gibbed.Dunia.FileFormats
                 var nameBytes = input.ReadBytes((int)nameLength);
                 var unknownValue = input.ReadValueU64(endian);
                 throw new NotImplementedException();
+            }
+
+            // v7+: unknown2 blocks (16 bytes each), after the (empty) localization section.
+            if (fileVersion >= 7)
+            {
+                var unknown2Count = input.ReadValueU32(endian);
+                for (uint i = 0; i < unknown2Count; i++)
+                {
+                    input.Seek(16, SeekOrigin.Current);
+                }
+            }
+
+            // v9+: sub-FATs. FCBConverter merges these into the same entry set;
+            // treat them as regular entries (they use the same serializer).
+            if (subFatCount > 0)
+            {
+                for (uint i = 0; i < subFatCount; i++)
+                {
+                    var subFatEntries = input.ReadValueS32(endian);
+                    if (subFatEntries < 0)
+                    {
+                        throw new FormatException();
+                    }
+                    for (uint j = 0; j < subFatEntries; j++)
+                    {
+                        entrySerializer.Deserialize(input, endian, out var entry);
+                        entries.Add(entry);
+                    }
+                }
             }
 
             foreach (var entry in this.Entries)
