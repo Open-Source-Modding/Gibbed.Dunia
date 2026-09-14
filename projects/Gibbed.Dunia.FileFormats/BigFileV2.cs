@@ -243,6 +243,15 @@ namespace Gibbed.Dunia.FileFormats
         {
             return version.FileVersion switch
             {
+                // Far Cry 3 / Blood Dragon / 4 / Primal (v9):
+                // scheme IDs are 0=None, 1=LZO1x, 2=LZ4 (per FCBConverter).
+                9 => id switch
+                {
+                    0 => CompressionScheme.None,
+                    1 => CompressionScheme.LZO1x,
+                    2 => CompressionScheme.LZ4,
+                    _ => throw new NotSupportedException(),
+                },
                 10 => CompressionSchemeV10_V11.ToCompressionScheme(version, id),
                 11 => CompressionSchemeV10_V11.ToCompressionScheme(version, id),
                 _ => throw new NotSupportedException(),
@@ -258,6 +267,14 @@ namespace Gibbed.Dunia.FileFormats
         {
             return version.FileVersion switch
             {
+                // Far Cry 3 / Blood Dragon / 4 / Primal (v9).
+                9 => compressionScheme switch
+                {
+                    CompressionScheme.None => 0,
+                    CompressionScheme.LZO1x => 1,
+                    CompressionScheme.LZ4 => 2,
+                    _ => throw new NotSupportedException(),
+                },
                 10 => CompressionSchemeV10_V11.FromCompressionScheme(version, compressionScheme),
                 11 => CompressionSchemeV10_V11.FromCompressionScheme(version, compressionScheme),
                 _ => throw new NotSupportedException(),

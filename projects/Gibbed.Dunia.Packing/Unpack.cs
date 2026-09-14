@@ -272,11 +272,12 @@ namespace Gibbed.Dunia.Packing
                 }
                 else
                 {
-                    using (var temp = new MemoryStream(guess))
+                    using (var temp = new MemoryStream())
                     {
                         input.Position = entry.Offset;
                         EntryDecompression.Decompress(archive, entry, input, temp, guess.Length);
-                        read = (int)temp.Position;
+                        temp.Position = 0;
+                        read = temp.Read(guess, 0, (int)Math.Min(temp.Length, guess.Length));
                     }
                 }
 
