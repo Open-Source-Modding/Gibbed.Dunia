@@ -52,9 +52,15 @@ namespace Gibbed.Dunia.Packing
             }
 
             bool showHelp = false;
+            string installPathOverride = null;
+            string outputDirOverride = null;
+            string dataPrefix = null;
 
             var options = new OptionSet()
             {
+                { "p|install-path=", "override install path (skips registry detection)", v => installPathOverride = v },
+                { "o|output-dir=", "override output directory for filelists", v => outputDirOverride = v },
+                { "d|data-prefix=", "remap data directory prefix in filelist paths (e.g. data_win64 to data_xenon)", v => dataPrefix = v },
                 { "h|help", "show this message and exit", v => showHelp = v != null },
             };
 
@@ -96,17 +102,27 @@ namespace Gibbed.Dunia.Packing
                 return;
             }
 
-            var listsPath = project.ListsPath;
+            var listsPath = outputDirOverride ?? project.ListsPath;
             if (string.IsNullOrEmpty(listsPath) == true)
             {
                 Console.WriteLine("Could not detect lists path.");
                 return;
             }
+            if (outputDirOverride != null)
+            {
+                Console.WriteLine("Using output directory: {0}", listsPath);
+                Directory.CreateDirectory(listsPath);
+            }
 
             HashList<THash> previousHashes = null;
 
             var installPaths = new List<string>();
-            if (string.IsNullOrEmpty(project.InstallPath) == false)
+            if (installPathOverride != null)
+            {
+                installPaths.Add(installPathOverride);
+                Console.WriteLine("Using install path: {0}", installPathOverride);
+            }
+            else if (string.IsNullOrEmpty(project.InstallPath) == false)
             {
                 installPaths.Add(project.InstallPath);
             }
@@ -115,6 +131,7 @@ namespace Gibbed.Dunia.Packing
             if (installPaths.Count == 0)
             {
                 Console.WriteLine("Could not detect install path.");
+                Console.WriteLine("Tip: use --install-path=<path> to specify manually.");
                 return;
             }
 
@@ -163,9 +180,22 @@ namespace Gibbed.Dunia.Packing
                 var fatPath = kv.Value;
 
                 var fat = new TArchive();
-                using (var input = File.OpenRead(fatPath))
+                try
                 {
-                    fat.Deserialize(input);
+                    using (var input = File.OpenRead(fatPath))
+                    {
+                        fat.Deserialize(input);
+                    }
+                }
+                catch (FormatException ex)
+                {
+                    Console.Error.WriteLine("WARNING: skipping {0} ({1})", fatPath, ex.Message);
+                    continue;
+                }
+                catch (EndOfStreamException ex)
+                {
+                    Console.Error.WriteLine("WARNING: skipping {0} ({1})", fatPath, ex.Message);
+                    continue;
                 }
 
                 fats[listPath] = fat;
@@ -181,13 +211,39 @@ namespace Gibbed.Dunia.Packing
             Console.WriteLine("Loading file lists...");
             THash wrappedComputeNameHash(string s) =>
                 nameHasher.Compute(s, tryGetHashOverride);
-            project.LoadListsFileNames(wrappedComputeNameHash, out previousHashes);
+            if (dataPrefix != null)
+            {
+                string archiveBase = Path.GetFileName(
+                    installPaths[0].TrimEnd(
+                        Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar));
+
+                string PrefixModifier(string line)
+                {
+                    line = line.Replace(@"/", @"\");
+                    if (line.StartsWith(dataPrefix + @"\", StringComparison.OrdinalIgnoreCase))
+                    {
+                        return archiveBase + line.Substring(dataPrefix.Length);
+                    }
+                    return line;
+                }
+                Console.WriteLine("Remapping filelist prefix: {0} → {1}", dataPrefix, archiveBase);
+                previousHashes = project.LoadLists("*.filelist", wrappedComputeNameHash, PrefixModifier);
+            }
+            else
+            {
+                project.LoadListsFileNames(wrappedComputeNameHash, out previousHashes);
+            }
 
             Console.WriteLine("Processing names for archives...");
             foreach (var kv in fatPaths)
             {
                 var listPath = kv.Key;
                 var fatPath = kv.Value;
+
+                if (fats.ContainsKey(listPath) == false)
+                {
+                    continue;
+                }
 
                 Console.WriteLine(listPath);
 
