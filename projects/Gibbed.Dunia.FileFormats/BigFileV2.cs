@@ -169,6 +169,9 @@ namespace Gibbed.Dunia.FileFormats
                 }
                 case CompressionScheme.LZO1x:
                 case CompressionScheme.Zlib:
+                case CompressionScheme.LZ4:
+                case CompressionScheme.LZ4LW:
+                case CompressionScheme.Oodle:
                 {
                     if (entry.CompressedSize == 0 && entry.UncompressedSize > 0)
                     {
