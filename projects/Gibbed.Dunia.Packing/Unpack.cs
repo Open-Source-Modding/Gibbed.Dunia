@@ -310,8 +310,9 @@ namespace Gibbed.Dunia.Packing
 
         private static string FilterEntryName(string entryName)
         {
-            entryName = entryName.Replace(@"/", @"\");
-            if (entryName.StartsWith(@"\") == true)
+            entryName = entryName.Replace('\\', Path.DirectorySeparatorChar);
+            entryName = entryName.Replace('/', Path.DirectorySeparatorChar);
+            if (entryName.StartsWith(Path.DirectorySeparatorChar.ToString()) == true)
             {
                 entryName = entryName.Substring(1);
             }
