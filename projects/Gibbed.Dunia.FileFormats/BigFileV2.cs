@@ -61,11 +61,6 @@ namespace Gibbed.Dunia.FileFormats
         public List<Entry<T>> Entries => this._Entries;
         #endregion
 
-        public static bool VersionSupportsEncryption(int fileVersion)
-        {
-            return fileVersion >= 11;
-        }
-
         public void Serialize(Stream output)
         {
             throw new NotImplementedException();
@@ -84,14 +79,16 @@ namespace Gibbed.Dunia.FileFormats
             var fileVersion = (int)(fileVersionAndEncryptionFlag & ~0x80000000u);
             var indexIsEncrypted = (fileVersionAndEncryptionFlag & 0x80000000u) != 0;
 
-            if (indexIsEncrypted == true && VersionSupportsEncryption(fileVersion) == false)
-            {
-                throw new FormatException("encryption flag set when unsupported");
-            }
-
             if (fileVersion > 11)
             {
                 throw new FormatException("unsupported version");
+            }
+
+            var layout = GetLayout(fileVersion);
+
+            if (indexIsEncrypted == true && layout.SupportsEncryption == false)
+            {
+                throw new FormatException("encryption flag set when unsupported");
             }
 
             var flags = fileVersion >= 3 ? input.ReadValueU32(endian) : 0u;
@@ -113,8 +110,7 @@ namespace Gibbed.Dunia.FileFormats
                 throw new FormatException("unknown version/platform/CV combination");
             }
 
-            var subFatEntryCount = unknown0C; // v9+: total entries across all sub-FATs
-            var subFatCount = unknown10; // v9+: number of sub-FAT blocks
+            var subFatCount = (int)unknown10; // v9+: number of sub-FAT blocks
 
             var entryCount = input.ReadValueS32(endian);
             if (entryCount < 0)
@@ -124,21 +120,7 @@ namespace Gibbed.Dunia.FileFormats
 
             var entrySerializer = GetEntrySerializer(fileVersion);
 
-            Stream index;
-            if (indexIsEncrypted == true)
-            {
-                var indexSize = entrySerializer.Size * entryCount;
-                var indexBytes = input.ReadBytes(indexSize);
-                indexSize &= ~7;
-                var indexKey = Big.Crypto.GenerateXTEAKey((uint)indexSize);
-                Crypto.XTEA.Decrypt(indexBytes, 0, indexSize, indexKey);
-                File.WriteAllBytes("index.bin", indexBytes);
-                index = new MemoryStream(indexBytes, false);
-            }
-            else
-            {
-                index = input;
-            }
+            Stream index = layout.ReadIndex(input, endian, indexIsEncrypted, entryCount, entrySerializer);
 
             var entries = new List<Entry<T>>();
             using (index != input ? index : null)
@@ -150,49 +132,9 @@ namespace Gibbed.Dunia.FileFormats
                 }
             }
 
-            uint localizationCount = input.ReadValueU32(endian);
-            for (uint i = 0; i < localizationCount; i++)
-            {
-                var nameLength = input.ReadValueU32(endian);
-                if (nameLength > 32)
-                {
-                    throw new FormatException("bad length for localization name");
-                }
-                var nameBytes = input.ReadBytes((int)nameLength);
-                var unknownValue = input.ReadValueU64(endian);
-                throw new NotImplementedException();
-            }
+            layout.ReadTrailer(input, endian, subFatCount, entrySerializer, entries);
 
-            // v7+: unknown2 blocks (16 bytes each), after the (empty) localization section.
-            if (fileVersion >= 7)
-            {
-                var unknown2Count = input.ReadValueU32(endian);
-                for (uint i = 0; i < unknown2Count; i++)
-                {
-                    input.Seek(16, SeekOrigin.Current);
-                }
-            }
-
-            // v9+: sub-FATs. FCBConverter merges these into the same entry set;
-            // treat them as regular entries (they use the same serializer).
-            if (subFatCount > 0)
-            {
-                for (uint i = 0; i < subFatCount; i++)
-                {
-                    var subFatEntries = input.ReadValueS32(endian);
-                    if (subFatEntries < 0)
-                    {
-                        throw new FormatException();
-                    }
-                    for (uint j = 0; j < subFatEntries; j++)
-                    {
-                        entrySerializer.Deserialize(input, endian, out var entry);
-                        entries.Add(entry);
-                    }
-                }
-            }
-
-            foreach (var entry in this.Entries)
+            foreach (var entry in entries)
             {
                 SanityCheckEntry(entry, version);
             }
@@ -205,6 +147,8 @@ namespace Gibbed.Dunia.FileFormats
 
         protected abstract IEntrySerializer<T> GetEntrySerializer(int version);
 
+        protected abstract IArchiveLayout<T> GetLayout(int version);
+
         internal static void SanityCheckEntry(Entry<T> entry, Version version)
         {
             var compressionScheme = ToCompressionScheme(version, entry.CompressionScheme);
@@ -212,7 +156,12 @@ namespace Gibbed.Dunia.FileFormats
             {
                 case CompressionScheme.None:
                 {
-                    if (version.Platform != Platform.Xenon && entry.UncompressedSize != 0)
+                    // v11 (FC6) entries always carry a real uncompressed size even
+                    // when uncompressed, so only enforce the zero-size invariant
+                    // for the earlier formats (v9 and below).
+                    if (version.FileVersion < 11 &&
+                        version.Platform != Platform.Xenon &&
+                        entry.UncompressedSize != 0)
                     {
                         throw new FormatException("no compression with a non-zero uncompressed size");
                     }

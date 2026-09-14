@@ -94,17 +94,15 @@ namespace Gibbed.Dunia.Packing
 
                 if (actualCompressedSize < uncompressedSize)
                 {
-                    throw new NotImplementedException();
-                    entry.CompressionScheme = byte.MaxValue /* CompressionScheme.LZO1x */;
+                    entry.CompressionScheme = (byte)CompressionScheme.LZO1x;
                     entry.UncompressedSize = uncompressedSize;
                     entry.CompressedSize = actualCompressedSize;
                     output.Write(compressedData, 0, actualCompressedSize);
                 }
                 else
                 {
-                    throw new NotImplementedException();
                     input.Seek(0, SeekOrigin.Begin);
-                    entry.CompressionScheme = 0 /* CompressionScheme.None */;
+                    entry.CompressionScheme = (byte)CompressionScheme.None;
                     entry.UncompressedSize = 0;
                     entry.CompressedSize = (int)input.Length;
                     output.WriteFromStream(input, input.Length);

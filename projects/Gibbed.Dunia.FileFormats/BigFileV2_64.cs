@@ -37,6 +37,13 @@ namespace Gibbed.Dunia.FileFormats
                 : throw new InvalidOperationException("entry serializer is missing");
         }
 
+        protected override IArchiveLayout<ulong> GetLayout(int version)
+        {
+            return _Layouts.TryGetValue(version, out var layout) == true
+                ? layout
+                : throw new InvalidOperationException("archive layout is missing");
+        }
+
         protected override bool IsKnownVersion(Version version)
         {
             return _KnownVersions.Contains(version) == true;
@@ -44,6 +51,7 @@ namespace Gibbed.Dunia.FileFormats
 
         private static readonly ReadOnlyCollection<Version> _KnownVersions;
         private static readonly ReadOnlyDictionary<int, IEntrySerializer<ulong>> _EntrySerializers;
+        private static readonly ReadOnlyDictionary<int, IArchiveLayout<ulong>> _Layouts;
 
         static BigFileV2_64()
         {
@@ -77,6 +85,14 @@ namespace Gibbed.Dunia.FileFormats
                     [9] = new EntrySerializerV09(),
                     [10] = new EntrySerializerV10(),
                     [11] = new EntrySerializerV11(),
+                });
+
+            _Layouts = new ReadOnlyDictionary<int, IArchiveLayout<ulong>>(
+                new Dictionary<int, IArchiveLayout<ulong>>()
+                {
+                    [9] = new BigFileLayoutV09<ulong>(),
+                    [10] = new BigFileLayoutV10<ulong>(),
+                    [11] = new BigFileLayoutV11<ulong>(),
                 });
         }
     }
