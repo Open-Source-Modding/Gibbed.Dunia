@@ -1,0 +1,12 @@
+<class name="CCameraShakeAndPadRumbleComponent">
+	<inherit name="CEntityComponent" />
+        <object name="Effects">
+          <object name="Effect">
+            <field name="sEffectName" type="String" />
+            <field name="arkCamera_roll" type="Id64" />
+            <field name="arkCamera_pitch" type="Id64" />
+            <field name="arkRumble_HF" type="Id64" />
+            <field name="arkRumble_LF" type="Id64" />
+          </object>
+          </object>
+</class>

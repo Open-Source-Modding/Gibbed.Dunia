@@ -1,0 +1,5 @@
+<file name="HudProperties_Default">
+	<object name="obj">
+		<inherit name="SHudProperties" />
+	</object>
+</file>

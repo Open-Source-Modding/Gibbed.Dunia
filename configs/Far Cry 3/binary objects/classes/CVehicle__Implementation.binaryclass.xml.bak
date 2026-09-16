@@ -1,0 +1,647 @@
+<class name="CVehicle::Implementation">
+<!-- <object name="EntityLibraries" /> -->
+	<field name="bUsePerlinNoise" type="Boolean" />
+	<field name="bPlayerHeroVehicle" desc="This variable is set to true on the vehicle that's considered to be THE Player's Hero Vehicle" type="Boolean" />
+	<field name="text_sBeautifierName" type="String" />
+	<field name="sBeautifierName" desc="Name of the beautifier" type="Hash32" />
+	<field name="text_sName" type="String" />
+	<field name="sName" desc="Name of the vehicle" type="Hash32" />
+	<field name="driverActionMap" desc="Name of the action map to activate while driving" type="String" />
+	<field name="arkSteeringInputCurve" desc="Curve applied on steering input" type="Id64" />
+	<field name="arkPitchInputCurve" desc="Curve applied to pitch and roll inputs (glider, wingsuit...)" type="Id64" />
+	<object name="PassengerDamage" />
+	<field name="fUnderWaterBailoutDepth" desc="Waterline to trigger the bailout of passenger off the vehicle" type="Float32" />
+	<field name="fSeatEntryMaxRadius" desc="Counts while useExtraEntyRadius is enabled" type="Float32" />
+	<field name="fSeatEntryClimbMaxRadius" desc="Radius for climbing from water" type="Float32" />
+	<field name="fSeatEntryClimbMaxAngle" desc="Angle for climbing from water (in degrees)" type="Float32" />
+	<field name="iAnimVehicleType" desc="Id of animation group for the vehicle" type="Int32" />
+	<field name="bAnchorToSeatBoneByDefault" desc="If true, all entry/switch seat anims will be anchor to seat bone by default (can still be overridden by the AnimSeatEntryAnchorBones)." type="Boolean" />	
+        <object name="AnimSeatEntryAnchorBones">
+          <object name="Seat">
+            <field name="text_EntryMoveStateAnchorBone" type="String" />
+            <field name="EntryMoveStateAnchorBone" type="Hash32">FFFFFFFF</field>
+          </object>
+        </object>
+	<field name="fIncomingFireEvasiveness" desc="Evasiveness Factor of Vehicle (statusFactor for AI)" type="Float32" />
+	<field name="fAccelerationPushFactor" desc="Compute the acceleration offset effect (only if looking forward to prevent clipping problems)" type="Float32" />
+	<field name="sEnterUsageString" desc="Usage string for entering event" type="String" />
+	<field name="sKickUsageString" desc="String for event while vehicle is Flipped" type="String" />
+	<field name="fKickForce" desc="PushVehicle: SetVelocity(pushDir * m_kickForce);" type="Float32" />
+	<field name="fJumpOutMinSpeed" desc="Min speed for jump out" type="Float32" />
+	<field name="fJumpOutBrakeFactor" desc="Subtracted from accelerator while JumpOut activated" type="Float32" />
+	<field name="fGetOutBrakeFactor" desc="Subtracted from accelerator when getting out of vehicle" type="Float32" />
+	<field name="bDisableEnterCollisionDetection" desc="whether entering collision enabled or not" type="Boolean" />
+	<field name="text_sEnterSignal" type="String" />
+	<field name="sEnterSignal" desc="Name of the signal to use while entering" type="Hash32" />
+	<field name="text_sLeaveTransitionSignal" type="String" />
+	<field name="sLeaveTransitionSignal" desc="Name of the signal to use while leaving" type="Hash32" />
+	<field name="bDiscardAfterUse" desc="Descarded only when vehicle moved more than 2 meters" type="Boolean" />
+	<field name="bUseDestroyedMaterial" desc="Apply the destroyed material once the vehicle is destroyed" type="Boolean" />
+	<field name="fExitPointOffset" desc="Offset of the exit point" type="Float32" />
+	<field name="bUseExitPointOffset" desc="Boolean flag for use/not use offset" type="Boolean" />
+	<!-- <object name="VehicleMountedWeapons" desc="list of weapons archetypes to mount" /> -->
+        <object name="VehicleMountedWeapons">
+          <object name="VehicleMountedWeaponEntry">
+            <field name="arkMountedWeaponArchId" type="Id64" />
+            <field name="iSeatIndex" type="Int32">FFFFFFFF</field>
+          </object>
+        </object>	
+	<!-- <object name="VehiculeAttachments" desc="list of attachments archetypes to spawn on the vehicle" /> -->
+        <object name="VehiculeAttachments">
+          <object name="VehicleAttachmentEntry">
+            <field name="arkVehicleAttachment" type="Id64">34DE64A304070000</field>
+            <field name="text_sAttachmentName" type="String" />
+            <field name="sAttachmentName" type="Hash32" />
+          </object>
+          </object>
+	<!-- <object name="VehiculeBoneSecondaryAttachments" desc="list of attachments archetypes to spawn on the vehicle" /> -->
+        <object name="VehiculeBoneSecondaryAttachments">
+          <object name="VehicleSecondaryAttachmentEntry">
+            <field name="text_sAttachmentBone" type="String" />
+            <field name="sAttachmentBone" type="Hash32">FFFFFFFF</field>
+            <field name="fAddSecondaryAttachmentProbability" type="Float32">0000803F</field>
+            <object name="SecondaryAttachments">
+              <object name="VehicleAttachmentEntry">
+                <field name="arkVehicleAttachment" type="Id64" />
+                <field name="fProbability" type="Float32">01000000</field>
+              </object>
+            </object>
+          </object>
+        </object>	
+	<field name="bAddSecondaryAttachments" desc="Do we need to randomize the attachments?" type="Boolean" />
+	<field name="vehicleMinLookAngle" desc="Angle lower limits for x,y,z while in vehicle" type="Vector3" />
+	<field name="vehicleMaxLookAngle" desc="Angle upper limits for x,y,z while in vehicle" type="Vector3" />
+	<field name="bCanPlayerLookBack" desc="Can the player look back while in this vehicle?" type="Boolean" />
+	<!--<object name="CanPlayerLookBack">-->
+		<field name="vehicleBackMinLookAngle" desc="Angle lower limits for x,y,z while in vehicle and looking back" type="Vector3" />
+		<field name="vehicleBackMaxLookAngle" desc="Angle upper limits for x,y,z while in vehicle and looking back" type="Vector3" />
+		<field name="fLookBackAngle" desc="Angle of look back (will determine which way the player will turn)" type="Float32" />
+		<field name="fLookBackDampingFactor" desc="Damping factor for when looking back (0 = instantly, 0.6 = very smoothly)" type="Float32" />
+	<!--</object>-->
+	<field name="fMountedWeaponOffsetMultiplier" desc="Multiplier to determine how much the user of a mounted weapon is affected by this vehicle speed and acceleration" type="Float32" />
+	<field name="vehicleLockedCameraMinLookAngle" desc="Angle lower limits for x,y,z while in vehicle and LockCameraMode turned on" type="Vector3" />
+	<field name="vehicleLockedCameraMaxLookAngle" desc="Angle upper limits for x,y,z while in vehicle and LockCameraMode turned on" type="Vector3" />
+	<field name="HideBodyYawAngle" desc="Angle limit while in First Person" type="Float32" />
+	<field name="vehicleMinAimYaw" desc="Min yaw to rotate camera while aiming. Can't exceed anim limit." type="Float32" />
+	<field name="vehicleMaxAimYaw" desc="Max yaw to rotate camera while aiming. Can't exceed anim limit." type="Float32" />
+	<!-- <object name="Leaning" desc="Leaning params" /> -->
+        <object name="Leaning">
+          <field name="fMaxPushDist" type="Float32">CDCCCC3D</field>
+          <field name="fMaxPullDist" type="Float32">CDCCCC3D</field>
+          <field name="fPullPushSpeedFactor" type="Float32">00000040</field>
+          <field name="fMaxPushAngle" type="Float32" />
+          <field name="fMaxPullAngle" type="Float32" />
+          <field name="fPullPushAngleSpeedFactor" type="Float32">00000040</field>
+          <field name="fMaxPullPushAccel" type="Float32">00007041</field>
+          <field name="fMaxUpDist" type="Float32">CDCCCC3D</field>
+          <field name="fMaxDownDist" type="Float32">CDCCCC3D</field>
+          <field name="fUpDownSpeedFactor" type="Float32">00000040</field>
+          <field name="fMaxUpDownAccel" type="Float32">00007041</field>
+          <field name="fVehicleMaxSpeed" type="Float32">00004842</field>
+          <field name="fMaxRotationYaw" type="Float32">FFFFCF41</field>
+          <field name="fMaxRotationRoll" type="Float32" />
+          <field name="fMaxDisplacement" type="Float32">CDCCCC3D</field>
+          <field name="fSteeringMultiplier" type="Float32">0000803F</field>
+          <field name="fSteeringDampingFactor" type="Float32">0000003F</field>
+          <field name="fAccelerationMultiplier" type="Float32">9A99993E</field>
+          <field name="fAccelerationDampingFactor" type="Float32">9A99193F</field>
+          <field name="fVelocityMultiplier" type="Float32">0000C03F</field>
+          <field name="fVelocityDampingFactor" type="Float32">CDCCCC3D</field>
+          <field name="fLeaningDampingFactorUp" type="Float32" />
+          <field name="fLeaningDampingFactorDown" type="Float32" />
+          <field name="arkLeaningCurve" type="Id64" />
+        </object>	
+	<!-- <object name="Rumble" desc="Rumble params" /> -->
+        <object name="Rumble">
+          <field name="fAmplitudeVelocityFactor" type="Float32" />
+          <field name="fAmplitudeC" type="Float32" />
+          <field name="fLeanFactor" type="Float32" />
+          <field name="fStrength" type="Float32" />
+          <field name="fFrequency" type="Float32" />
+          <field name="fSpeedPower" type="Float32" />
+        </object>
+        <object name="ChassisRumble">
+          <object name="param">
+            <field name="logmatLogicMaterial" type="Int32">FF000000</field>
+            <field name="CameraBalance" type="Float32">0000803F</field>
+            <field name="LowSpeed" type="Float32" />
+            <field name="HighSpeed" type="Float32">00004842</field>
+            <object name="Idle">
+              <field name="Frequency" type="Float32">0000803F</field>
+              <field name="Duration" type="Float32">0000803F</field>
+              <field name="RandomRatio" type="Int32" />
+              <field name="Rotation" type="Vector3">FFFF1F41FFFF1F4100000000</field>
+              <field name="PadRumbleLow" type="Int32" />
+              <field name="PadRumbleHigh" type="Int32" />
+            </object>
+			<object name="Low" >
+              <field name="Frequency" type="Float32">0000803F</field>
+              <field name="Duration" type="Float32">0000803F</field>
+              <field name="RandomRatio" type="Int32" />
+              <field name="Rotation" type="Vector3">FFFF1F41FFFF1F4100000000</field>
+              <field name="PadRumbleLow" type="Int32" />
+              <field name="PadRumbleHigh" type="Int32" />
+            </object>			
+			<object name="High" >
+              <field name="Frequency" type="Float32">0000803F</field>
+              <field name="Duration" type="Float32">0000803F</field>
+              <field name="RandomRatio" type="Int32" />
+              <field name="Rotation" type="Vector3">FFFF1F41FFFF1F4100000000</field>
+              <field name="PadRumbleLow" type="Int32" />
+              <field name="PadRumbleHigh" type="Int32" />
+            </object>			
+          </object>		  
+          </object>		
+        <object name="ChassisRumbleNoise">
+          <object name="param">
+            <field name="MinSpeed" type="Float32">0000803F</field>
+            <field name="MaxSpeed" type="Float32">00008041</field>
+            <field name="fMinNoiseScale" type="Float32">0000803F</field>
+            <field name="fMaxNoiseScale" type="Float32">0000803F</field>
+            <field name="fNoiseAmplitudeWheelFL" type="Float32">CDCCCC3D</field>
+            <field name="fNoiseAmplitudeWheelFR" type="Float32">CDCCCC3D</field>
+            <field name="fNoiseAmplitudeWheelBL" type="Float32">CDCCCC3D</field>
+            <field name="fNoiseAmplitudeWheelBR" type="Float32">CDCCCC3D</field>
+            <field name="CameraBalance" type="Float32">0000803F</field>
+            <field name="PadRumbleMinAmplitude" type="Float32">CDCCCC3D</field>
+            <field name="PadRumbleLowMin" type="Int32" />
+            <field name="PadRumbleLowMax" type="Int32" />
+            <field name="PadRumbleHighMin" type="Int32" />
+            <field name="PadRumbleHighMax" type="Int32" />
+            <object name="LogicMaterials">
+              <object name="Data">
+                <field name="logmatLogicMaterial" type="Int32" />
+              </object>
+            </object>
+          </object>
+          </object>
+	<field name="ChassisRumbleNoiseMaxSpeed" desc="Max rotation speed applied from chassis rumble noise (rad/s)" type="Float32" />
+	<field name="ChassisRumbleNoiseMaxAccel" desc="Max rotation acceleration applied from chassis rumble noise (rad/s)" type="Float32" />
+        <object name="WaterDrops">
+          <field name="fMinSpeed" type="Float32" />
+          <field name="fMaxSpeed" type="Float32" />
+          <field name="bDependsOnWindshield" type="Boolean" />
+          <field name="fInWaterMultiplier" type="Float32" />
+          <field name="fRainingMultiplier" type="Float32" />
+        </object>
+	<field name="fDustFactor" desc="Triggers a material update" type="Float32" />
+	<field name="fDirtFactor" desc="Triggers a material update" type="Float32" />
+	<field name="nMinRandomColorIndex" desc="Lower boundary for the random color selection while spawned" type="Int32" />
+	<field name="nMaxRandomColorIndex" desc="Upper boundary for the random color selection while spawned" type="Int32" />
+	<!-- <object name="VehicleAvoidanceStims" desc="The list of Stims that a vehicle produces when it moves" /> -->
+        <object name="VehicleAvoidanceStims">
+          <object name="Stims">
+            <object name="Stim">
+              <field name="selStimType" type="Enum">03000000</field>
+            </object>
+          </object>
+        </object>	
+	<field name="bCanEnterFromWater" desc="Can enter from water" type="Boolean" />
+	<field name="bEnableClimbingFromWater" desc="Enable climb from water" type="Boolean" />
+	<field name="text_defaultSkin" type="String" />
+	<field name="defaultSkin" desc="This is the randomly chosen skin, you can rerandomize by leaving this empty." type="Hash32" />
+	<field name="bCanShootFromAttachedTurret" desc="If the player is shooting from a turret attached to this vehicle they are allowed to shoot the vehicle. Unticking this prevents some issues in cases where this is not desired." type="Boolean" />
+	<field name="bHeadCouldClipThroughGround" desc="Allows checks to see if the head of any passenger clips through the gound." type="Boolean" />
+	<field name="selVehicleColor" type="Enum">
+		<enum name="enumVehicleColor">
+		</enum>
+	</field>
+        <object name="FOV">
+          <field name="VehicleMinSpeed" type="Float32" />
+          <field name="VehicleMaxSpeed" type="Float32" />
+          <field name="FOVCompensationOffset" type="Float32" />
+          <field name="FOVCompensationVerticalOffset" type="Int32" />
+          <field name="FOVCompensationPitchOffsetMinSpeed" type="Int32" />
+          <field name="FOVCompensationPitchOffsetMaxSpeed" type="Int32" />
+          <field name="FOVAngleAtMinSpeed" type="Float32" />
+          <field name="FOVAngleAtMaxSpeed" type="Float32" />
+          <field name="fFOVShiftDampingFactorUp" type="Float32" />
+          <field name="fFOVShiftDampingFactorDown" type="Float32" />
+        </object>
+        <object name="SpeedFX">
+          <field name="fVehicleMinSpeed" type="Float32" />
+          <field name="fVehicleMaxSpeed" type="Float32" />
+          <field name="fDistanceInFront" type="Float32" />
+          <field name="text_psPathID" type="String" />
+          <field name="psPathID" type="Hash64" />
+        </object>
+        <object name="Look">
+          <field name="fAngularAdjustmentRate" type="Float32" />
+          <field name="fAngularRollModifier" type="Float32" />
+          <field name="fAngularPitchModifier" type="Float32" />
+        </object>
+        <object name="CollisionCamPos">
+          <field name="text_MoveState" type="String" />
+          <field name="MoveState" type="Hash64" />
+          <object name="Procedural">
+            <field name="ImpulseTime" type="Float32" />
+            <field name="RestitutionTime" type="Float32" />
+            <field name="ImpulseFactor" type="Float32" />
+            <field name="MaxDist" type="Vector3" />
+            <object name="SmallCollision">
+              <field name="fFrontCollisionThreshold" type="Float32" />
+              <field name="fMaxHealthRemoved" type="Float32" />
+              <field name="fHealthPercentRemoved" type="Float32" />
+              <field name="fMaxSpeedToTriggerAnim" type="Float32" />
+            </object>
+            <object name="MediumCollision">
+              <field name="fFrontCollisionThreshold" type="Float32" />
+              <field name="fMaxHealthRemoved" type="Float32" />
+              <field name="fHealthPercentRemoved" type="Float32" />
+              <field name="fMaxSpeedToTriggerAnim" type="Float32" />
+            </object>            
+			<object name="BigCollision">
+              <field name="fFrontCollisionThreshold" type="Float32" />
+              <field name="fMaxHealthRemoved" type="Float32" />
+              <field name="fHealthPercentRemoved" type="Float32" />
+              <field name="fMaxSpeedToTriggerAnim" type="Float32" />
+            </object>
+          </object>
+        </object>
+        <object name="Steering">
+          <field name="arkSteeringSpeedCurve" type="Id64" />
+          <object name="SteeringRandom">
+            <field name="fTimeTrigger" type="Float32" />
+            <field name="fMin" type="Float32" />
+            <field name="fMax" type="Float32" />
+            <field name="fVehicleMinSpeed" type="Float32" />
+            <field name="fVehicleMaxSpeed" type="Float32" />
+          </object>
+        </object>
+        <object name="OnOffRoad">
+          <field name="fOnRoadBufferTime" type="Float32" />
+          <field name="fOnRoadTime" type="Float32" />
+        </object>
+        <object name="ExitAnim">
+          <field name="fMaxExitAnimPitchAngle" type="Float32" />
+          <field name="fMaxExitAnimRollAngle" type="Float32" />
+        </object>
+	<field name="fWindFactor" desc="used for wind force caclulations. (Used in AMBX)" type="Float32" />
+	<field name="MaxSpeedToExit" desc="Maximum speed(kmph) where the pawn can exit the vehicle (do not affect bailout nor exterior seat)" type="Float32" />
+	<object name="SeatsInfo" desc="Info on seats in vehicle (NB: MUST NOT be edited or loaded)" />
+        <object name="PassengerSeatsLookAngles">
+          <object name="Seat">
+            <field name="sSeatBoneName" type="String">00</field>
+            <field name="MaxLookAngle" type="Vector3">000000000000000000000000</field>
+            <field name="MinLookAngle" type="Vector3">000000000000000000000000</field>
+          </object>
+        </object>
+        <object name="UserSeatTypeOverride">
+          <object name="Seat">
+            <field name="EntryBoneName" type="String" />
+            <field name="bHumanUserType" type="Boolean" />
+            <field name="bAIUserType" type="Boolean" />
+            <field name="bMultiUserType" type="Boolean" />
+          </object>
+          </object>
+        <object name="SeatsExterior">
+          <object name="Seat">
+            <field name="sSeatBoneName" type="String" />
+            <field name="bIsExterior" type="Boolean" />
+          </object>
+        </object>
+        <object name="SeatsEntryRestriction">
+          <object name="Seat">
+            <field name="sSeatBoneName" type="String" />
+            <field name="fHeightLimit" type="Float32" />
+            <field name="selForceWeapon" type="Enum" />
+            <field name="selUserExposure" type="Enum" />
+          </object>
+          </object>
+        <object name="SeatsSwitchesAllowed">
+          <object name="Seat">
+            <field name="FromSeatIndex" type="Hash32" />
+            <field name="ToSeatIndex" type="Hash32" />
+          </object>
+        </object>		 							
+        <object name="SeatsTypeOverride">
+          <object name="Seat">
+            <field name="sSeatBoneName" type="String" />
+            <field name="NewSeatType" type="Hash32" />
+            <field name="bCanThrowGrenade" type="Boolean" />
+            <field name="bCanSwitchWeapon" type="Boolean" />
+            <field name="bForcePlayerNearZ" type="Boolean" />
+          </object>
+        </object>
+        <object name="SeatsEntryUsedForClimbing">
+          <object name="Seat">
+            <field name="sEntryBoneName" type="String" />
+            <field name="bIsUsedForClimbing" type="Boolean" />
+          </object>
+        </object>
+	<object name="AllowHeadLights" desc="Whether head lights state could be changed" />
+        <object name="SpeedVerticalOffset">
+          <field name="arkSpeedOffsetCurve" type="Id64" />
+          <field name="fSpeedOffsetMinSpeed" type="Float32" />
+          <field name="fSpeedOffsetMaxSpeed" type="Float32" />
+        </object>
+        <object name="StatisticAndProgression">
+          <object name="StatisticNumberUtilisation">
+            <field name="selStatisticType" type="Enum" />
+          </object>
+        </object>
+        <object name="CollisionFX">
+          <field name="fSmallCollisionStimLevel" type="Float32" />
+          <field name="fMediumCollisionStimLevel" type="Float32" />
+          <field name="fBigCollisionStimLevel" type="Float32" />
+          <field name="fSmallWaterCollisionSpeed" type="Float32" />
+          <field name="fMediumWaterCollisionSpeed" type="Float32" />
+          <field name="fBigWaterCollisionSpeed" type="Float32" />
+          <field name="matimpSmallCollisionImpact" type="Id64" />
+          <field name="matimpMediumCollisionImpact" type="Id64" />
+          <field name="matimpBigCollisionImpact" type="Id64" />
+        </object>
+        <object name="CollisionRumble">
+          <field name="fSmallCollisionStimLevel" type="Float32" />
+          <field name="fMediumCollisionStimLevel" type="Float32" />
+          <field name="fBigCollisionStimLevel" type="Float32" />
+          <field name="fRumbleIntensitySmallCollision" type="Float32" />
+          <field name="fRumbleIntensityMediumCollision" type="Float32" />
+          <field name="fRumbleIntensityBigCollision" type="Float32" />
+        </object>
+        <object name="speedPostFX">
+          <field name="text_sPostFX" type="String" />
+          <field name="sPostFX" type="Hash32" />
+          <field name="fLowSpeed" type="Float32" />
+          <field name="fHighSpeed" type="Float32" />
+          <field name="fDampFactor" type="Float32" />
+        </object>
+        <object name="EngineDamaged">
+          <field name="text_psEngineSmoke" type="String" />
+          <field name="psEngineSmoke" type="Hash64" />
+          <field name="text_psEngineSmokeNoHood" type="String" />
+          <field name="psEngineSmokeNoHood" type="Hash64" />
+          <field name="text_psDisabledEngineSmoke" type="String" />
+          <field name="psDisabledEngineSmoke" type="Hash64" />
+          <field name="text_psDisabledEngineSmokeNoHood" type="String" />
+          <field name="psDisabledEngineSmokeNoHood" type="Hash64" />
+          <field name="text_psBrokenEngineSmoke" type="String" />
+          <field name="psBrokenEngineSmoke" type="Hash64" />
+          <field name="text_psBrokenEngineSmokeNoHood" type="String" />
+          <field name="psBrokenEngineSmokeNoHood" type="Hash64" />
+        </object>
+        <object name="EngineFire">
+          <field name="text_psEngineFire" type="String" />
+          <field name="psEngineFire" type="Hash64" />
+          <field name="text_psEngineFireNoHood" type="String" />
+          <field name="psEngineFireNoHood" type="Hash64" />
+          <field name="text_psAfterExplosionBurning" type="String" />
+          <field name="psAfterExplosionBurning" type="Hash64" />
+          <field name="fAfterExplosionEngineFireDuration" type="Float32" />
+          <object name="EngineFireStim">
+            <field name="hidEventName" type="String" />
+            <field name="bSupportForDualComponent" type="Boolean" />
+            <field name="hidTargetEntityId" type="Hash64" />
+            <field name="text_sDetail" type="String" />
+            <field name="sDetail" type="Hash32" />
+            <field name="selFilterSubType" type="Enum" />
+            <field name="fLevel" type="Float32" />
+            <field name="vectorImpactPos" type="Vector3" />
+            <field name="fRadius" type="Float32" />
+            <field name="bFalloff" type="Boolean" />
+            <field name="fFalloffMinLevel" type="Float32" />
+            <field name="fFalloffInterpolationFactor" type="Float32" />
+            <field name="bUseNewFalloffCurve" type="Boolean" />
+            <field name="arkFalloffCurve" type="Id64" />
+            <field name="hidShowType" type="Boolean" />
+            <field name="hidShowRadius" type="Boolean" />
+            <field name="fDuration" type="Float32" />
+          </object>
+        </object>
+        <object name="EngineExplosion">
+          <field name="fExplosionDelay" type="Float32" />
+          <field name="fDelayRemovedPerDamage" type="Float32" />
+          <field name="fDelayRemovedPerPierceDamage" type="Float32" />
+          <field name="fDelayRemovedPerExplosionDamage" type="Float32" />
+          <field name="fDelayRemovedPerCrushDamage" type="Float32" />
+          <field name="fEngineExplosionImpulse" type="Float32" />
+          <field name="vEngineExplosionOffset" type="Vector3" />
+          <field name="vEngineExplosionRandOffset" type="Vector3" />
+          <field name="text_psEngineExplosion" type="String" />
+          <field name="psEngineExplosion" type="Hash64" />
+          <field name="fExplosionScale" type="Float32" />
+          <field name="fDamageOverHealthToTriggerExplosion" type="Float32" />
+          <field name="fInstantExplosionFallHeight" type="Float32" />
+        </object>
+        <object name="EngineExplosionEmitter">
+          <field name="vectorSelfForce" type="Vector3" />
+          <field name="fPartsForce" type="Float32" />
+          <field name="vectorExplosionCenter" type="Vector3" />
+          <object name="ExplosionStim">
+            <field name="hidEventName" type="String" />
+            <field name="bSupportForDualComponent" type="Boolean" />
+            <field name="hidTargetEntityId" type="Hash64" />
+            <field name="text_sDetail" type="String" />
+            <field name="sDetail" type="Hash32" />
+            <field name="selFilterSubType" type="Enum" />
+            <field name="fLevel" type="Float32" />
+            <field name="vectorImpactPos" type="Vector3" />
+            <field name="fRadius" type="Float32" />
+            <field name="bFalloff" type="Boolean" />
+            <field name="fFalloffMinLevel" type="Float32" />
+            <field name="fFalloffInterpolationFactor" type="Float32" />
+            <field name="bUseNewFalloffCurve" type="Boolean" />
+            <field name="arkFalloffCurve" type="Id64" />
+            <field name="hidShowType" type="Boolean" />
+            <field name="hidShowRadius" type="Boolean" />
+            <field name="fDuration" type="Float32" />
+            <field name="fPhysImpulse" type="Float32" />
+            <field name="fPhysImpulse_z_multiplier" type="Float32" />
+            <field name="fPhysImpulse_x_multiplier" type="Float32" />
+            <field name="fPhysImpulse_y_multiplier" type="Float32" />
+            <field name="fRealTreeImpulseMultiplier" type="Float32" />
+            <field name="fRealTreeRadiusMultiplier" type="Float32" />
+            <object name="DiceRolls">
+              <object name="Dice">
+                <field name="fMinValue" type="Float32" />
+                <field name="fMaxValue" type="Float32" />
+                <field name="fStepSize" type="Float32" />
+                <field name="nNbRolls" type="Int32" />
+              </object>
+            </object>
+          </object>
+          <object name="ExtraStims">
+            <object name="Stim">
+              <field name="hidEventName" type="String" />
+              <field name="bSupportForDualComponent" type="Boolean" />
+              <field name="hidTargetEntityId" type="Hash64" />
+              <field name="text_sDetail" type="String" />
+              <field name="sDetail" type="Hash32" />
+              <field name="selType" type="Enum" />
+              <field name="fLevel" type="Float32" />
+              <field name="vectorImpactPos" type="Vector3" />
+              <field name="fRadius" type="Float32" />
+              <field name="bFalloff" type="Boolean" />
+              <field name="fFalloffMinLevel" type="Float32" />
+              <field name="fFalloffInterpolationFactor" type="Float32" />
+              <field name="bUseNewFalloffCurve" type="Boolean" />
+              <field name="arkFalloffCurve" type="Id64" />
+              <field name="hidShowType" type="Boolean" />
+              <field name="hidShowRadius" type="Boolean" />
+              <field name="fDuration" type="Float32" />
+            </object>
+          </object>
+        </object>
+        <object name="GasTankExplosion">
+          <field name="fGasTankExplosionImpulse" type="Float32" />
+          <field name="vGasTankExplosionOffset" type="Vector3" />
+          <field name="text_psGasTankExplosion" type="String" />
+          <field name="psGasTankExplosion" type="Hash64" />
+        </object>	
+        <object name="GasTankExplosionEmitter">
+          <field name="vectorSelfForce" type="Vector3" />
+          <field name="fPartsForce" type="Float32" />
+          <field name="vectorExplosionCenter" type="Vector3" />
+          <object name="ExplosionStim">
+            <field name="hidEventName" type="String" />
+            <field name="bSupportForDualComponent" type="Boolean" />
+            <field name="hidTargetEntityId" type="Hash64" />
+            <field name="text_sDetail" type="BinHex" />
+            <field name="sDetail" type="Hash32" />
+            <field name="selFilterSubType" type="Enum" />
+            <field name="fLevel" type="Float32" />
+            <field name="vectorImpactPos" type="Vector3" />
+            <field name="fRadius" type="Float32" />
+            <field name="bFalloff" type="Boolean" />
+            <field name="fFalloffMinLevel" type="Float32" />
+            <field name="fFalloffInterpolationFactor" type="Float32" />
+            <field name="bUseNewFalloffCurve" type="Boolean" />
+            <field name="arkFalloffCurve" type="Hash64" />
+            <field name="hidShowType" type="Boolean" />
+            <field name="hidShowRadius" type="Boolean" />
+            <field name="fDuration" type="Float32" />
+            <field name="fPhysImpulse" type="Float32" />
+            <field name="fPhysImpulse_z_multiplier" type="Float32" />
+            <field name="fPhysImpulse_x_multiplier" type="Float32" />
+            <field name="fPhysImpulse_y_multiplier" type="Float32" />
+            <field name="fRealTreeImpulseMultiplier" type="Float32" />
+            <field name="fRealTreeRadiusMultiplier" type="Float32" />
+            <object name="DiceRolls">
+              <object name="Dice">
+                <field name="fMinValue" type="Float32" />
+                <field name="fMaxValue" type="Float32" />
+                <field name="fStepSize" type="Float32" />
+                <field name="nNbRolls" type="Int32" />
+              </object>
+            </object>
+          </object>
+          <object name="ExtraStims">
+            <object name="Stim">
+              <field name="hidEventName" type="String" />
+              <field name="bSupportForDualComponent" type="Boolean" />
+              <field name="hidTargetEntityId" type="Hash64" />
+              <field name="text_sDetail" type="String" />
+              <field name="sDetail" type="Hash32" />
+              <field name="selType" type="Enum" />
+              <field name="fLevel" type="Float32" />
+              <field name="vectorImpactPos" type="Vector3" />
+              <field name="fRadius" type="Float32" />
+              <field name="bFalloff" type="Boolean" />
+              <field name="fFalloffMinLevel" type="Float32" />
+              <field name="fFalloffInterpolationFactor" type="Float32" />
+              <field name="bUseNewFalloffCurve" type="Boolean" />
+              <field name="arkFalloffCurve" type="Hash64" />
+              <field name="hidShowType" type="Boolean" />
+              <field name="hidShowRadius" type="Boolean" />
+              <field name="fDuration" type="Float32" />
+            </object>
+          </object>
+        </object>
+        <object name="PostExplosion">
+          <field name="bRemoveEntityOnExplosion" type="Boolean" />
+          <field name="fRemoveDelay" type="Float32" />
+        </object>
+        <object name="SoundSettings">
+          <field name="sndtpSoundType" type="UInt32" />
+          <field name="m_psHZZSS" type="Int32" />
+          <field name="sndmlDamageSoundMultilayer" type="Hash32" />
+          <field name="sndmlSpeedSoundMultilayer" type="Hash32" />
+          <field name="sndmlRPMSoundMultilayer" type="Hash32" />
+          <field name="sndmlExtraTorqueSoundMultilayer" type="Hash32" />
+          <field name="sndmlStartGearSoundMultilayer" type="Hash32" />
+          <field name="sndmlThrustPedalSoundMultilayer" type="Hash32" />
+          <field name="sndswtpMaterialSoundSwitchType" type="Hash32" />
+          <field name="sndEngineMinorDamage" type="String" />
+          <field name="sndEngineMajorDamage" type="String" />
+          <field name="sndEngineDisabled" type="String" />
+          <field name="sndEngineBurning" type="String" />
+          <field name="sndEngineExplosion" type="String" />
+          <field name="sndGasTankExplosion" type="String" />
+          <field name="sndEngineSmoke" type="String" />
+          <field name="sndEngineFlooded" type="String" />
+          <field name="sndAfterExplosionBurning" type="String" />
+          <object name="Reverse">
+            <field name="sndswtpDirectionSwitchType" type="Hash32" />
+            <field name="sndswvlSoundSwitchForward" type="Hash32" />
+            <field name="sndswvlSoundSwitchReverse" type="Hash32" />
+          </object>
+        </object>	
+        <object name="EngineRumble">
+          <field name="LowRPM" type="Float32" />
+          <field name="HighRPM" type="Float32" />
+          <object name="Idle">
+            <field name="Frequency" type="Float32" />
+            <field name="PadRumbleLow" type="Int32" />
+            <field name="PadRumbleHigh" type="Int32" />
+          </object>
+          <object name="Low">
+            <field name="Frequency" type="Float32" />
+            <field name="PadRumbleLow" type="Int32" />
+            <field name="PadRumbleHigh" type="Int32" />
+          </object>		  
+          <object name="High">
+            <field name="Frequency" type="Float32" />
+            <field name="PadRumbleLow" type="Int32" />
+            <field name="PadRumbleHigh" type="Int32" />
+          </object>	
+        </object>
+        <object name="Flooding">
+          <field name="fEngineUnderWaterZOffset" type="Float32" />
+          <field name="fEngineDeepUnderWaterZOffset" type="Float32" />
+          <field name="fFloodDelay" type="Float32" />
+          <field name="text_psEngineFlooded" type="String" />
+          <field name="psEngineFlooded" type="Hash64" />
+        </object>
+        <object name="Exhaust">
+          <field name="text_psExhaust" type="String" />
+          <field name="psExhaust" type="Hash64" />
+          <field hash="E8EF2ADB" type="Float32" />                    <!-- Unknow name -->
+          <field hash="0E8F853A" type="Float32" />                    <!-- Unknow name -->
+        </object>
+        <object name="HandBrakeSound">
+          <field name="sndHandbrake" type="String" />
+          <field name="fHandBrakeDelay" type="Float32" />
+        </object>
+        <object name="GaugesSettings">
+          <field name="fRPMMaxAngle" type="Float32" />
+          <field name="fSpeedLowRangeSpeed" type="Float32" />
+          <field name="fSpeedLowRangeAngle" type="Float32" />
+          <field name="fSpeed50kmhAngle" type="Float32" />
+          <field name="fSpeedCutOff" type="Float32" />
+        </object>
+        <object name="VehicleLightSettings">
+          <field name="fBrakeLightDimmedFactor" type="Float32" />
+          <field name="fDynamicLightRange" type="Float32" />
+          <field name="fDynamicLightFadeStartRange" type="Float32" />
+          <field name="fDynamicLightInnerAngle" type="Float32" />
+          <field name="fDynamicLightOuterAngle" type="Float32" />
+          <field name="fLightsOnTimeOfDay" type="Float32" />
+          <field name="fLightsOffTimeOfDay" type="Float32" />
+          <field name="fLightIntensity" type="Float32" />
+          <object name="InteriorLightSettings">
+            <field name="colorInteriorLightColor" type="Vector3" />
+            <field name="fInteriorLightIntensity" type="Float32" />
+            <field name="fInteriorLightRadius" type="Float32" />
+            <field name="fInteriorLightInnerRadius" type="Float32" />
+            <field name="bInteriorLightAlwaysOn" type="Boolean" />
+            <field name="fInteriorLightOnTimeOfDay" type="Float32" />
+            <field name="fInteriorLightOffTimeOfDay" type="Float32" />
+          </object>
+        </object>		
+        <object name="AnimSeatEntryMoveStates">
+          <object name="Seat">
+            <field name="text_EntryMoveState" type="String" />
+            <field name="EntryMoveState" type="Hash64">FFFFFFFFFFFFFFFF</field>
+          </object>
+        </object>
+</class>

@@ -1,0 +1,6 @@
+<class name="CCurve">
+	<inherit name="CBaseEntity" />
+	<object name="curveCurve">
+		<inherit name="CCurveObj" />
+	</object>
+</class>

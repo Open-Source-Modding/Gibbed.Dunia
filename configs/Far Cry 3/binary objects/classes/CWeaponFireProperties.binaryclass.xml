@@ -1,0 +1,6 @@
+<class name="CWeaponFireProperties">
+	<inherit name="CNomadObject" />
+	<object name="Network">
+		<field name="strControllerNetobjectType" type="String" />
+	</object>
+</class>

@@ -1,0 +1,20 @@
+<class name="CDoorComponent">
+	<inherit name="CEntityComponent" />
+                <object hash="23C20EF1">
+                  <object name="Node">
+                    <field hash="88E8521E" type="BinHex">446F6F7200</field>
+          </object>						
+          </object>						
+        <field name="hidHasAliasName" type="Boolean"/>
+        <field name="sUsageString" type="Boolean"/>
+        <field name="bEnabled" type="Boolean"/>
+        <field name="bSaveGameWhenOpenDoor" type="Boolean"/>
+        <field name="bSynchSectorAfteruse" type="Boolean"/>
+        <field name="selDoorType" type="Enum"/>
+        <field name="bPushToWeaponSafe" type="Boolean"/>
+        <field name="bPullToWeaponSafe" type="Boolean"/>
+        <field name="vectorBoundingBoxSize" type="Vector3"/>
+        <field name="sndPullDoor" type="String"/>
+        <field name="sndPushDoor" type="String"/>
+        <field name="sndtpSoundType" type="Int32"/>
+</class>

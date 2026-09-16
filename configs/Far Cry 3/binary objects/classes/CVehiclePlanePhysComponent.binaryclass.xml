@@ -1,0 +1,147 @@
+<class name="CVehiclePlanePhysComponent">
+	<inherit name="CPhysComponent" />
+        <field name="sndtpSoundType" type="UInt32" />
+        <field name="bAnimateableAlwaysKeyFrame" type="Boolean" />
+        <field name="fLogicConstraintDeactivationDistance" type="Float32" />
+        <field name="fRepairMultiplier" type="Float32" />
+        <field name="HealthDamageEnabled" type="Boolean" />	
+        <object name="CollisionStims">
+          <field name="fMaxStimCollisionLevel" type="Float32" />
+          <field name="fMinStimCollisionLevel" type="Float32" />
+          <field name="fMinAnimalMassToCollide" type="Float32" />
+          <field name="fMinStimCollisionLevelForVehicleDamage" type="Float32" />
+          <field name="fMinColliderMassForVehicleDamage" type="Float32" />
+          <field name="fMinimumSpeedForDamageStim" type="Float32" />
+          <field name="fCollisionImmunityDelay" type="Float32" />
+          <field name="fOverallCrushStimModifier" type="Float32" />
+          <field name="fCharacterCrushStimModifier" type="Float32" />
+          <object name="CollisionSoundStimRanges">
+            <field name="MinInterestingSpeed" type="Float32" />
+            <field name="MaxInterestingSpeed" type="Float32" />
+            <field name="MinThreateningSpeed" type="Float32" />
+            <field name="MaxThreateningSpeed" type="Float32" />
+            <field name="MinInterestingRange" type="Float32" />
+            <field name="MaxInterestingRange" type="Float32" />
+            <field name="MinThreateningRange" type="Float32" />
+            <field name="MaxThreateningRange" type="Float32" />
+          </object>
+        </object>
+        <object name="EngineStimSettings">
+          <field name="fThreateningEngineRange" type="BinHex" />
+          <field name="fInterestingEngineRange" type="BinHex" />
+        </object>
+        <object name="Reliability">
+          <field name="bReliabilityEnabled" type="Boolean" />
+          <field name="fInitialReliability" type="Float32" />
+          <field name="MinorDamageLevel" type="Float32" />
+          <field name="MajorDamageLevel" type="Float32" />
+          <field name="DisabledDamageLevel" type="Float32" />
+          <field name="MinorDamageEngineScale" type="Float32" />
+          <field name="MajorDamageEngineScale" type="Float32" />
+          <field name="MintEngineStartTime" type="Float32" />
+          <field name="MinorDamageEngineStartTime" type="Float32" />
+          <field name="MajorDamageEngineStartTime" type="Float32" />
+          <field name="sndswtpReliabilitySoundSwitchType" type="Int32" />
+          <field name="sndswvlNoDamageSoundSwitchValue" type="Int32" />
+          <field name="sndswvlMinorDamageSoundSwitchValue" type="Int32" />
+          <field name="sndswvlMajorDamageSoundSwitchValueE207AE30" type="Int32" />
+          <field name="sndswvlDisabledSoundSwitchValue" type="Int32" />
+          <field name="sndswvlBrokenSoundSwitchValue" type="Int32" />
+          <field name="ImpulseModifierStimPierce" type="Float32" />
+          <field name="ImpulseModifierStimCrush" type="Float32" />
+          <field name="ImpulseModifierStimExplosion" type="Float32" />
+        </object>
+        <object name="Parts">
+          <object name="Part">
+            <field name="text_Name" type="String" />
+            <field name="Name" type="Hash32" />
+            <field name="hidIsFrame" type="Boolean" />
+            <field name="hidIsWindshiled" type="Boolean" />
+            <field name="selhidType" type="Int32" />
+            <field name="fMaxHealth" type="Float32" />
+            <field name="fInitialHealth" type="Float32" />
+            <field name="fHealthDamaged" type="Float32">000080BF</field>
+            <field name="fHealthDisable" type="Float32">000080BF</field>
+            <field name="fHealthConstrained" type="Float32" />
+            <field name="fArmor" type="Float32" />
+            <field name="bCanBeRepair" type="Boolean" />
+            <field name="bRepairVisual" type="Boolean" />
+            <field name="bIsVisible" type="Boolean" />
+            <field name="bUseRayCheck" type="Boolean" />
+            <field name="bKeepAttached" type="Boolean" />
+            <field name="bDetachOnExplosion" type="Boolean" />
+            <field name="bDetachOnVehicleExplosion" type="Boolean" />
+            <field name="bUseConstraintDampings" type="Boolean" />
+            <field name="bUseLogicConstraint" type="Boolean" />
+            <field name="bLaunchFXOnStateCreate" type="Boolean" />
+            <field name="bImpulseOnDetach" type="Boolean" />
+            <field name="fAngularModifier" type="Float32" />
+            <field name="bAnnihilation" type="Boolean" />
+            <field name="fFloatingScale" type="Float32" />
+            <field name="fWaterFriction" type="Float32" />
+            <field name="fWaterForceFactor" type="Float32" />
+            <field name="fCollisionExtraRadius" type="Float32" />
+            <field name="fBurnExtraRadius" type="Float32" />
+            <field name="fMass" type="Float32" />
+            <field name="fLinearDamping" type="Float32" />
+            <field name="fAngularDamping" type="Float32" />
+            <field name="fGravityFactor" type="Float32" />
+            <object name="Stim">
+              <field name="bPierceStim" type="BinHex" />
+              <field name="fPierceDamageMultiplier" type="BinHex" />
+              <field name="bCrushStim" type="BinHex" />
+              <field name="fCrushDamageMultiplier" type="BinHex" />
+              <field name="bBurnStim" type="BinHex" />
+              <field name="fBurnDamageMultiplier" type="BinHex" />
+              <field name="bExplosionStim" type="BinHex" />
+              <field name="fExplosionDamageMultiplier" type="BinHex" />
+              <field name="bExplosionGrenadeStim" type="BinHex" />
+              <field name="fExplosionGrenadeDamageMultiplier" type="BinHex" />
+              <field name="bExplosionRPGStim" type="BinHex" />
+              <field name="fExplosionRPGDamageMultiplier" type="BinHex" />
+              <field name="bExplosionIEDStim" type="BinHex" />
+              <field name="fExplosionIEDDamageMultiplier" type="BinHex" />
+              <field name="bExplosionSplashStim" type="BinHex" />
+              <field name="fExplosionSplashDamageMultiplier" type="BinHex" />
+              <field name="bArrowStim" type="BinHex" />
+              <field name="fArrowDamageMultiplier" type="BinHex" />
+              <field name="bCutStim" type="BinHex" />
+              <field name="fCutDamageMultiplier" type="BinHex" />
+              <field name="fBulletImpulseScale" type="BinHex" />
+              <field name="fExplosionImpulseScale" type="BinHex" />
+            </object>
+            <object name="Sounds" />
+            <object name="hidStates">
+              <object name="hidState">
+                <field name="hidRigidbodyIndex" type="Int32" />
+                <field name="hidGraphicIndex" type="Int32" />
+                <field name="text_hidRigidbodyName" type="String" />
+                <field name="hidRigidbodyName" type="Hash32" />
+                <field name="text_hidHighresRigidbodyName" type="String" />
+                <field name="hidHighresRigidbodyName" type="Hash32" />
+                <field name="hidPartId" type="BinHex" />
+              </object>
+              </object>
+			  <object name="disStateFXs" />
+              </object>
+              </object>
+        <object name="PlaneParams">
+          <field name="Mass" type="Float32" />
+          <field name="Density" type="Float32" />
+          <field name="LinearDamping" type="Int32" />
+          <field name="AngularDamping" type="Float32" />
+          <field name="WindDragCoeff" type="Int32" />
+          <field name="FloatingScale" type="Float32" />
+          <field name="MaxLinearSpeed" type="Float32" />
+          <field name="MaxLinearAccel" type="Float32" />
+          <field name="MaxLeaningAngle" type="Float32" />
+          <field name="MaxLeaningAccel" type="Float32" />
+          <field name="MaxLeaningSpeedDecel" type="Float32" />
+          <field name="MaxLeaningForceRatio" type="Float32" />
+          <field name="CriticalAngleOfAttack" type="Float32" />
+          <field name="AngleOfAttackAccel" type="Float32" />
+          <field name="AngleOfAttackSpeedDecel" type="Float32" />
+          <field name="AngleOfAttackLiftRatio" type="Float32" />
+          <field name="bTiltRotor" type="Boolean" />
+        </object>			  
+</class>

@@ -1,0 +1,6 @@
+<class name="CCompoundPhysComponent">
+	<inherit name="CCompoundComponent" />
+        <field name="hidHasAliasName" type="Boolean"/>
+        <field name="text_hidResourceId" type="String"/>
+        <field name="hidResourceId" type="Hash64"/>	
+</class>

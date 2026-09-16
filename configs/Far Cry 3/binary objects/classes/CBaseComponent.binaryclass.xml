@@ -1,0 +1,8 @@
+<class name="CBaseComponent">
+	<inherit name="CNomadObject" />
+        <field name="text_sBinkPath" type="String"/>
+        <field name="sBinkPath" type="Hash64"/>
+        <field name="text_sMaterialName" type="String"/>
+        <field name="sMaterialName" type="Hash32"/>
+        <field name="fVolumePercent" type="Float32"/>
+</class>

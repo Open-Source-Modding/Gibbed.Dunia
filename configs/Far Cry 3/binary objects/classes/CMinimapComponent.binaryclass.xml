@@ -1,0 +1,7 @@
+<class name="CMinimapComponent">
+	<inherit name="CEntityComponent" />
+      <object name="CMinimapComponent">
+        <field name="hidHasAliasName" type="Boolean"/>
+        <field name="minimapobjectinfoObjectInfo" type="Id64"/>
+      </object> 	
+</class>

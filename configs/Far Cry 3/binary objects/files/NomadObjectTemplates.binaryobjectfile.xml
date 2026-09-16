@@ -1,0 +1,50 @@
+<file name="NomadObjectTemplates">
+	<object name="NomadObjectTemplates">
+		<object hash="142371CF">
+			<field name="Name" type="String" />
+			<object name="Template">
+				<field name="FullName" type="String" />
+				
+				<!-- ^Name -->
+				<inherit name="CFCXPlayerAbilitiesService"
+				         condition_field="^Name"
+				         condition_value="AbilityService" condition_type="String" />
+				<inherit name="CBonusService"
+				         condition_field="^Name"
+				         condition_value="BonusService" condition_type="String" />
+				<inherit name="CFCXEncounterService"
+				         condition_field="^Name"
+				         condition_value="EncounterService" condition_type="String" />
+				<inherit name="CFCXMapService"
+				         condition_field="^Name"
+				         condition_value="MapService" condition_type="String" />
+				<inherit name="CFCXMusicService"
+				         condition_field="^Name"
+				         condition_value="MusicService" condition_type="String" />
+				<inherit name="CFCXPlayerParamsService"
+				         condition_field="^Name"
+				         condition_value="PlayerParamsService" condition_type="String" />
+				<inherit name="CFCXPlayerService"
+				         condition_field="^Name"
+				         condition_value="PlayerService" condition_type="String" />
+				<inherit name="CFCXTutorialService"
+				         condition_field="^Name"
+				         condition_value="TutorialService" condition_type="String" />
+				<inherit name="CSocialNetworkingService"
+				         condition_field="^Name"
+				         condition_value="SocialNetworkingService" condition_type="String" />
+				<inherit name="CFCXUnlockService"
+				         condition_field="^Name"
+				         condition_value="UnlockService" condition_type="String" />
+				
+				<!-- FullName -->
+				<inherit name="CFCXIntelService"
+				         condition_field="FullName"
+				         condition_value="intelservice:params.intelservice" condition_type="String" />
+				<inherit name="CFCXIntelRewardService"
+				         condition_field="FullName"
+				         condition_value="intelservice:rewards.intelrewardservice" condition_type="String" />
+			</object>
+		</object>
+	</object>
+</file>

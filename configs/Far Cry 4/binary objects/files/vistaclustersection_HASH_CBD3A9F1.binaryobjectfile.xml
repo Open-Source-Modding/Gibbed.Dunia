@@ -1,0 +1,39 @@
+<file name=".vcs" extension=".vcs">
+<object hash="CBD3A9F1">
+  <field hash="17DE8E65" type="String" />
+  <field hash="25897A97" type="Vector3" />
+  <field hash="2E37405E" type="Hash64" />
+  <field hash="56F5C144" type="String" />
+  <field hash="88104391" type="BinHex" />
+  <field hash="8C5DD6EE" type="String" />
+  <field hash="B363EDEF" type="BinHex" />
+  <field hash="B5B418D5" type="Hash64" />
+  <field hash="CF50AF1E" type="Hash64" />
+  <field hash="D0D46BA4" type="BinHex" />
+  <field hash="FBA54988" type="BinHex" />
+  <object hash="8484C71E">
+    <object hash="35ECB046">
+      <field hash="24FF05C1" name="CastShadow" type="BinHex" />
+      <field hash="38C21E68" type="BinHex" />
+      <field hash="3B9CA21D" type="String" />
+      <field hash="454D618E" type="BinHex" />
+      <field hash="5626B2F0" type="Hash64" />
+      <field hash="6DBD71E5" type="String" />
+      <field hash="6DF3628B" type="BinHex" />
+      <field hash="767E4499" type="BinHex" />
+      <field hash="78A5CCAB" type="BinHex" />
+      <field hash="804C4B72" type="String" />
+      <field hash="97A3421E" type="Hash64" />
+      <field hash="987025B5" type="BinHex" />
+      <field hash="A207BC28" type="BinHex" />
+      <field hash="A77B9DF2" type="Hash64" />
+      <field hash="DBB687C1" type="BinHex" />
+      <field hash="E0F7CCDC" type="BinHex" />
+      <field hash="EF771523" type="BinHex" />
+      <object hash="92848566">
+        <field hash="DCB67730" name="Value" type="BinHex" />
+      </object>
+    </object>
+  </object>
+</object>
+</file>

@@ -1,0 +1,5 @@
+<class name="CFCXPawnLootComponent::PossibleGroup">
+	<inherit name="CNomadObject" />
+	<field name="percent" type="Float32" />
+	<field name="lootGroup" type="Int32" />
+</class>

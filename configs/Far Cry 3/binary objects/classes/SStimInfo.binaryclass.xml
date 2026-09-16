@@ -1,0 +1,21 @@
+<class name="SStimInfo">
+	<inherit name="#11E152C8" />
+	<field name="selStimType" type="Enum">
+		<enum name="enumStimType">
+			<element name="Generic">0</element>
+			<element name="BulletHit">1</element>
+			<element name="Explosion">2</element>
+			<element name="None">3</element>
+		</enum>
+	</field>
+	<merge name="CPhysStim"
+	       condition_field="selStimType"
+	       condition_value="0" condition_type="Int32" />
+	<merge name="CPhysBulletHitStim"
+	       condition_field="selStimType"
+	       condition_value="1" condition_type="Int32" />
+	<merge name="CPhysExplosionStim"
+	       condition_field="selStimType"
+	       condition_value="2" condition_type="Int32" />
+	<field name="bAppliesRangeMultipliers" type="Boolean" />
+</class>

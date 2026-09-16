@@ -1,0 +1,22 @@
+
+<file name="worldmapdatalibrary" extension=".fcb">
+<object hash="22E69541">
+  <object hash="17D65816">
+    <object hash="9B8318B9" name="Collectible">
+      <field hash="0F5E4BAA" name="EntityId" type="BinHex"></field>
+      <field hash="29D08A8B" type="BinHex"></field>
+      <field hash="B894A04C" name="Pos" type="Vector3"></field>
+      <field hash="E95B2A50" type="String"></field>
+    </object>
+  </object>
+  <object hash="61F93DDC" />
+  <object hash="D194991A" />
+  <object hash="D616D2E7">
+    <object hash="E2CFA419">
+      <field hash="27BA8E29" name="points" type="BinHex"></field>
+      <field hash="462CE4F5" name="position" type="BinHex"></field>
+      <field hash="CD460934" type="BinHex"></field>
+    </object>
+  </object>
+</object>
+</file>
