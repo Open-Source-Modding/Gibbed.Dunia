@@ -1,0 +1,7 @@
+<project>
+	<name>Far Cry Primal</name>
+	<dependencies>
+		<dependency>Shared</dependency>
+	</dependencies>
+	<list_location>../../configs/Far Cry Primal</list_location>
+</project>

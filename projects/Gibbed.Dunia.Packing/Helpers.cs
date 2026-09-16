@@ -47,7 +47,7 @@ namespace Gibbed.Dunia.Packing
         {
             var executablePath = GetExecutablePath();
             var binPath = Path.GetDirectoryName(executablePath);
-            return Path.Combine(binPath, "..", "configs", projectName, "project.json");
+            return Path.Combine(binPath, "projects", projectName + ".xml");
         }
     }
 }

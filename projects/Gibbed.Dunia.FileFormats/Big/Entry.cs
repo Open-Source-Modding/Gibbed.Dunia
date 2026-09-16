@@ -33,6 +33,8 @@ namespace Gibbed.Dunia.FileFormats.Big
         public int CompressedSize { get; set; }
         public byte CompressionScheme { get; set; }
         public bool IsEncrypted { get; set; }
+        public string Name { get; set; }
+        public uint DataHash { get; set; }
 
         public override string ToString()
         {
@@ -50,7 +52,9 @@ namespace Gibbed.Dunia.FileFormats.Big
                 this.Offset == other.Offset &&
                 this.CompressedSize == other.CompressedSize &&
                 this.CompressionScheme == other.CompressionScheme &&
-                this.IsEncrypted == other.IsEncrypted;
+                this.IsEncrypted == other.IsEncrypted &&
+                this.DataHash == other.DataHash &&
+                this.Name == other.Name;
         }
 
         public override bool Equals(object obj)
@@ -77,6 +81,8 @@ namespace Gibbed.Dunia.FileFormats.Big
             hashCode = hashCode * -1521134295 + this.CompressedSize.GetHashCode();
             hashCode = hashCode * -1521134295 + this.CompressionScheme.GetHashCode();
             hashCode = hashCode * -1521134295 + this.IsEncrypted.GetHashCode();
+            hashCode = hashCode * -1521134295 + this.DataHash.GetHashCode();
+            hashCode = hashCode * -1521134295 + (this.Name?.GetHashCode() ?? 0);
             return hashCode;
         }
     }

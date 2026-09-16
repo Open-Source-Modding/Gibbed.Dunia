@@ -127,26 +127,35 @@ namespace Gibbed.Dunia.Packing
             }
 
             var inputPaths = new List<string>();
-            string fatPath, datPath;
+            string fatPath, datPath, nfoPath;
 
             if (extras.Count == 1)
             {
                 inputPaths.Add(extras[0]);
                 fatPath = Path.ChangeExtension(extras[0], ".fat");
                 datPath = Path.ChangeExtension(extras[0], ".dat");
+                nfoPath = Path.ChangeExtension(extras[0], ".nfo");
             }
             else
             {
                 fatPath = extras[0];
 
-                if (Path.GetExtension(fatPath) != ".fat")
+                if (Path.GetExtension(fatPath) == ".nfo")
+                {
+                    nfoPath = fatPath;
+                    fatPath = Path.ChangeExtension(nfoPath, ".fat");
+                    datPath = Path.ChangeExtension(nfoPath, ".dat");
+                }
+                else if (Path.GetExtension(fatPath) != ".fat")
                 {
                     datPath = fatPath;
                     fatPath = Path.ChangeExtension(datPath, ".fat");
+                    nfoPath = Path.ChangeExtension(datPath, ".nfo");
                 }
                 else
                 {
                     datPath = Path.ChangeExtension(fatPath, ".dat");
+                    nfoPath = Path.ChangeExtension(fatPath, ".nfo");
                 }
 
                 inputPaths.AddRange(extras.Skip(1));
@@ -286,9 +295,15 @@ namespace Gibbed.Dunia.Packing
                     var entry = new Big.Entry<THash>();
                     entry.NameHash = pendingEntry.NameHash;
                     entry.Offset = output.Position;
+                    entry.Name = pendingEntry.Name;
 
                     using (var input = File.OpenRead(pendingEntry.FullPath))
                     {
+                        byte[] data = new byte[input.Length];
+                        input.Read(data, 0, data.Length);
+                        entry.DataHash = Gibbed.Dunia.FileFormats.Hashing.CRC32.Compute(data, 0, data.Length);
+
+                        input.Seek(0, SeekOrigin.Begin);
                         EntryCompression.Compress(fat.Version.Platform, ref entry, input, compress, output);
                         output.Seek(output.Position.Align(16), SeekOrigin.Begin);
                     }
@@ -300,6 +315,11 @@ namespace Gibbed.Dunia.Packing
             using (var output = File.Create(fatPath))
             {
                 fat.Serialize(output);
+            }
+
+            using (var output = File.Create(nfoPath))
+            {
+                fat.SerializeNfo(output);
             }
         }
     }

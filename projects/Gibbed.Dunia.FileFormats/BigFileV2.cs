@@ -66,6 +66,33 @@ namespace Gibbed.Dunia.FileFormats
             throw new NotImplementedException();
         }
 
+        public void SerializeNfo(Stream output)
+        {
+            var settings = new System.Xml.XmlWriterSettings()
+            {
+                Indent = true,
+                IndentChars = "\t",
+                OmitXmlDeclaration = true,
+            };
+            using (var writer = System.Xml.XmlWriter.Create(output, settings))
+            {
+                writer.WriteStartElement("Root");
+                writer.WriteStartElement("common");
+                foreach (var entry in this.Entries)
+                {
+                    writer.WriteStartElement("File");
+                    writer.WriteAttributeString("Path", entry.Name ?? "");
+                    writer.WriteAttributeString("Crc", Convert.ToString(entry.NameHash, System.Globalization.CultureInfo.InvariantCulture));
+                    writer.WriteAttributeString("FilePosition", entry.Offset.ToString(System.Globalization.CultureInfo.InvariantCulture));
+                    writer.WriteAttributeString("FileSize", entry.CompressedSize.ToString(System.Globalization.CultureInfo.InvariantCulture));
+                    writer.WriteAttributeString("FileTime", entry.DataHash.ToString(System.Globalization.CultureInfo.InvariantCulture));
+                    writer.WriteEndElement();
+                }
+                writer.WriteEndElement(); // common
+                writer.WriteEndElement(); // Root
+            }
+        }
+
         public void Deserialize(Stream input)
         {
             var magic = input.ReadValueU32(Endian.Little);

@@ -194,6 +194,45 @@ namespace Gibbed.Dunia.Packing
                 nameHasher.Compute(s, tryGetHashOverride);
             project.LoadListsFileNames(wrappedComputeNameHash, out var hashes);
 
+            // Match Disrupt behavior: if a .nfo file sits next to an archive, its name
+            // mapping takes precedence over the project file lists.
+            foreach (var archive in archives)
+            {
+                var nfoPath = Path.ChangeExtension(archive.DatPath, ".nfo");
+                if (File.Exists(nfoPath) == false)
+                {
+                    continue;
+                }
+
+                var nfo = new BigFileInfo();
+                using (var nfoInput = File.OpenRead(nfoPath))
+                {
+                    nfo.Deserialize(nfoInput);
+                }
+
+                foreach (var nfoEntry in nfo.Entries)
+                {
+                    if (string.IsNullOrEmpty(nfoEntry.Path) == true)
+                    {
+                        continue;
+                    }
+
+                    var path = nfoEntry.Path.Replace("/", "\\").TrimStart('\\');
+                    try
+                    {
+                        var hash = (THash)Convert.ChangeType(
+                            nfoEntry.Crc,
+                            typeof(THash),
+                            CultureInfo.InvariantCulture);
+                        hashes.Add(hash, path);
+                    }
+                    catch (Exception)
+                    {
+                        // skip unparseable .nfo entries
+                    }
+                }
+            }
+
             var context = new UnpackContext<TArchive, TNameHasher, THash>(
                 archives,
                 nameHasher,
