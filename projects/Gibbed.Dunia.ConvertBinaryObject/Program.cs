@@ -37,13 +37,6 @@ namespace Gibbed.Dunia.ConvertBinaryObject
             return Path.GetFileName(System.Reflection.Assembly.GetExecutingAssembly().Location);
         }
 
-        private static string GetProjectPath(string projectName)
-        {
-            var executablePath = Path.GetFullPath(System.Reflection.Assembly.GetExecutingAssembly().Location);
-            var binPath = Path.GetDirectoryName(executablePath);
-            return Path.Combine(binPath, "..", "configs", projectName, "project.json");
-        }
-
         private static void Main(string[] args)
         {
             var mode = Mode.Unknown;
@@ -118,10 +111,10 @@ namespace Gibbed.Dunia.ConvertBinaryObject
                 Console.WriteLine("Loading project...");
             }
 
-            var project = ProjectData.Project.Load(GetProjectPath("Far Cry 3"));
+            var project = ProjectHelpers.LoadProject();
             if (project == null)
             {
-                Console.WriteLine("Failed to load project!");
+                Console.WriteLine("Warning: no active project loaded.");
                 return;
             }
 
