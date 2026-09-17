@@ -418,6 +418,13 @@ namespace Gibbed.Dunia.Packing
                 Directory.CreateDirectory(outputParent);
             }
 
+            // Back up existing filelist before overwriting
+            if (File.Exists(outputPath) == true)
+            {
+                var backupPath = outputPath + ".bak";
+                File.Copy(outputPath, backupPath, overwrite: true);
+            }
+
             File.WriteAllText(outputPath, sb.ToString(), new UTF8Encoding(false));
         }
 
