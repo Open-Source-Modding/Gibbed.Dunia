@@ -3,5 +3,5 @@
 	<dependencies>
 		<dependency>Shared</dependency>
 	</dependencies>
-	<list_location>../../configs/Far Cry 4</list_location>
+	<list_location>Far Cry 4</list_location>
 </project>

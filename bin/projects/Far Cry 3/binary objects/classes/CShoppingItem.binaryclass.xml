@@ -1,0 +1,108 @@
+<class name="CShoppingItem">
+	<inherit name="CNomadDbObjectSeqId:unsigned short" />
+	<field name="locidItemNameId" type="Int32" />
+	<field name="shpcatCategory" type="UInt8" />
+	<field name="shpscataSubCategory1" type="UInt8" />
+	<field name="shpscatbSubCategory2" type="UInt8" />
+	<field name="shpitpeItemType" type="UInt8" />
+	<field name="shpisubtpeItemSubType" type="UInt8" />
+	<field name="locidDescriptionId" type="Int32" />
+	<field name="selAttachmentType" type="Enum">
+		<enum name="enumAttachmentType">
+			<element name="None">0</element>
+			<element name="Scope">1</element>
+			<element name="Silencer">2</element>
+			<element name="Pointer">3</element>
+			<element name="Upgrade">4</element>
+			<element name="Clip">5</element>
+		</enum>
+	</field>
+	<field name="text_ammoAmmoType" type="String" />
+	<field name="ammoAmmoType" type="Hash32" />
+	<field name="iAmmoAmount" type="Int32" />
+	<field name="selGadgetType" type="Enum">
+		<enum name="enumGadgetType">
+			<element name="None">0</element>
+			<element name="Grenade">1</element>
+			<element name="Molotov">2</element>
+		</enum>
+	</field>
+	<field name="arkArchetype" type="Id64" />
+	<field name="arkDisplayArchetype" type="Id64" />
+	<field name="fRotationSpeed" type="Float32" />
+	<field name="fRotationAmplitude" type="Float32" />
+	<field name="text_sName" type="String" />
+	<field name="sName" type="Hash32" />
+	<field name="iCost" type="Int32" />
+	<field name="fRefillAllAmmoCostMultiplier" desc="Cost multiplier when you use 'Refill All Ammo'" type="Float32" />
+	<field name="iXPOnLoot" type="Int32" />
+	<field name="iSortId" type="Int32" />
+	<field name="UnlockOnMissionComplete" type="String" />
+	<field name="UnlockFromScript" type="String" />
+	<field name="bVisibleInInventory" type="Boolean" />
+	<field name="bShowCurrentCount" type="Boolean" />
+	<field name="sIconName" type="String" />
+	<field name="sShopIconName" type="String" />
+	<field name="sHudIconName" type="String" />
+	<field name="bIsLootItem" desc="Is this considered as a loot item and included in the loot inventory?" type="Boolean" />
+	<field name="bIsTreasureMap" desc="If this is a TreasureMap" type="Boolean" />
+	<field name="bIsRareItem" desc="Is this a rare item (cannot discard or sell, special display) ?" type="Boolean" />
+	<field name="TreasureMap" />
+	<field name="RadioTowerEntityId" type="Hash64" />
+	<object name="RevealInfos">
+		<object name="RevealInfo">
+			<!-- should probably go in #11DF949C -->
+			<field name="sMapName" desc="TODO" type="String" />
+			<object name="MarkersRevealed">
+				<inherit name="STreasureMapRevealInfo" />
+			</object>
+		</object>
+	</object>
+	<field name="selCollectibleType" type="Enum">
+		<enum name="enumCollectibleType">
+			<element name="Invalid">-1</element>
+			<element name="Plant">0</element>
+			<element name="SDCard">1</element>
+			<element name="JapLetter">2</element>
+			<element name="TribalRelic">3</element>
+			<element name="BoarRelic">4</element>
+			<element name="SpiderRelic">5</element>
+			<element name="SharkRelic">6</element>
+			<element name="HeronRelic">7</element>
+			<element name="AnimalPart">8</element>
+			<element name="Misc">9</element>
+			<element name="Photo">10</element>
+			<element name="Money">11</element>
+			<element name="LootWood">12</element>
+			<element name="LootMetal">13</element>
+			<element name="LootReinforced">14</element>
+		</enum>
+	</field>
+	<field name="bIsWeaponStatistics" desc="Is this a weapon" type="Boolean" />
+	<object name="WeaponStatistics">
+		<inherit name="SWeaponStatistics" />
+	</object>
+	<field name="sULC_Name" desc="The name of the unlockable contant if relevant, e.g. Hunting_Skins_1" type="String" />
+	<object name="DefaultPositionOnScreen">
+		<field name="vectorDisplayDefaultPosition" type="Vector3" />
+		<field name="DisplayDefaultAngles" type="Vector3" />
+		<field name="vectorDisplayDefaultPositionWithSilencer" type="Vector3" />
+		<field name="DisplayDefaultAnglesWithSilencer" type="Vector3" />
+	</object>
+	<object name="CategoryPositionOnScreen">
+		<field name="bDisplayAsDefaultItem" type="Boolean" />
+		<field name="vectorDisplayDefaultCategoryPosition" type="Vector3" />
+		<field name="DisplayDefaultCategoryAngles" type="Vector3" />
+		<object name="DefaultAttachmentsNames">
+			<object name="DefaultAttachmentName">
+				<field name="text_Name" type="String" />
+				<field name="Name" type="Hash32" />
+			</object>
+		</object>
+	</object>
+	<object name="PositionOnFullScreen">
+		<field name="FullscreenpAngles" type="Vector3" />
+		<field name="vectorFullscreenCenterOffset" type="Vector3" />
+	</object>
+	<field name="wikiItemId" desc="Does this unlock a wiki entry?" type="Int32" />
+</class>

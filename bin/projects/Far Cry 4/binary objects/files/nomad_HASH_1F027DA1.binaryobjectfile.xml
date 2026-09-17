@@ -1,0 +1,457 @@
+<!-- Steve64 HASH="1F027DA1" -->
+<file name="nomad" extension=".nomad.fcb">
+<object hash="1F027DA1">
+  <object hash="1F027DA1">
+    <field hash="25368426" name="hid_DTCTH_ClassName" type="Hash32" />
+    <field hash="7D3AF8A9" type="BinHex" />
+    <field hash="CF68E402" name="text_hid_DTCTH_ClassName" type="String" />
+    <object hash="170CF1E2">
+      <field hash="385B7EDB" type="BinHex" />
+      <field hash="3BA15E8A" type="BinHex" />
+      <field hash="71EC7B60" type="BinHex" />
+      <field hash="8EC6D656" type="BinHex" />
+      <field hash="DFFC9862" name="BBox" type="BinHex" />
+      <field hash="F9C1E6C0" type="BinHex" />
+      <object hash="2426406E">
+        <object hash="0C3C8F59" name="Slot">
+          <field hash="F96FAF0D" name="text_Name" type="String" />
+          <field hash="FE11D138" name="Name" type="Hash32" />
+          <object hash="19E69416" name="Materials">
+            <object hash="ABE0EC5B" name="Map">
+              <object hash="EAE0B274" name="Entry">
+                <field hash="595D0033" name="text_name" type="String" />
+                <field hash="5E237E06" name="name" type="Hash32" />
+                <object hash="85C817C3" name="Material">
+                  <field hash="3C0BE965" name="filename" type="BinHex" />
+                  <field hash="3F9FF7EB" type="BinHex" />
+                  <field hash="8A496577" name="text_filename" type="String" />
+                  <field hash="8BA0291C" name="text_type" type="String" />
+                  <field hash="8CDE5729" name="type" type="BinHex" />
+                  <field hash="BBFFA3C2" name="text_class" type="String" />
+                  <field hash="ED4B199F" name="class" type="BinHex" />
+                </object>
+              </object>
+            </object>
+          </object>
+          <object hash="1ED340D0">
+            <field hash="315AF0F2" name="buffer" type="BinHex" />
+            <field hash="BF1CD3C3" name="version" type="BinHex" />
+          </object>
+          <object hash="6C246CFD" name="Geometry">
+            <field hash="3C0BE965" name="filename" type="BinHex" />
+            <field hash="3F9FF7EB" type="BinHex" />
+            <field hash="8A496577" name="text_filename" type="String" />
+            <field hash="8BA0291C" name="text_type" type="String" />
+            <field hash="8CDE5729" name="type" type="BinHex" />
+            <field hash="BBFFA3C2" name="text_class" type="String" />
+            <field hash="ED4B199F" name="class" type="BinHex" />
+          </object>
+          <object hash="FE0B4A5D">
+            <object hash="D66BB191">
+              <field hash="1CD83E34" type="BinHex" />
+              <field hash="2D870A80" name="Scale" type="BinHex" />
+              <field hash="F543030E" name="Transform" type="BinHex" />
+            </object>
+          </object>
+        </object>
+      </object>
+      <object hash="B9A3A243">
+        <field hash="F96FAF0D" name="text_Name" type="String" />
+        <field hash="FE11D138" name="Name" type="Hash32" />
+        <object hash="19E69416" name="Materials">
+          <object hash="ABE0EC5B" name="Map">
+            <object hash="EAE0B274" name="Entry">
+              <field hash="595D0033" name="text_name" type="String" />
+              <field hash="5E237E06" name="name" type="Hash32" />
+              <object hash="85C817C3" name="Material">
+                <field hash="3C0BE965" name="filename" type="BinHex" />
+                <field hash="3F9FF7EB" type="BinHex" />
+                <field hash="8A496577" name="text_filename" type="String" />
+                <field hash="8BA0291C" name="text_type" type="String" />
+                <field hash="8CDE5729" name="type" type="BinHex" />
+                <field hash="BBFFA3C2" name="text_class" type="String" />
+                <field hash="ED4B199F" name="class" type="BinHex" />
+              </object>
+            </object>
+          </object>
+        </object>
+        <object hash="6C246CFD" name="Geometry">
+          <field hash="3C0BE965" name="filename" type="BinHex" />
+          <field hash="3F9FF7EB" type="BinHex" />
+          <field hash="8A496577" name="text_filename" type="String" />
+          <field hash="8BA0291C" name="text_type" type="String" />
+          <field hash="8CDE5729" name="type" type="BinHex" />
+          <field hash="BBFFA3C2" name="text_class" type="String" />
+          <field hash="ED4B199F" name="class" type="BinHex" />
+        </object>
+        <object hash="FE0B4A5D">
+          <object hash="D66BB191">
+            <field hash="1CD83E34" type="BinHex" />
+            <field hash="2D870A80" name="Scale" type="BinHex" />
+            <field hash="F543030E" name="Transform" type="BinHex" />
+          </object>
+        </object>
+      </object>
+      <object hash="DFCD6E51">
+        <field hash="604BD33E" type="BinHex" />
+        <field hash="B28E0C5A" name="Resolution" type="BinHex" />
+        <field hash="D2170E8C" type="BinHex" />
+        <field hash="E0F7CCDC" type="BinHex" />
+      </object>
+      <object hash="E8235AD9">
+        <object hash="9AEACC13" name="level">
+          <field hash="9AEACC13" name="level" type="Int32" />
+        </object>
+      </object>
+      <object hash="ED6FFCD1">
+        <object hash="9AEACC13" name="level">
+          <field hash="9AEACC13" name="level" type="Int32" />
+        </object>
+      </object>
+      <object hash="F90B7691">
+        <object hash="9AEACC13" name="level">
+          <field hash="9AEACC13" name="level" type="Int32" />
+        </object>
+      </object>
+      <object hash="FC47D099">
+        <object hash="9AEACC13" name="level">
+          <field hash="9AEACC13" name="level" type="Int32" />
+        </object>
+      </object>
+    </object>
+    <object hash="26296DD2" name="Normal">
+      <field hash="51334930" type="BinHex" />
+      <field hash="B78A1A56" type="BinHex" />
+      <object hash="82660D72" name="texture">
+        <field hash="3C0BE965" name="filename" type="BinHex" />
+        <field hash="3F9FF7EB" type="BinHex" />
+        <field hash="8A496577" name="text_filename" type="String" />
+        <field hash="8BA0291C" name="text_type" type="String" />
+        <field hash="8CDE5729" name="type" type="BinHex" />
+        <field hash="BBFFA3C2" name="text_class" type="String" />
+        <field hash="ED4B199F" name="class" type="BinHex" />
+      </object>
+    </object>
+    <object hash="2C4AC6C5">
+      <object hash="149B422F" name="Bones">
+        <object hash="95741049" name="Bone">
+          <field hash="A7E8817D" type="BinHex" />
+          <object hash="960B1766">
+            <object hash="0DD5981F">
+              <field hash="06D19B84" name="Length" type="BinHex" />
+              <field hash="3CD06B6C" name="Radius" type="Float32" />
+              <field hash="55681B71" type="BinHex" />
+              <field hash="B01C4A81" name="Orientation" type="BinHex" />
+              <field hash="BF5A86A3" name="Position" type="BinHex" />
+            </object>
+          </object>
+        </object>
+      </object>
+      <object hash="359E8C4B">
+        <field hash="12737CCC" type="BinHex" />
+        <field hash="2DF4370A" type="BinHex" />
+        <field hash="31F66F31" type="BinHex" />
+        <field hash="333CBA5B" type="BinHex" />
+        <field hash="4069863C" type="BinHex" />
+        <field hash="4C92775D" type="BinHex" />
+        <field hash="4EEADC23" type="BinHex" />
+        <field hash="516D6B01" type="BinHex" />
+        <field hash="5994B368" type="BinHex" />
+        <field hash="6E0CD89A" type="BinHex" />
+        <field hash="79535E73" type="BinHex" />
+        <field hash="9BA7D4D1" type="BinHex" />
+        <field hash="A8C05B89" type="BinHex" />
+        <field hash="C0FD2556" type="BinHex" />
+        <field hash="FB91474C" type="BinHex" />
+        <field hash="FE3C5CA6" type="BinHex" />
+      </object>
+    </object>
+    <object hash="389E8818">
+      <field hash="3C0BE965" name="filename" type="BinHex" />
+      <field hash="3F9FF7EB" type="BinHex" />
+      <field hash="8A496577" name="text_filename" type="String" />
+      <field hash="8BA0291C" name="text_type" type="String" />
+      <field hash="8CDE5729" name="type" type="BinHex" />
+      <field hash="BBFFA3C2" name="text_class" type="String" />
+      <field hash="ED4B199F" name="class" type="BinHex" />
+    </object>
+    <object hash="4C23F872">
+      <object hash="565D5A49">
+        <field hash="15798558" type="BinHex" />
+        <field hash="3B3F16E1" type="BinHex" />
+        <field hash="3B7C6E5A" name="radius" type="BinHex" />
+        <field hash="51206612" type="BinHex" />
+        <field hash="87E7960B" name="centerPos" type="BinHex" />
+        <field hash="92DDADA6" type="String" />
+        <field hash="9E2A488B" type="BinHex" />
+        <field hash="CEB50566" type="BinHex" />
+        <field hash="D92C4B9D" type="BinHex" />
+        <object hash="238B0AEC">
+          <field hash="29EA129B" type="BinHex" />
+          <field hash="2C228845" type="BinHex" />
+          <field hash="30F138F6" type="BinHex" />
+          <field hash="3C608A77" type="BinHex" />
+          <field hash="47F60860" type="BinHex" />
+          <field hash="4B67BAE1" type="BinHex" />
+          <field hash="A569DBCD" type="BinHex" />
+          <field hash="A9F8694C" type="BinHex" />
+          <field hash="D26EEB5B" type="BinHex" />
+          <field hash="DEFF59DA" type="BinHex" />
+        </object>
+        <object hash="24E6CEF5">
+          <field hash="29EA129B" type="BinHex" />
+          <field hash="2C228845" type="BinHex" />
+          <field hash="30F138F6" type="BinHex" />
+          <field hash="3C608A77" type="BinHex" />
+          <field hash="47F60860" type="BinHex" />
+          <field hash="4B67BAE1" type="BinHex" />
+          <field hash="A569DBCD" type="BinHex" />
+          <field hash="A9F8694C" type="BinHex" />
+          <field hash="D26EEB5B" type="BinHex" />
+          <field hash="DEFF59DA" type="BinHex" />
+        </object>
+        <object hash="53E1FE63">
+          <field hash="29EA129B" type="BinHex" />
+          <field hash="2C228845" type="BinHex" />
+          <field hash="30F138F6" type="BinHex" />
+          <field hash="3C608A77" type="BinHex" />
+          <field hash="47F60860" type="BinHex" />
+          <field hash="4B67BAE1" type="BinHex" />
+          <field hash="A569DBCD" type="BinHex" />
+          <field hash="A9F8694C" type="BinHex" />
+          <field hash="D26EEB5B" type="BinHex" />
+          <field hash="DEFF59DA" type="BinHex" />
+        </object>
+        <object hash="548C3A7A">
+          <field hash="29EA129B" type="BinHex" />
+          <field hash="2C228845" type="BinHex" />
+          <field hash="30F138F6" type="BinHex" />
+          <field hash="3C608A77" type="BinHex" />
+          <field hash="47F60860" type="BinHex" />
+          <field hash="4B67BAE1" type="BinHex" />
+          <field hash="A569DBCD" type="BinHex" />
+          <field hash="A9F8694C" type="BinHex" />
+          <field hash="D26EEB5B" type="BinHex" />
+          <field hash="DEFF59DA" type="BinHex" />
+        </object>
+        <object hash="BA825B56">
+          <field hash="29EA129B" type="BinHex" />
+          <field hash="2C228845" type="BinHex" />
+          <field hash="30F138F6" type="BinHex" />
+          <field hash="3C608A77" type="BinHex" />
+          <field hash="47F60860" type="BinHex" />
+          <field hash="4B67BAE1" type="BinHex" />
+          <field hash="A569DBCD" type="BinHex" />
+          <field hash="A9F8694C" type="BinHex" />
+          <field hash="D26EEB5B" type="BinHex" />
+          <field hash="DEFF59DA" type="BinHex" />
+        </object>
+        <object hash="BDEF9F4F">
+          <field hash="29EA129B" type="BinHex" />
+          <field hash="2C228845" type="BinHex" />
+          <field hash="30F138F6" type="BinHex" />
+          <field hash="3C608A77" type="BinHex" />
+          <field hash="47F60860" type="BinHex" />
+          <field hash="4B67BAE1" type="BinHex" />
+          <field hash="A569DBCD" type="BinHex" />
+          <field hash="A9F8694C" type="BinHex" />
+          <field hash="D26EEB5B" type="BinHex" />
+          <field hash="DEFF59DA" type="BinHex" />
+        </object>
+        <object hash="C35EE3F2">
+          <field hash="29EA129B" type="BinHex" />
+          <field hash="2C228845" type="BinHex" />
+          <field hash="30F138F6" type="BinHex" />
+          <field hash="3C608A77" type="BinHex" />
+          <field hash="47F60860" type="BinHex" />
+          <field hash="4B67BAE1" type="BinHex" />
+          <field hash="A569DBCD" type="BinHex" />
+          <field hash="A9F8694C" type="BinHex" />
+          <field hash="D26EEB5B" type="BinHex" />
+          <field hash="DEFF59DA" type="BinHex" />
+        </object>
+        <object hash="CAE8AFD9">
+          <field hash="29EA129B" type="BinHex" />
+          <field hash="2C228845" type="BinHex" />
+          <field hash="30F138F6" type="BinHex" />
+          <field hash="3C608A77" type="BinHex" />
+          <field hash="47F60860" type="BinHex" />
+          <field hash="4B67BAE1" type="BinHex" />
+          <field hash="A569DBCD" type="BinHex" />
+          <field hash="A9F8694C" type="BinHex" />
+          <field hash="D26EEB5B" type="BinHex" />
+          <field hash="DEFF59DA" type="BinHex" />
+        </object>
+        <object hash="CD856BC0">
+          <field hash="29EA129B" type="BinHex" />
+          <field hash="2C228845" type="BinHex" />
+          <field hash="30F138F6" type="BinHex" />
+          <field hash="3C608A77" type="BinHex" />
+          <field hash="47F60860" type="BinHex" />
+          <field hash="4B67BAE1" type="BinHex" />
+          <field hash="A569DBCD" type="BinHex" />
+          <field hash="A9F8694C" type="BinHex" />
+          <field hash="D26EEB5B" type="BinHex" />
+          <field hash="DEFF59DA" type="BinHex" />
+        </object>
+      </object>
+    </object>
+    <object hash="869D84A5">
+      <field hash="3C0BE965" name="filename" type="BinHex" />
+      <field hash="3F9FF7EB" type="BinHex" />
+      <field hash="8A496577" name="text_filename" type="String" />
+      <field hash="8BA0291C" name="text_type" type="String" />
+      <field hash="8CDE5729" name="type" type="BinHex" />
+      <field hash="BBFFA3C2" name="text_class" type="String" />
+      <field hash="ED4B199F" name="class" type="BinHex" />
+    </object>
+    <object hash="88C26B79">
+      <field hash="51334930" type="BinHex" />
+      <field hash="B78A1A56" type="BinHex" />
+      <object hash="82660D72" name="texture">
+        <field hash="3C0BE965" name="filename" type="BinHex" />
+        <field hash="3F9FF7EB" type="BinHex" />
+        <field hash="8A496577" name="text_filename" type="String" />
+        <field hash="8BA0291C" name="text_type" type="String" />
+        <field hash="8CDE5729" name="type" type="BinHex" />
+        <field hash="BBFFA3C2" name="text_class" type="String" />
+        <field hash="ED4B199F" name="class" type="BinHex" />
+      </object>
+    </object>
+    <object hash="913D0B14">
+      <field hash="3C0BE965" name="filename" type="BinHex" />
+      <field hash="3F9FF7EB" type="BinHex" />
+      <field hash="8A496577" name="text_filename" type="String" />
+      <field hash="8BA0291C" name="text_type" type="String" />
+      <field hash="8CDE5729" name="type" type="BinHex" />
+      <field hash="BBFFA3C2" name="text_class" type="String" />
+      <field hash="ED4B199F" name="class" type="BinHex" />
+    </object>
+    <object hash="97904F73">
+      <field hash="3C0BE965" name="filename" type="BinHex" />
+      <field hash="3F9FF7EB" type="BinHex" />
+      <field hash="8A496577" name="text_filename" type="String" />
+      <field hash="8BA0291C" name="text_type" type="String" />
+      <field hash="8CDE5729" name="type" type="BinHex" />
+      <field hash="BBFFA3C2" name="text_class" type="String" />
+      <field hash="ED4B199F" name="class" type="BinHex" />
+    </object>
+    <object hash="ABE0EC5B" name="Map">
+      <object hash="EAE0B274" name="Entry">
+        <field hash="595D0033" name="text_name" type="String" />
+        <field hash="5E237E06" name="name" type="Hash32" />
+        <object hash="41FF9CA8">
+          <field hash="3C0BE965" name="filename" type="BinHex" />
+          <field hash="3F9FF7EB" type="BinHex" />
+          <field hash="8A496577" name="text_filename" type="String" />
+          <field hash="8BA0291C" name="text_type" type="String" />
+          <field hash="8CDE5729" name="type" type="BinHex" />
+          <field hash="BBFFA3C2" name="text_class" type="String" />
+          <field hash="ED4B199F" name="class" type="BinHex" />
+        </object>
+      </object>
+    </object>
+    <object hash="AEADC01B">
+      <field hash="66BDAA1D" type="BinHex" />
+      <object hash="0480CE7A">
+        <object hash="54821FD3">
+          <field hash="088BF7AF" type="BinHex" />
+          <field hash="3CD06B6C" name="Radius" type="Float32" />
+          <field hash="475CEE12" name="Center" type="BinHex" />
+          <field hash="95528742" type="BinHex" />
+        </object>
+      </object>
+      <object hash="98732583">
+        <object hash="AE6F4F17">
+          <field hash="088BF7AF" type="BinHex" />
+          <field hash="2694592A" type="BinHex" />
+          <field hash="3CD06B6C" name="Radius" type="Float32" />
+          <field hash="8EF37792" type="BinHex" />
+          <field hash="95528742" type="BinHex" />
+          <object hash="2F6DE155">
+            <object hash="0DF7A269">
+              <field hash="0DF7A269" type="BinHex" />
+            </object>
+          </object>
+          <object hash="3389F5F5">
+            <object hash="85826038">
+              <field hash="85826038" type="BinHex" />
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+    <object hash="B2B9D9E4">
+      <field hash="3C0BE965" name="filename" type="BinHex" />
+      <field hash="3F9FF7EB" type="BinHex" />
+      <field hash="8A496577" name="text_filename" type="String" />
+      <field hash="8BA0291C" name="text_type" type="String" />
+      <field hash="8CDE5729" name="type" type="BinHex" />
+      <field hash="BBFFA3C2" name="text_class" type="String" />
+      <field hash="ED4B199F" name="class" type="BinHex" />
+    </object>
+    <object hash="B484C517" name="Small">
+      <field hash="51334930" type="BinHex" />
+      <field hash="B78A1A56" type="BinHex" />
+      <object hash="82660D72" name="texture">
+        <field hash="3C0BE965" name="filename" type="BinHex" />
+        <field hash="3F9FF7EB" type="BinHex" />
+        <field hash="8A496577" name="text_filename" type="String" />
+        <field hash="8BA0291C" name="text_type" type="String" />
+        <field hash="8CDE5729" name="type" type="BinHex" />
+        <field hash="BBFFA3C2" name="text_class" type="String" />
+        <field hash="ED4B199F" name="class" type="BinHex" />
+      </object>
+    </object>
+    <object hash="C02C3086">
+      <field hash="51334930" type="BinHex" />
+      <field hash="B78A1A56" type="BinHex" />
+      <object hash="82660D72" name="texture">
+        <field hash="3C0BE965" name="filename" type="BinHex" />
+        <field hash="3F9FF7EB" type="BinHex" />
+        <field hash="8A496577" name="text_filename" type="String" />
+        <field hash="8BA0291C" name="text_type" type="String" />
+        <field hash="8CDE5729" name="type" type="BinHex" />
+        <field hash="BBFFA3C2" name="text_class" type="String" />
+        <field hash="ED4B199F" name="class" type="BinHex" />
+      </object>
+    </object>
+    <object hash="C50B3B7A">
+      <field hash="3C0BE965" name="filename" type="BinHex" />
+      <field hash="3F9FF7EB" type="BinHex" />
+      <field hash="8A496577" name="text_filename" type="String" />
+      <field hash="8BA0291C" name="text_type" type="String" />
+      <field hash="8CDE5729" name="type" type="BinHex" />
+      <field hash="BBFFA3C2" name="text_class" type="String" />
+      <field hash="ED4B199F" name="class" type="BinHex" />
+    </object>
+    <object hash="C5BEE972">
+      <field hash="3C0BE965" name="filename" type="BinHex" />
+      <field hash="3F9FF7EB" type="BinHex" />
+      <field hash="8A496577" name="text_filename" type="String" />
+      <field hash="8BA0291C" name="text_type" type="String" />
+      <field hash="8CDE5729" name="type" type="BinHex" />
+      <field hash="BBFFA3C2" name="text_class" type="String" />
+      <field hash="ED4B199F" name="class" type="BinHex" />
+    </object>
+    <object hash="C98950A7">
+      <field hash="3C0BE965" name="filename" type="BinHex" />
+      <field hash="3F9FF7EB" type="BinHex" />
+      <field hash="8A496577" name="text_filename" type="String" />
+      <field hash="8BA0291C" name="text_type" type="String" />
+      <field hash="8CDE5729" name="type" type="BinHex" />
+      <field hash="BBFFA3C2" name="text_class" type="String" />
+      <field hash="ED4B199F" name="class" type="BinHex" />
+    </object>
+    <object hash="DFCD6E51">
+      <field hash="3C0BE965" name="filename" type="BinHex" />
+      <field hash="3F9FF7EB" type="BinHex" />
+      <field hash="8A496577" name="text_filename" type="String" />
+      <field hash="8BA0291C" name="text_type" type="String" />
+      <field hash="8CDE5729" name="type" type="BinHex" />
+      <field hash="BBFFA3C2" name="text_class" type="String" />
+      <field hash="ED4B199F" name="class" type="BinHex" />
+    </object>
+  </object>
+</object>
+</file>

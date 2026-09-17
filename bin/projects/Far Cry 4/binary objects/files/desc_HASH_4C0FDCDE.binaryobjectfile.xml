@@ -1,0 +1,34 @@
+<!-- Steve64 -->
+<file name="desc" extension=".fcb">
+<object hash="4C0FDCDE" name="Sector">
+  <field hash="2ABD43F2" name="Id" type="Hash32" />  
+  <field hash="6633993C" type="String" />  
+  <field hash="7DF321C2" name="DetailTexMask" type="BinHex" />
+  <field hash="B7B2364B" name="X" type="BinHex" />
+  <field hash="C0B506DD" name="Y" type="BinHex" />
+  <field hash="EC9B84B6" type="UInt64" />  
+  <object hash="116D10E0" name="SectorDesc">
+    <object hash="5910C698">
+      <field hash="BF396750" name="id" type="BinHex" />      
+      <field hash="CAC46EBE" name="Flags" type="BinHex" />      
+    </object>
+    <object hash="C947653B">
+      <field hash="BF396750" name="id" type="BinHex" />      
+    </object>
+    <object hash="D3B66660">
+      <field hash="28D65428" type="BinHex" />
+      <field hash="2942961F" type="BinHex" />
+      <field hash="CAC46EBE" name="Flags" type="BinHex" />      
+    </object>
+  </object>
+  <object hash="69B9410F">
+    <object hash="B0E981C6">
+      <field hash="0B157E3C" type="BinHex" />
+      <field hash="4C1B138E" type="BinHex" />
+      <field hash="8C7682D8" type="BinHex" />
+      <field hash="9F615CF4" type="BinHex" />
+      <field hash="DFD9EAFB" type="BinHex" />
+    </object>
+  </object>
+</object>
+</file>

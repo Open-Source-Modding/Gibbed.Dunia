@@ -1,0 +1,19 @@
+<class hash="18F3CD85" name="CIgnitorComponent">
+	<inherit name="CBaseEntity" />
+        <field hash="45A05988" type="BinHex" />
+        <field hash="49224A87" type="BinHex" />
+        <field hash="6CBE1829" type="BinHex" />
+        <field hash="9035A13E" name="hidInjected" type="Boolean" />
+        <field hash="91E16657" type="BinHex" />
+        <field hash="ABB63ED9" type="BinHex" />
+        <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+        <object hash="46A78336" name="IgnitorStims">
+          <field hash="38C1D9E6" type="BinHex" />
+          <field hash="39B5390E" name="bIgniteOnPierce" type="BinHex" />
+          <field hash="687E9BFD" type="BinHex" />
+          <field hash="77ACC4EA" name="bIgniteOnBurn" type="BinHex" />
+          <field hash="8B57CAD5" name="bIgniteOnCrush" type="BinHex" />
+          <field hash="A5C7F64B" type="BinHex" />
+          <field hash="C6868FA5" type="BinHex" />
+        </object>
+</class>

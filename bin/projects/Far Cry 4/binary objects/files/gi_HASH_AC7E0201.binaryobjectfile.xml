@@ -1,0 +1,24 @@
+<file name="gi" extension=".fcb">
+<object hash="AC7E0201">
+  <field hash="38BC1D9C" type="BinHex" />
+  <field hash="4526B3BA" type="BinHex" />
+  <field hash="4FBB2D0A" type="BinHex" />
+  <field hash="70A1EA5F" name="Version" type="Int32" />  
+  <object hash="1F027DA1">
+    <field hash="25368426" name="hid_DTCTH_ClassName" type="Hash32" />
+    <field hash="CF68E402" name="text_hid_DTCTH_ClassName" type="String" />    
+    <object hash="1DCFDBD2">
+      <field hash="25368426" name="hid_DTCTH_ClassName" type="Hash32" />
+      <field hash="25934063" type="BinHex" />
+      <field hash="2E20D937" type="BinHex" />
+      <field hash="AF5C51B8" type="BinHex" />
+      <field hash="B5C5FAAA" type="BinHex" />
+      <field hash="CF68E402" name="text_hid_DTCTH_ClassName" type="String" />      
+      <field hash="D69FE57C" name="positions" type="BinHex" />
+      <field hash="D6C81723" type="Vector3" />      
+      <field hash="EAC5287A" type="Vector3" />      
+      <field hash="EC4F225C" type="BinHex" />
+    </object>
+  </object>
+</object>
+</file>

@@ -1,0 +1,31 @@
+<class name="CVehicle">
+	<inherit name="CGameObject" />
+	<merge name="CVehicle::Implementation" />
+	<field name="selVehicleType" type="Enum">
+		<enum name="enumVehicleType">
+			<element name="Wheeled">0</element>
+			<element name="Floating">1</element>
+			<element name="Paraglider">2</element>
+			<element name="Motorcycle">3</element>
+			<element name="Helicopter">4</element>
+			<element name="Plane">5</element>
+			<element name="Wingsuit">6</element>
+			<element name="None">7</element>
+		</enum>
+	</field>
+	<field name="Type" />
+	<!-- TODO: finish me -->
+        <field name="sndKickSoundID" type="String" />
+        <field name="sndtpKickSoundType" type="UInt32" />
+        <field name="fPedalFadeInTime" type="Float32" />
+        <field name="fPedalFadeOutTime" type="Float32" />
+        <object name="PassengerDamage">
+          <field name="iBailoutStimLevel" type="Int32">FFFFFFFF</field>
+          <field name="fPassengerCrushModifier" type="Float32">CDCC4C3D</field>
+          <field name="fPassengerNPCCrushModifier" type="Float32">CDCC4C3D</field>
+          <field name="fPassengerCrushMinMass" type="Float32">0000FA43</field>
+          <field name="fMinCrushStimLevelPassenger" type="Float32">00004843</field>
+          <field name="HighDropHeight" type="Float32">00002041</field>
+          <field name="bSendPierceStimToPassengers" type="Boolean">00</field>
+        </object>		
+</class>

@@ -1,0 +1,37 @@
+<class name="CFCXWorldLabelComponent">
+	<inherit name="CEntityComponent" />
+	<field name="fMaxLabelPoint" type="Float32" />
+	<field name="fMinLabelPoint" type="Float32" />
+	<field name="fLabelCost" type="Float32" />
+	<field name="fLabelPointsRecoveryPerSecond" type="Float32" />
+	<field name="fMaxDistanceTaggerToSelfSound" type="Float32" />
+	<field name="fMaxDistanceSelfToTaggedSound" type="Float32" />
+	<field name="fMaxDistanceTaggerToSelfVisual" type="Float32" />
+	<field name="fMaxDistanceSelfToTaggedVisual" type="Float32" />
+        <object name="Worldlabel">
+          <field name="fWorldLabelLiveTime" type="Float32" />
+        </object>
+        <object name="PointLabel">
+          <field name="fPointLabelLiveTime" type="Float32" />
+          <field name="fLabelRadius" type="Float32" />
+        </object>
+        <object name="CharacterLabel">
+          <field name="fCharacterLabelLiveTime" type="Float32" />
+          <field name="OutlineColor" type="Vector3" />
+          <field name="fRemoveDelay" type="Float32" />
+          <field name="fRemoveDelayCoop" type="Float32" />
+          <field name="fLabelRange" type="Float32" />
+          <field name="fMinScreenDrawPercent" type="Float32" />
+          <field name="fMinCharacterVisibilityPercent" type="Float32" />
+        </object>
+	<object name="Sounds">
+          <field hash="A60E0C14" type="String" />
+          <field hash="F0223EA2" type="String" />
+          <field hash="6BF17ED7" type="String" />
+          <field name="sndPressBackButton" type="String" />
+          <field name="sndPlayerAttention" type="String" />
+          <field name="sndPlayerConfirm" type="String" />
+          <field name="sndtpSoundType" type="Int32" />
+          <field name="fVoxActivationDelay" type="Float32" />
+</object>		  
+</class>

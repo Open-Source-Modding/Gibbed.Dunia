@@ -1,0 +1,24 @@
+
+<file name="animtrackcol" extension="animtrackcol.rml">
+<object hash="01AD984F">
+  <field hash="70A1EA5F" name="Version" type="Int32"></field>
+  <field hash="CD282957" type="BinHex"></field>
+  <field hash="EAC5C577" name="CRC" type="BinHex"></field>
+  <object hash="23C12F18" name="Tracks">
+    <object hash="1722D7A2" name="Track">
+      <object hash="1722D7A2" name="Track">
+        <field hash="25368426" name="hid_DTCTH_ClassName" type="Hash32"></field>
+        <field hash="CF68E402" name="text_hid_DTCTH_ClassName" type="String"></field>
+        <field hash="F96FAF0D" name="text_Name" type="String"></field>
+        <field hash="FE11D138" name="Name" type="Hash32"></field>
+        <object hash="14BCEBD2">
+          <object hash="B2DDED49" name="Key">
+            <field hash="CFA6377B" name="Time" type="BinHex"></field>
+            <field hash="DCB67730" name="Value" type="BinHex"></field>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+</object>
+</file>

@@ -1,0 +1,52 @@
+<class name="CObjectSoundAndFXComponent">
+	<inherit name="CEntityComponent" />
+	<field name="hidCanPlayFallingSound" />
+	<field name="hidLastVelocity" />
+	<field name="hidWaterSplashTimer" />
+        <object hash="3AF23BDE" name="Water">
+          <field hash="0B1C135D" name="fZMaxSplashScale" type="BinHex" />
+          <field hash="147B67CE" name="fZSpeedForMaxSplashVolume" type="BinHex" />
+          <field hash="62210CA0" name="fZMinSpeedToTriggerSplash" type="BinHex" />
+          <field hash="66BB3D8A" name="fZMaxSpeedToTriggerSplash" type="BinHex" />
+          <field hash="B23A882C" name="fZMinSplashScale" type="BinHex" />
+        </object>
+        <object hash="3B83D348" name="Falling">
+          <field hash="32145F6F" name="fSpeedToPlayFallingSound" type="BinHex" />
+          <field hash="498F1610" name="sndtpFallingType" type="BinHex" />
+          <field hash="88C7BCA2" name="sndFallingSound" type="BinHex" />
+          <field hash="A1B5C273" name="FallingSoundTimeTrigger" type="BinHex" />
+          <field hash="FE2AB381" name="bAllowAfterCollision" type="BinHex" />
+        </object>
+        <object hash="74059CE1" name="WaterWave">
+          <field hash="2A2CFAB4" type="BinHex" />
+          <field hash="3F6EF29D" type="BinHex" />
+          <field hash="46AE69C3" type="BinHex" />
+          <field hash="4D557CB6" type="BinHex" />
+          <field hash="4F161AF7" type="BinHex" />
+          <field hash="50E24D25" type="BinHex" />
+          <field hash="5325BD31" type="BinHex" />
+          <field hash="5E109A1D" type="BinHex" />
+          <field hash="799CB03D" type="BinHex" />
+          <field hash="7E79CD1B" type="BinHex" />
+          <field hash="89126D82" type="BinHex" />
+          <field hash="94A94910" type="BinHex" />
+          <field hash="A06C909A" type="BinHex" />
+          <field hash="E7FA2737" type="BinHex" />
+        </object>
+        <object hash="C3A5C531" name="Impact">
+          <field hash="0D713BF1" name="fMinimalCollisionSpeed" type="BinHex" />
+          <field hash="7862FEF3" name="bIsSingleDropImpactObject" type="BinHex" />
+          <field hash="86A8A2DC" name="fSpeedForMaxDropImpactVolume" type="BinHex" />
+          <field hash="CBCF835A" name="matimpDropImpact" type="BinHex" />
+          <object hash="0F3AB874" name="MovementSound">
+            <field hash="21E2902E" name="sndtpSlidingSoundType" type="BinHex" />
+            <field hash="4057D6C6" name="sndtpRollingSoundType" type="BinHex" />
+            <field hash="4BC9F599" name="sndmlObjectMovementMultilayer" type="BinHex" />
+            <field hash="7401DE02" name="sndSlidingSoundEnd" type="BinHex" />
+            <field hash="8A190215" name="sndSlidingSound" type="BinHex" />
+            <field hash="AAB8E5DC" name="sndRollingSoundEnd" type="BinHex" />
+            <field hash="D5AF4127" name="sndRollingSound" type="BinHex" />
+          </object>
+        </object>
+
+</class>

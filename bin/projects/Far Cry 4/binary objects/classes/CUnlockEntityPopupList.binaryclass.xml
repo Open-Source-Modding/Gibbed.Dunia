@@ -1,0 +1,9 @@
+<class name="CUnlockEntityPopupList">
+	<inherit name="CNomadObject" />
+	<field name="entEntityId" type="Hash64" />
+	<object name="UnlockPopups">
+		<object name="UnlockPopup">
+			<field name="popupLocId" />
+		</object>
+	</object>
+</class>

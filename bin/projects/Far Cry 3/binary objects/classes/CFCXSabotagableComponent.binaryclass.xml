@@ -1,0 +1,4 @@
+<class name="CFCXSabotagableComponent">
+	<inherit name="CEntityComponent" />	
+	<field name="hidHasAliasName" type="Boolean" />	
+</class>

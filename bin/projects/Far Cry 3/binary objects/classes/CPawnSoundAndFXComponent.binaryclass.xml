@@ -1,0 +1,71 @@
+<class name="CPawnSoundAndFXComponent">
+	<inherit name="CCreatureSoundAndFXComponent" />
+        <object name="PawnSoundAndFXComponent">
+          <field name="bUseFootStepDetection" type="Boolean" />
+          <field name="fFastFootStepsMinSpeed" type="Float32" />
+          <field name="matimpFootStepThird" type="Id64" />
+          <field name="matimpFootStepThirdFast" type="Id64" />
+          <field name="matimpFootStepThirdSilent" type="Id64" />
+          <field name="matimpSlide" type="Id64" />
+          <field name="sndswtpLadderSwitchType" type="Int32" />
+          <field name="sndswtpFootstepSpeedSwitchType" type="Int32" />
+          <field name="matimpLanding" type="Id64" />
+          <field name="sndLandingFatalSoundID" type="String" />
+          <field name="sndtpLandingFatalSoundType" type="Int32" />
+          <field name="sndLandHurtSoundID" type="String" />
+          <field name="sndtpLandHurtSoundType" type="Int32" />
+          <field name="matimpFakeBulletFx" type="Id64" />
+          <field name="logmatFakeMulletMaterial" type="Int32" />
+          <field name="text_psSwimMoveHands" type="String" />
+          <field name="psSwimMoveHands" type="Hash64" />
+          <field name="text_psSwimMoveChest" type="String" />
+          <field name="psSwimMoveChest" type="Hash64" />
+          <field name="text_psSwimIdleHands" type="String" />
+          <field name="psSwimIdleHands" type="Hash64" />
+          <field name="text_psSwimIdleChest" type="String" />
+          <field name="psSwimIdleChest" type="Hash64" />
+          <field name="text_psDiveMove" type="String" />
+          <field name="psDiveMove" type="Hash64" />
+          <field name="text_psSubmerge" type="String" />
+          <field name="psSubmerge" type="Hash64" />
+          <field name="text_psEmerge" type="String" />
+          <field name="psEmerge" type="Hash64" />
+          <field name="text_psDiveIdle" type="String" />
+          <field name="psDiveIdle" type="Hash64" />
+          <field name="text_psStorm" type="String" />
+          <field name="psStorm" type="Hash64" />
+          <object name="FootStepSounds">
+            <field name="bUseMaterialImpactSounds" type="Boolean" />
+            <field name="sndFootStepSoundEvent" type="String" />
+            <field name="sndtpFootStepSoundType" type="Int32" />
+            <field name="sndFootStepSoundEventSilent" type="String" />
+            <field name="sndtpFootStepSoundTypeSilent" type="Int32" />
+            <field name="sndSlideSoundEvent" type="String" />
+            <field name="sndtpSlideSoundType" type="Int32" />
+          </object>	
+          <object name="FootstepSpeedSwitch">
+            <object name="FootstepSpeedSwitch">
+              <field name="fSpeedHigherBound" type="Float32" />
+              <field name="sndswvlFootstepSwitchValue" type="Int32" />
+              <field name="sndswvlFootstepSilentRunSwitchValue" type="Int32" />
+            </object>	
+          </object>	
+          <object name="MacheteSwing">
+            <field name="sndMacheteSwingNoImpactSoundID" type="String" />
+            <field name="sndMacheteSwingImpactSoundID" type="String" />
+            <field name="sndtpMacheteSwingSoundType" type="Int32" />
+            <field name="text_psBloodSplat" type="String" />
+            <field name="psBloodSplat" type="Hash64" />
+          </object>	
+          <object name="WaterImpact">
+            <field name="sndInWaterImpactSoundID" type="String" />
+            <field name="sndvarInWaterImpactRTPC" type="Int32" />
+            <field name="sndOutWaterImpactSoundID" type="String" />
+            <field name="sndtpWaterImpactSoundType" type="Int32" />
+          </object>
+          <object name="NPCBodyBulletImpact">
+            <field name="sndNPCBodyBulletImpactSoundID" type="String" />
+            <field name="sndtpNPCBodyBulletImpactSoundType" type="Int32" />
+          </object>		  
+	</object>		  		  
+</class>

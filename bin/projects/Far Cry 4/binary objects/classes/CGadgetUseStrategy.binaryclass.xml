@@ -1,0 +1,5 @@
+<class name="CGadgetUseStrategy">
+	<inherit name="CNomadObject" />
+	<field name="BeingUsed" />
+	<field name="UserID" />
+</class>

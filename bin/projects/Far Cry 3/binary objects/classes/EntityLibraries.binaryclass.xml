@@ -1,0 +1,10 @@
+<class name="EntityLibraries">
+	<object name="EntityLibrary">
+		<field name="Name" type="String" />
+		<object name="EntityPrototype">
+			<field name="disLibItemId" type="Id64" />
+			<field name="Name" type="String" />
+			<object name="Entity" class_field_name="hidEntityClass" />
+		</object>
+	</object>
+</class>

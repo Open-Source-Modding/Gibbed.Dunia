@@ -1,0 +1,9 @@
+<class name="CTriggerComponent">
+	<inherit name="CEntityComponent" />
+	    <!-- <object name="CTriggerComponent"> -->
+        <field name="hidHasAliasName" type="Boolean">00</field>
+        <field name="static" type="Boolean">00</field>
+        <field name="hidRaycast" type="Boolean">00</field>
+        <field name="bIsSphere" type="Boolean">00</field>
+      <!-- </object> -->
+</class>

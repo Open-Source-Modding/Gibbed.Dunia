@@ -1,0 +1,7 @@
+<class name="CEquipmentBase">
+	<inherit name="CGameObject" />
+	<field name="OwnerId" />
+	<field name="WielderID" />
+	<field name="iAnimationValue" type="Int32" />
+	<field name="bByPassLockHiresCustom" type="Boolean" />
+</class>

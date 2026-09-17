@@ -1,0 +1,34 @@
+<file name="dialogmanagerindexes" extension=".dat">
+<object hash="96285C6E">
+  <object hash="5EC9CBB6">
+    <object hash="531819EC">
+      <field hash="DCB67730" name="Value" type="BinHex"></field>
+      <field hash="F96FAF0D" name="text_Name" type="String"></field>
+      <field hash="FE11D138" name="Name" type="Hash32"></field>
+    </object>
+  </object>
+  <object hash="6341426B" />
+  <object hash="B588AF72">
+    <object hash="B588AF72">
+      <object hash="0A6E184D">
+        <field hash="45363B2C" type="String"></field>
+        <field hash="5A2D8D3D" type="BinHex"></field>
+        <field hash="B63908E8" type="BinHex"></field>
+        <field hash="C6D784A7" type="String"></field>
+        <field hash="F96FAF0D" name="text_Name" type="String"></field>
+        <field hash="FE11D138" name="Name" type="Hash32"></field>
+      </object>
+    </object>
+  </object>
+  <object hash="BF802C2C">
+    <object hash="B588AF72" />
+  </object>
+  <object hash="F00547E8">
+    <object hash="531819EC">
+      <field hash="DCB67730" name="Value" type="BinHex"></field>
+      <field hash="F96FAF0D" name="text_Name" type="String"></field>
+      <field hash="FE11D138" name="Name" type="Hash32"></field>
+    </object>
+  </object>
+</object>
+</file>

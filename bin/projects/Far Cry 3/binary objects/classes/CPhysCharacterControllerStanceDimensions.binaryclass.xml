@@ -1,0 +1,6 @@
+<class name="CPhysCharacterControllerStanceDimensions">
+	<inherit name="CNomadObject" />
+	<field name="vecStandCapsulePointA" type="Vector3" />
+	<field name="vecStandCapsulePointB" type="Vector3" />
+	<field name="fStandCapsuleRadius" type="Float32" />
+</class>

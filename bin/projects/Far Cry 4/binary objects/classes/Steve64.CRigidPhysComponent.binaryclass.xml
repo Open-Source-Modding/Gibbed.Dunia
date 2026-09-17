@@ -1,0 +1,76 @@
+<class hash="40B958BA" name="CRigidPhysComponent">
+		<inherit name="CBaseEntity" />
+        <field hash="0DBE2127" name="fHealth" type="BinHex" />
+        <field hash="10544067" type="BinHex" />
+        <field hash="19373762" type="BinHex" />
+        <field hash="1B5C5211" type="Boolean" />
+        <field hash="1CFFDBEC" name="bCreateAsStatic" type="Boolean" />
+        <field hash="2E50EB85" name="hidResourceId" type="Hash64" />
+        <field hash="2FAB0399" name="fFloatingScale" type="Float32" />
+        <field hash="377CBB2A" name="sndDestructionSound" type="BinHex" />
+        <field hash="3D255EB4" name="fMass" type="Float32" />
+        <field hash="43EBE31F" name="fMinimumSpeedForDamageStim" type="Float32" />
+        <field hash="46C19CCF" name="sndtpDestructionSoundType" type="BinHex" />
+        <field hash="4B920C34" name="fWaterFriction" type="Float32" />
+        <field hash="527E7674" name="text_hidResourceId" type="String" />
+        <field hash="5BABAAC6" name="bUseMaxTerrainSlope" type="BinHex" />
+        <field hash="5E9FE0F4" name="selCollisionLayer" type="BinHex" />
+        <field hash="6631BD1F" type="BinHex" />
+        <field hash="68C1CF4F" name="bAnimateableAlwaysKeyFrame" type="Boolean" />
+        <field hash="6979CD98" type="BinHex" />
+        <field hash="6C655DC9" name="vectorCenterOfMassOffset" type="Vector3" />
+        <field hash="6EB9AFAA" type="BinHex" />
+        <field hash="976F114C" name="bAlwaysStatic" type="BinHex" />
+        <field hash="9EBBF0BE" name="fSelfCollOverrideSpeed" type="BinHex" />
+        <field hash="A0C9D351" name="ResourceIndex" type="UInt32" />
+        <field hash="B2AC9745" type="BinHex" />
+        <field hash="C784A41F" type="BinHex" />
+        <field hash="CAA1B825" name="bUseFastCollision" type="BinHex" />
+        <field hash="CD8C3274" name="bDisappearOnDeath" type="BinHex" />
+        <field hash="E7CD1E54" name="fWaterForceFactor" type="Float32" />
+        <field hash="EFFCA0CA" name="bDisabledAtStart" type="BinHex" />
+        <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+        <object hash="18327EA1" name="LogicMaterialOverrides" />
+        <object hash="2C3872D7" name="Stim">
+          <field hash="0E383244" name="fExplosionRPGDamageMultiplier" type="Float32" />
+          <field hash="0FD3A7FE" name="fBurnDamageMultiplier" type="Float32" />
+          <field hash="1BD9687D" name="bPierceStim" type="Boolean" />
+          <field hash="1ED338AB" type="BinHex" />
+          <field hash="2CE04FBD" name="bBurnStim" type="Boolean" />
+          <field hash="2E4EF419" name="fExplosionIEDDamageMultiplier" type="Float32" />
+          <field hash="331A65A7" name="fArrowDamageMultiplier" type="Float32" />
+          <field hash="3CC3447B" name="fPierceDamageMultiplier" type="Float32" />
+          <field hash="41FBA420" type="BinHex" />
+          <field hash="45E3B9A7" type="BinHex" />
+          <field hash="5E11AAC1" type="BinHex" />
+          <field hash="66E259A4" name="bExplosionStim" type="Boolean" />
+          <field hash="6FB1A7E4" type="BinHex" />
+          <field hash="7B2F6D28" name="fBulletImpulseScale" type="Float32" />
+          <field hash="7E69602B" name="fCrushDamageMultiplier" type="Float32" />
+          <field hash="84C61665" name="bExplosionRPGStim" type="Boolean" />
+          <field hash="85F6E5EF" type="BinHex" />
+          <field hash="87F53B8B" type="BinHex" />
+          <field hash="8C05E605" type="BinHex" />
+          <field hash="8E73DE2E" type="BinHex" />
+          <field hash="9DB43150" type="BinHex" />
+          <field hash="A82A04B0" name="bCrushStim" type="Boolean" />
+          <field hash="AF05B5DA" name="fExplosionDamageMultiplier" type="Float32" />
+          <field hash="B400C023" name="fExplosionSplashDamageMultiplier" type="Float32" />
+          <field hash="C7284E44" type="BinHex" />
+          <field hash="CD44BAF4" name="bExplosionSplashStim" type="Boolean" />
+          <field hash="D0D0214E" name="bExplosionGrenadeStim" type="Boolean" />
+          <field hash="D509DE5D" type="BinHex" />
+          <field hash="D5DFD00B" name="bArrowStim" type="Boolean" />
+          <field hash="D8CE60FD" name="bCutStim" type="Boolean" />
+          <field hash="DAC33C62" type="BinHex" />
+          <field hash="EC4E2508" name="fCutDamageMultiplier" type="Float32" />
+          <field hash="EF60D3E5" name="fExplosionGrenadeDamageMultiplier" type="Float32" />
+          <field hash="F5A437A9" name="bExplosionIEDStim" type="Boolean" />
+          <field hash="FA5898B1" name="fExplosionImpulseScale" type="Float32" />
+          <field hash="FC82B1DA" type="BinHex" />
+        </object>
+        <object hash="C6CC131E">
+          <field hash="8ACC3499" type="BinHex" />
+        </object>
+        <object hash="F8CD54EF" name="hidEffectBones" />
+</class>
