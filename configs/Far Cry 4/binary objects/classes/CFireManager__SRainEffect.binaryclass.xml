@@ -1,5 +1,0 @@
-<class name="CFireManager::SRainEffect">
-	<field name="TimeToIncreaseWetnessLevel" type="Float32" />
-	<field name="TimeToDecreaseWetnessLevel" type="Float32" />
-	<field name="BudgetDecreaseRatePerSecond" type="Int8" />
-</class>

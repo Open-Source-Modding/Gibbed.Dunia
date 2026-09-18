@@ -1,9 +1,0 @@
-<file name="entitylibrarynamestoresid" extension=".fcb">
-<object hash="BD2C0E0E">
-  <field hash="23FB77E3" type="BinHex" /><!-- Note: Is actually a STRING (multiple strings), but not supported by Dunia -->
-  <field hash="45CB9377" type="BinHex" />
-  <field hash="AF246360" type="BinHex" />
-  <field hash="B7801988" type="BinHex" />
-  <field hash="F7D5438F" type="BinHex" />
-</object>
-</file>

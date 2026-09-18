@@ -1,5 +1,0 @@
-<class name="CEncounterService">
-	<inherit name="IGameModeService" />
-	<field name="MzoneExclusionDepth" type="Int32" />
-	<field name="MzoneExclusionCooldown" type="Int32" />
-</class>

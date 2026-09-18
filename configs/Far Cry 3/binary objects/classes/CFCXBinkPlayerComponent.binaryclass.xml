@@ -1,5 +1,0 @@
-<class name="CFCXBinkPlayerComponent">
-	<inherit name="CBaseComponent" />
-        <field name="hidHasAliasName" type="Boolean"/>
-        <field name="hidInjected" type="Boolean"/>
-</class>

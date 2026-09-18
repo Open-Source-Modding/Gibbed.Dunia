@@ -1,5 +1,0 @@
-<class name="CSpawnPointSharedEntity">
-	<inherit name="CSpawnPointMPEntity" />
-	<field name="bAllowBlueTeam" type="Boolean" />
-	<field name="bAllowRedTeam" type="Boolean" />
-</class>

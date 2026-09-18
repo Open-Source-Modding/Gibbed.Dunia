@@ -1,4 +1,0 @@
-<class name="CFCXIdentifiableComponent">
-	<inherit name="CEntityComponent" />
-	<field name="fIdentificationRadiusModifier" type="Float32" />
-</class>

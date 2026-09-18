@@ -1,4 +1,0 @@
-<class name="CFCXAbilityImprovedIntuitionProperties">
-	<inherit name="CFCXPersistentAbilityProperties" />
-	<field name="fNewIntuitionAmount" desc="New amount of max intuition." type="Float32" />
-</class>

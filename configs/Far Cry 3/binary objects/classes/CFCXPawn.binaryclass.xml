@@ -1,4 +1,0 @@
-<class name="CFCXPawn">
-	<inherit name="CEntityComponent" />
-	<field name="bConditionalZoneEventsEnabled" type="Boolean" />
-</class>

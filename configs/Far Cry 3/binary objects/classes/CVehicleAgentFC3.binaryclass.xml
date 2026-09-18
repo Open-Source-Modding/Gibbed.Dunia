@@ -1,4 +1,0 @@
-<class name="CVehicleAgentFC3">
-	<inherit name="CEntityComponent" />	
-
-</class>

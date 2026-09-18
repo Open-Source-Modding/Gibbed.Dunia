@@ -1,4 +1,0 @@
-<class name="CSocialNetworkingService">
-	<inherit name="IGameModeService" />
-	<field name="filePostTexture" type="String" />
-</class>

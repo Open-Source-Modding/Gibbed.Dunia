@@ -1,4 +1,0 @@
-<class name="CRadioManager">
-	<inherit name="CSingletonEntity" />
-	<field name="bBroadcastEnabled" type="Boolean" />
-</class>

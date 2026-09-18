@@ -1,8 +1,0 @@
-<class name="CStimArrayBase_SStimInfo">
-	<inherit name="CNomadObject" />
-	<object name="Stims">
-		<object name="Stim">
-			<inherit name="SStimInfo" />
-		</object>
-	</object>
-</class>

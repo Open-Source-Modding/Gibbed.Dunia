@@ -1,7 +1,0 @@
-<file name="ShoppingItems">
-	<object name="lib">
-		<object hash="72DE4948">
-			<inherit name="CShoppingItem" />
-		</object>
-	</object>
-</file>

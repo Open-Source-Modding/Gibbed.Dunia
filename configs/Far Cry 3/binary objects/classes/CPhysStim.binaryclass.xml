@@ -1,3 +1,0 @@
-<class name="CPhysStim">
-	<inherit name="CRandomEntityEventStim" />
-</class>

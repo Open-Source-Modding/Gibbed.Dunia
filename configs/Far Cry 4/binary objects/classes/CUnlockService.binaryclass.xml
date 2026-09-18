@@ -1,3 +1,0 @@
-<class name="CUnlockService">
-	<inherit name="IGameModeService" />
-</class>

@@ -1,6 +1,0 @@
-<class name="CObjectIgnitorCreatorComponent">
-	<inherit name="CNomadObject" />
-    <object name="CObjectIgnitorCreatorComponent">
-        <field name="hidHasAliasName" type="Boolean"/>
-    </object>	
-</class>

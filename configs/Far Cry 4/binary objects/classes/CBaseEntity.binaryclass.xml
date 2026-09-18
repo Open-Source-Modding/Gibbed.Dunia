@@ -1,9 +1,0 @@
-<class name="CBaseEntity">
-	<inherit name="CNomadObject" />
-	<field name="hidName" type="String" />
-	<field name="disEntityId" type="Int64" />
-	<field name="text_hidEntityClass" type="String" />
-	<field name="hidEntityClass" type="Hash32" />
-	<field hash="B435B769" type="String" />
-	<field hash="2D90D933" type="Hash64" />
-</class>

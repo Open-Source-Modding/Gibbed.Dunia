@@ -1,3 +1,0 @@
-<class name="CSpawnPointComponent">
-	<inherit name="CEntityComponent" />
-</class>

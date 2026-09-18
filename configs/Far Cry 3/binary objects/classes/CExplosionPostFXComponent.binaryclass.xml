@@ -1,6 +1,0 @@
-<class name="CExplosionPostFXComponent">
-	<inherit name="CEntityComponent" />
-	<object name="postFxData">
-		<inherit name="CExplosionPostFXData" />
-	</object>
-</class>

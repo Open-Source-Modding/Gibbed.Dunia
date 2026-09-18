@@ -1,5 +1,0 @@
-<class name="CPawn">
-	<inherit name="CGameObject" />
-	<merge name="CPawn::SPawnImpl" /><!-- Implementation -->
-	<field name="Usable" type="Boolean" />
-</class>

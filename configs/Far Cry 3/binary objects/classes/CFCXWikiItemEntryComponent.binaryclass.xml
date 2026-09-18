@@ -1,5 +1,0 @@
-<class name="CFCXWikiItemEntryComponent">
-	<inherit name="CEntityComponent" />
-	<field name="wikiItemId" type="Int32" />
-	<field name="bShouldNotifyHud" type="Boolean" />
-</class>

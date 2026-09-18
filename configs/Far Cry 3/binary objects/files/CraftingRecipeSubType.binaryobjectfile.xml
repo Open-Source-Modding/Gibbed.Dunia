@@ -1,7 +1,0 @@
-<file name="CraftingRecipeSubType">
-	<object name="lib">
-	  <object hash="72DE4948">
-	  	<inherit name="CCraftingRecipeSubType" />
-	  </object>
-	</object>
-</file>

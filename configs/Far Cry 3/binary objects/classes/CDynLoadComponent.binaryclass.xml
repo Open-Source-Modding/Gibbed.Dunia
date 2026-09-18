@@ -1,4 +1,0 @@
-<class name="CDynLoadComponent">
-	<inherit name="CEntityComponent" />
-	<field name="hidLoadPreset" />
-</class>

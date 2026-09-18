@@ -1,4 +1,0 @@
-<class name="CCameraShakeAndPadRumbleComponent">
-	<inherit name="CEntityComponent" />
-	<object name="Effects" />
-</class>

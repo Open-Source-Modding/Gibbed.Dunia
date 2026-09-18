@@ -1,3 +1,0 @@
-<class name="IPlayerService">
-	<inherit name="IGameModeService" />
-</class>

@@ -1,4 +1,0 @@
-<class name="CEntityEvent">
-	<inherit name="CBaseEvent" />
-	<field name="hidTargetEntityId" type="Hash64" />
-</class>

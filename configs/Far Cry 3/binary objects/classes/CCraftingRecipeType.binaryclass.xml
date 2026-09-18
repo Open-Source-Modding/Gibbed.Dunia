@@ -1,4 +1,0 @@
-<class name="CCraftingRecipeType">
-	<inherit name="CGameEconomyCategoryBase" />
-	<field name="locidItemNameId" type="Int32" />
-</class>

@@ -1,4 +1,0 @@
-<class name="CFCXPlayerService">
-	<inherit name="CPlayerService" />
-	<field name="NumPlayerSlots" type="Int32" />
-</class>

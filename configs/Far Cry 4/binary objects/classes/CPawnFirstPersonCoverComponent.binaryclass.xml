@@ -1,6 +1,0 @@
-<class name="CPawnFirstPersonCoverComponent">
-	<inherit name="CEntityComponent" />
-	<object name="VaultCheck" />
-	<object name="CoverDetection" />
-	<object name="PeekDetection" />
-</class>

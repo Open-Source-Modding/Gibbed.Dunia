@@ -1,5 +1,0 @@
-<class name="CTutorialResourcePath">
-	<inherit name="CNomadObject" />
-	<field name="sTutorialPath" type="String" />
-	<field name="locidTutorial" type="Int32" />
-</class>

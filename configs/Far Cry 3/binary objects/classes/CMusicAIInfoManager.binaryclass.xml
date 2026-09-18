@@ -1,3 +1,0 @@
-<class name="CMusicAIInfoManager">
-	<inherit name="CSingletonEntity" />
-</class>

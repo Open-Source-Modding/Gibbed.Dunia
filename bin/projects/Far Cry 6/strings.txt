@@ -1,0 +1,3714 @@
+ADL2_Adapter_Active_Get
+ADL2_Adapter_AdapterInfoX2_Get
+ADL2_Adapter_Crossfire_Caps
+ADL2_Adapter_Crossfire_Get
+ADL2_Adapter_Graphic_Core_Info_Get
+ADL2_Adapter_NumberOfAdapters_Get
+ADL2_Adapter_ObservedClockInfo_Get
+ADL2_Display_DDCInfo2_Get
+ADL2_Display_DisplayInfo_Get
+ADL2_Display_DisplayMapConfig_Get
+ADL2_Display_Modes_Get
+ADL2_Display_NumberOfDisplays_Get
+ADL2_Display_SLSMapConfigX2_Get
+ADL2_Display_SLSMapIndexList_Get
+ADL2_Display_SLSMapIndex_Get
+ADL2_Graphics_VersionsX2_Get
+ADL2_Main_Control_Create
+ADL2_Main_Control_Destroy
+AISpawnClientLog
+ASSERT - %s(%u) %s: %s
+Absolute
+AccelerationStructure
+Accepted connection from %s
+AccessibilityChatWheel
+AccessibilityCoopMarkers
+AccessibilityPresetCognitive
+AccessibilityPresetHearing
+AccessibilityPresetMotion
+AccessibilityPresetMotor
+AccessibilityPresetVisual
+AccessibilityTTSVoice
+AccessibilityTTSVoiceRate
+Achievements
+Activate
+Activating
+Activating %s child of %s user ptr: %p
+Activating module %s user ptr: %p
+Activating target module %s child of %s user ptr: %p
+Active
+Actor
+ActorResPath
+ActualPath
+Adding user %p
+Additive brightness, which effectively overwhitens the image
+AdditiveFactor
+Adjust terrain virtual texture sampling mip level.
+Adjust the contrast of the image
+Adjust the intensity of the vignette
+Adress
+Aftermath Info
+AftermathDump
+AftermathInfo
+AftermathLogs
+AftermathShader-%llx-%llx.nvdbg
+AgentEntityFact
+AllOk
+Allow high quality depth of field
+AllowAsynchShaderLoading
+AllowHighQualityDepthOfField
+Alpha
+Alpha offset
+AlphaBlendEnable
+AlphaBlendEnable0
+AlphaBlendEnable1
+AlphaBlendEnable2
+AlphaBlendEnable3
+AlphaOffset
+AlphaToCoverageEnable
+AlternateServerConfig
+AlternateServerConfigs
+Always
+Ambient
+AmbientQuality
+Amount of aerosols in the atmosphere, from 0.0 (none) to 1.0 (max amount).
+Amount of cirrus clouds in the sky, from 0.0 (no clouds) to 1.0 (max clouds).
+Amount of cumulus clouds in the sky, from 0.0 (no clouds) to 1.0 (max clouds).
+Amount of global fog, from 0.0 (no fog) to 1.0 (full fog).
+Amount of horizon clouds in the sky, from 0.0 (no clouds) to 1.0 (max clouds).
+Amount of local fog, from 0.0 (no fog) to 1.0 (full fog).
+Amount of water vapor in the atmosphere, from 0.0 (none) to 1.0 (max amount).
+AnimAmplitude
+AnimBlend
+AnimFreq
+AnimOffset
+Animation
+Aniso2XClamp
+Aniso2XWrap
+Aniso4XWrap
+Aniso8XWrap
+AntiAliasingMode
+AntiCheat
+AnyHitShadersCount
+ApplicationBuildId: %s C%s_D%s_S%s
+ArcCosine
+Area of effect of the force
+AreaLighting
+ArtisticPost
+AspectRatio
+AssaultsHeatMeterColdColor
+AssaultsHeatMeterHotColor
+AssaultsHeatMeterNeutralColor
+Assert
+AssertDefaultValues
+AssertNoSerialization
+AssetFilter
+AssetType
+AssignOpCodesAndPatchInfos
+AsyncOp
+AsyncOpTimedOut
+AsyncOperation
+AtmosphericScatteringAttenuation
+Attempt to add an operation twice. Ignoring: %s
+Attenuation of the atmospheric scattering intensity.
+Attributes
+AudioDynamicRange
+Australia
+Austria
+AuthenticAMD
+BTType
+BTUiType
+Bad disc... %u
+BadEBu
+Bandwidth
+BaseColorTexture
+BaseType
+Basic
+Beaufort wind force affecting ocean, from 1.0 to 4.0.
+BeaufortLevel
+Belgium
+BigFileResult
+BinaryServerPort
+BindCount
+BindPoint
+Binding
+BinkDisplaySettings
+BinkFile
+BinkFiles
+BinocularSensitivity
+BlackScreenLog
+BlendFactor
+BlendFactorA
+BlendFactorB
+BlendFactorG
+BlendFactorR
+BlendOp
+BlendOp0
+BlendOp1
+BlendOp2
+BlendOp3
+BlendOp4
+BlendOpAlpha
+BlendType
+Bloom
+Bloomberg execution GUID: %s
+Bloomberg: invalid version, no crash will be reported
+BloombergClient::FlushErrorLogs
+BloombergClient::Init
+BloombergConfig
+Bloomberg_MetaLog.log
+BlueOffset
+BlueScale
+Bluebird
+Blur intensity
+BlurFactor
+BonusLog
+Boolean
+Border
+BoundResources
+Branch:
+BranchAngle
+BranchLengthRatio
+BranchPushFactor
+Brazil
+Brightness
+Brightness.
+Broadcast animation Cycle (in seconds)
+BrokenClouds (3)
+BrowseFilter
+BuffEffects
+Buffer
+BufferFlags
+BuiltIn
+BushBreakVelocity
+BushBreakVelocityVariance
+Button
+C stack overflow
+CActivateEngineUserModuleOp
+CActivatePlatformModuleOp
+CActiveDeviceSwitchedNotification
+CAlternateBloombergServerConfig
+CArchiveFile
+CAssaultsHeatMeterColorblindColorChangedNotification
+CAsyncOpTimedOutFacility
+CAsyncOperation
+CAsyncOperationManager was not updated for the last %.1fs, clipping delta time to %.1fs!
+CAsyncOperationManager::UpdatePass
+CAsyncOperationManagerImpl::AddOperation
+CAsyncOperationManagerImpl::Cancel
+CAsyncOperationManagerImpl::DeleteCompletedOperations
+CAsyncOperationManagerImpl::HandleStateCompleted
+CAsyncOperationManagerImpl::HandleStateFinalizing
+CAsyncOperationManagerImpl::HandleStateIdle
+CAsyncOperationManagerImpl::HandleStateToRollBack
+CAsyncOperationManagerImpl::OnOperationExit
+CAsyncOperationManagerImpl::SemaphoreDetach
+CAsyncOperationManagerImpl::SemaphoreUnlock
+CAsyncOperationManagerImpl::SetOperationProgression
+CAsyncOperationManagerImpl::SetParentOperation
+CAsyncOperationManagerImpl::UnlockSemaphores
+CAsyncOperationSemaphore:%u not found to unlock
+CAsyncReturnValue
+CAsyncSetScreenRect
+CBTTaskWait
+CBTTaskWaitData
+CBakedResourceContainer
+CBaseEvent
+CBaseFact
+CBasicGeometryProvider
+CBinaryResource
+CBinaryResourceContainer
+CBinkDisplaySettingsDB
+CBinkRenderResourceBase::m_binkListenersLock
+CBloomberg
+CBloombergConfig
+CBundleResource
+CClusterBurnData
+CClusterNormalData
+CCollectionExclusionSceneManager
+CCollectionExclusionSceneSector
+CColorblindnessModeChangedNotification
+CCommandCB::Execute
+CCommandManagerThread
+CCompressedBinaryResource
+CConstantBufferMemoryManager::Page
+CCrashHandlerConfig
+CCurveObj
+CDataPathEntry
+CDataPathObject
+CDeactivateEngineUserModuleOp
+CDeactivatePlatformModuleOp
+CDecompressedArchiveFile
+CDenseNeuronLayer
+CDenseNeuronLayerBase
+CDescPostFxBase
+CDescPostFxBlur
+CDescPostFxChromaticAberration
+CDescPostFxColorBurn
+CDescPostFxColorGrading
+CDescPostFxColorMask
+CDescPostFxSourceDistortion
+CDirectoryDatabaseCollection
+CDissect2Config
+CDitheringEffect
+CDynamicRenderStatesGeometryProvider
+CDynamicTypeCreatorPointer
+CEmptyAsyncOperation
+CEnemyOutlineColorChangedNotification
+CEngineServices::Initialize
+CEngineServicesConfig
+CEngineUser::Activate
+CEngineUser::ActivateModule
+CEngineUser::AddModule
+CEngineUser::CActivateEngineUserModuleOp::ActivateChildren
+CEngineUser::CActivateEngineUserModuleOp::DoStart
+CEngineUser::CActivateEngineUserModuleOp::OnActivateOpDone
+CEngineUser::CDeactivateEngineUserModuleOp::DeactivateChildren
+CEngineUser::CDeactivateEngineUserModuleOp::DoStart
+CEngineUser::CDeactivateEngineUserModuleOp::EmitDeactivationEvents
+CEngineUser::CDeactivateEngineUserModuleOp::OnDeactivateChildDone
+CEngineUser::CDeactivateEngineUserModuleOp::OnDeactivateOpDone
+CEngineUser::Deactivate
+CEngineUser::DeactivateModule
+CEngineUser::UpdateState
+CEngineUserModule
+CEngineUserModule::SetState
+CEntryPoint
+CEntryPointParameter
+CFCXLootComponent
+CFacility
+CFact
+CFactCheckRange
+CFactCheckRangeData
+CFactCheckValue
+CFactCheckValueData
+CFactCopy
+CFactCopyData
+CFactExists
+CFactExistsData
+CFactMove
+CFactMoveData
+CFactOperation
+CFactOperationData
+CFactRemove
+CFactRemoveData
+CFactSetValue
+CFactSetValueData
+CFactValueVariant
+CFakeNodeForJessysDebugger
+CFakeResource
+CFileManager
+CFlareScaleOffsets
+CGIEvaluatedKeyframe
+CGOExternalState
+CGOState
+CGOStateEvent
+CGPUBatchBuffer::FrameDynamic::Page
+CGPUFenceManager::m_fencePool
+CGPUFenceManager_new_GPUFence
+CGPUTimerMarkerSet::QueryPool
+CGPUTimerMarkerSet::m_readbackBuffer
+CGSFAPI_Base
+CGSFEntityComponent
+CGSFGenericEvent
+CGSFNamedObject
+CGSFObjectProperties
+CGameFlowEventInfo
+CGameModeID
+CGenericMember member no more supported, please use member2
+CGenericTerrainPainterSceneManager
+CGenericTerrainSectorSceneSector
+CGetAvatarRGBAReturnValue
+CGradientColor
+CGradientColorKey
+CGrassForceBitmapSceneObject
+CGrassForceSourceSceneObject
+CGrassForceTrackSceneObject
+CHighlightModifierOptionChangedNotification
+CHudLayoutChangedNotification
+CIndexBufferMemoryManager::Page
+CInstallPackageConfig
+CInstallPackageManager
+CInstallPackageManagerNative
+CKnot
+CLaserSightColorChangedNotification
+CLaserSightComponentLog
+CLegacyNomadDBLibRepo
+CLifeSystemTimer
+CLifeTimer
+CLightEffectParameterProvider
+CLootOutlineColorChangedNotification
+CMTSafeAllocator<_Ty, _THeap>::Allocate
+CManagedNomadObject
+CMemoryBufferFile
+CMemoryFile
+CMemoryStreamFile
+CMemoryStreamRefFile
+CMeshNameID
+CMetaDataContainer
+CMobileEventPollingThread
+CNH_CompressedData
+CNH_CompressedSize
+CNH_OldNodeMemUsage
+CNH_UncompressedSize
+CNativeFileSystem
+CNativeFileSystem()
+CNetObjectBase
+CNetObjectComponentBase
+CNetObjectDescriptor
+CNoCaseStringID
+CNodeAssert
+CNodeAssertData
+CNodeBase
+CNodeDecision
+CNodeDecisionData
+CNodeDecisionSimpleCond
+CNodeDecisionSimpleCondData
+CNodeInterrupt
+CNodeInterruptData
+CNodeInterruptSimple
+CNodeInterruptSimpleData
+CNodeInvert
+CNodeInvertData
+CNodeInvertSimple
+CNodeInvertSimpleData
+CNodeNoOp
+CNodeNoOpData
+CNodeParallel
+CNodeParallelData
+CNodeParallelSimple
+CNodeParallelSimpleData
+CNodeRepeat
+CNodeRepeatData
+CNodeRepeatForever
+CNodeRepeatForeverData
+CNodeRepeatNoChildren
+CNodeRepeatNoChildrenData
+CNodeRepeatUntilFailure
+CNodeRepeatUntilFailureData
+CNodeRepeatUntilSuccess
+CNodeRepeatUntilSuccessData
+CNodeReturn
+CNodeReturnData
+CNodeReturnSimple
+CNodeReturnSimpleData
+CNodeSchedulerBase
+CNodeScope
+CNodeScopeData
+CNodeSelector
+CNodeSelectorData
+CNodeSelectorFalse
+CNodeSelectorFalseData
+CNodeSelectorFalseSimple
+CNodeSelectorFalseSimpleData
+CNodeSelectorInvert
+CNodeSelectorInvertData
+CNodeSelectorInvertSimple
+CNodeSelectorInvertSimpleData
+CNodeSelectorSimple
+CNodeSelectorSimpleData
+CNodeSelectorTrue
+CNodeSelectorTrueData
+CNodeSelectorTrueSimple
+CNodeSelectorTrueSimpleData
+CNodeSequence
+CNodeSequenceData
+CNodeSequenceFalse
+CNodeSequenceFalseData
+CNodeSequenceFalseSimple
+CNodeSequenceFalseSimpleData
+CNodeSequenceInvert
+CNodeSequenceInvertData
+CNodeSequenceInvertSimple
+CNodeSequenceInvertSimpleData
+CNodeSequenceSimple
+CNodeSequenceSimpleData
+CNodeSequenceTrue
+CNodeSequenceTrueData
+CNodeSequenceTrueSimple
+CNodeSequenceTrueSimpleData
+CNomadConfigObject
+CNomadDbObject
+CNomadDbResource
+CNomadManagedResource
+CNomadObject
+CNomadObjectResourceCB
+CNomadObjectTemplatesResource
+CNomadResource
+CNomadTreeInstanceData
+CNotification
+CNotificationManagerBase::AddUser
+CNotificationManagerBase::DispatchNotificationNow
+CNotificationManagerBase::RemoveUser
+CNotificationManagerBase::SignalNotification
+COMPUTE queue
+COcclusionMeshConfig
+COnlineLogger::LoggerImpl::Write
+COpCodeVector
+CPathID
+CPersistentStorageCheckFilePresenceReturnDataHolder
+CPersistentStorageReadOp
+CPersistentStorageReturnDataHolder
+CPersistentStorageWriteOp
+CPhysicalFile
+CPlatformCursor
+CPlatformFacility
+CPlatformNotification
+CPlatformUserModule
+CPlatformUserModule::EmitNotifToGameFlowManager(128)
+CPlatformUserModule::EmitNotifToGameFlowManager(132)
+CPngResource
+CRawBinaryResource
+CRenderAmbientConfig
+CRenderBaseConfig
+CRenderConfig
+CRenderDeferredAmbientConfig
+CRenderDevice::UpdateBuffer::TempDataStaging
+CRenderDevice::m_DummyBuffer
+CRenderDevice::m_DummyBufferCB
+CRenderEnvironmentConfig
+CRenderGeometryConfig
+CRenderPostFxConfig
+CRenderQualityConfig
+CRenderResolutionConfig
+CRenderShaderConfig
+CRenderShadowConfig
+CRenderTerrainConfig
+CRenderTextureConfig
+CRenderVSyncConfig
+CRenderVegetationConfig
+CRenderVolumetricCloudsConfig
+CRenderVolumetricFogConfig
+CRenderWaterConfig
+CResPack
+CResource
+CResourceBatcher
+CResourceContainer
+CResourceContainerSliceable
+CResourceDeviceObject
+CResourceDeviceObject begin
+CResourceDeviceObject end
+CResourceMetaData
+CResourceNotifier
+CReticleADSColorChangedNotification
+CReticleColorChangedNotification
+CS_Binormal
+CS_BlendIndices
+CS_BlendWeights
+CS_Color
+CS_IndirectInstanceData
+CS_InstanceColor
+CS_InstanceGrassBurnInfo
+CS_InstanceGrassRotMatrixI
+CS_InstanceGrassWindParamsX
+CS_InstanceGrassWindParamsY
+CS_InstancePosition
+CS_InstanceRotationZ
+CS_InstanceTransformA
+CS_InstanceTransformB
+CS_InstanceTransformC
+CS_InstanceTransformD
+CS_InstanceTransformE
+CS_InstanceUvMinMax
+CS_Normal
+CS_Position
+CS_PreviousPosition
+CS_Tangent
+CS_TangentSign
+CS_TexCoord
+CSceneAdaptiveBloom
+CSceneBinkFrames
+CSceneBlendShapes
+CSceneBlendShapesInstance
+CSceneBlit
+CSceneBurnRegion
+CSceneCamera
+CSceneCharacterVisibility
+CSceneClusterData
+CSceneCollectionDensitySector
+CSceneCollectionDensitySingleton
+CSceneColorRemapList
+CSceneDebugLine
+CSceneDebugText
+CSceneDecalInstance
+CSceneDecalMaterial
+CSceneEcho
+CSceneEnvironment
+CSceneEnvironmentMapParallaxCorrectionDynamicGeometry
+CSceneEnvironmentMapParallaxCorrectionFarGeometry
+CSceneEnvironmentMapParallaxCorrectionGeometry
+CSceneEnvironmentMapProbe
+CSceneEnvironmentMapZone
+CSceneFogParticleEmitter
+CSceneGeometry
+CSceneGeometryLOD
+CSceneGlobalOceanObject
+CSceneGlobalVolumetricCloudsObject
+CSceneGlobalWetnessEffectsObject
+CSceneGpuParticleEmitter
+CSceneGraphicObjectCluster
+CSceneGraphicObjectInstance
+CSceneGraphicObjectInstanceGroup
+CSceneGraphicObjectInstanceProvider
+CSceneGraphicObjectModel
+CSceneLight
+CSceneLightEffect
+CSceneLightning
+CSceneLocalVolumetricFog
+CSceneMaterial
+CSceneMaterialModifier
+CSceneMaterialVariations
+CSceneMegamapPrimitives
+CSceneMesh
+CSceneMinimapPrimitives
+CSceneModifierHandleContainer
+CSceneObjectManager::CSceneObjectManager
+CSceneOcclusionBufferQuery
+CSceneOcclusionMesh
+CSceneOcclusionPrimitiveBox
+CSceneOcclusionPrimitiveQuad
+CSceneOcclusionQuery
+CSceneOceanObject
+CSceneParticleAttributes
+CSceneParticleEmitter
+CSceneParticleOcclusionMapProvider
+CScenePhoenixFont
+CScenePhoenixFontCommands
+CScenePhoenixPrimitives
+CScenePostFxBase
+CScenePostFxBlur
+CScenePostFxChromaticAberration
+CScenePostFxColorBurn
+CScenePostFxColorGrading
+CScenePostFxColorMask
+CScenePostFxDepthOfField
+CScenePostFxMotionBlur
+CScenePostFxRGBSeparation
+CScenePostFxSnapshot
+CScenePostFxSourceDistortion
+CScenePostFxVignette
+CScenePrimitives
+CSceneRealTreeCluster
+CSceneRealTreeInstance
+CSceneRendererConfig
+CSceneRenormalization
+CSceneRenormalizationInstance
+CSceneShowThroughWallsObject
+CSceneSimpleElement
+CSceneSimpleTransform
+CSceneSkeleton
+CSceneSky
+CSceneSkyResourceManager
+CSceneSplinePrimitive
+CSceneTerrain
+CSceneTerrainSector
+CSceneTerrainSectorPackedData
+CSceneTime
+CSceneTransform
+CSceneVegetationBenderList
+CSceneVertexDeclarationManager
+CSceneViewport
+CSceneViewportList
+CSceneViewportPicking
+CSceneViewportRenderConfig
+CSceneWaterBodies
+CSceneWeatherManager
+CSceneWetness
+CScheduler_%d_%d
+CScheduler_%s_%d
+CScriptSystem
+CSequentialWriter
+CShaderBindingTable::GenerateShaderBindingTable
+CShaderBindingTable::m_shaderTableBuffer
+CStagingBufferSliceAllocator::Page
+CStagingBufferSliceAllocator::fallback
+CStagingBufferSliceAllocator::unique_on_hold
+CStagingTextureBase::Initialize
+CStateMachineBlobResource
+CStateMachineResource
+CStringID
+CSubTree
+CSunShadowDegradationSettings
+CSystemFacility
+CTCPLayerThread
+CTemplateDbObject
+CTestTypeSerialization
+CTestTypeSerializationData
+CTestTypeSerializationSubObject
+CTextureResource
+CTimeAbsolute
+CUPlayGetAchievementsOperation
+CUPlayGetAchievementsOperation::UpcCallback
+CUPlayGetFriendListOperation
+CUPlayGetFriendListOperation::UpcCallback
+CUPlayPCEarnAchievementOperation
+CUPlayPCEarnAchievementOperation::UpcCallback
+CUPlayPCEnumerateCloudSavesOperation
+CUPlayPCEnumerateCloudSavesOperation::OnStart
+CUPlayPCGetGamerProfilePictureOperation
+CUPlayPCGetStoreProductsOperation
+CUPlayPCInviteToGameOperation
+CUPlayPCInviteToGameOperation::CUPlayPCInviteToGameOperation
+CUPlayPCInviteToGameOperation::OnStart
+CUPlayPCInviteToGameOperation::UpcCallback
+CUPlayPCManager - Invited [%s] to game!
+CUPlayPCReadCloudSaveOperation
+CUPlayPCRemoveAndEnumerateCloudSaveOperation
+CUPlayPCRemoveCloudSaveOperation
+CUPlayPCRemoveCloudSaveOperation::OnStart
+CUPlayPCShowOverlayMicroAppOperation
+CUPlayPCShowOverlayOperation
+CUPlayPCShowOverlayOperation::OnStart
+CUPlayPCWriteAndEnumerateCloudSaveOperation
+CUPlayPCWriteCloudSaveOperation
+CUnavailable selection value
+CUnknownFacility
+CUpcAsyncOperation
+CUplayPCGetStoreProductsReturnValue
+CUplayPCManager - Clear Game Session request failed with error [%d]!
+CUplayPCManager - Clear Game Session request.
+CUplayPCManager - Friends Game Invite Accepted: sessionId [%llu].
+CUplayPCManager - Join Friend Requested: sessionId [%llu].
+CUplayPCManager - Overlay hidden.
+CUplayPCManager - Overlay shown.
+CUplayPCManager - Ownership added [%d].
+CUplayPCManager - Ownership updated [%d].
+CUplayPCManager - Set Game Session request failed with error [%d]!
+CUplayPCManager - Set Game Session request: sessionId [%llu], isJoinable [%d].
+CUplayPCManager - ShowUplayPCNotification: notificationId [%u].
+CUplayPCManager - register callback [%p].
+CUplayPCManager - unregister callback [%p].
+CUplayPCManager::ClearGameSession
+CUplayPCManager::GenerateUplayTicket
+CUplayPCManager::GetUplayAccountId
+CUplayPCManager::GetUplayPath
+CUplayPCManager::GetUplayUserName
+CUplayPCManager::Initialize
+CUplayPCManager::IsUplayOfflineMode
+CUplayPCManager::RegisterCallback
+CUplayPCManager::SetGameSession
+CUplayPCManager::ShowUplayPCNotification
+CUplayPCManager::ShowUplayStorePage
+CUplayPCManager::ShutdownUplay
+CUplayPCManager::UnregisterCallback
+CUplayPCManager::Update
+CUploadBufferMemoryManager::Page
+CUserModuleBaseOp
+CVariantValue
+CVectorFactOperation
+CVectorFactOperationData
+CVertexBufferMemoryManager::Page
+CVideoMemoryStarvationNotification
+CVideoMode
+CWaitResource
+CWeatherPresetsData
+CWhitelistResource
+CWorldArea
+CWorldDescriptor
+CWorldDescriptorImpl
+CXmlResource
+CalibrationScreensShown
+CameraShakesMode
+CameraViewCenterOffsetX
+CameraViewCenterOffsetY
+Canada
+Cancel
+Cancellation   %s canceled before it was started
+Cancellation   %s cancellation skipped because it cannot be canceled
+CascadedShadowMapMSAA
+CascadedShadowMapSize
+Category
+Cell count along forward axis for volumetric fog (64-256, default: 128)
+CentaurHauls
+CenterX
+CenterY
+Change default distance after which particles will no longer be rendered in quadres buffer.
+Change shadow night range for CSM 1 and 2.
+Change shadow range.
+Change the Detail Objects LOD scale. 0 means no detail object.
+Change the Kill LOD scale.
+Change the LOD scale of trees.
+Change the LOD scale.
+Change the clusters LOD scale.
+Change the clusters zoom factor scale.
+Change the grass clusters LOD scale.
+Change the multiplier applied to the maximum number of cluster instances.
+Change the weapon effect LOD scale.
+ChangeList:
+Changelist information was registered without a changelist number or label. Please make sure the application has access to changelist information for Bloomberg. Callstack resolution with Perforce might not work without this information.
+Changes the depth distribution of the cell, near the camera
+CheckInstallMission
+ChildMemberName
+Children
+Chile
+China
+ChunkDataDirPath
+ChunkOffsets
+ChunkPos
+ChunkSize
+CirrusCloudCoverage
+CityWeather
+Clamp
+ClampMipBias
+ClampMipLevels
+ClampNoMip
+Class
+ClassFilter
+ClassName
+Classification
+ClearArea
+ClearSky (2)
+CloseFile
+ClosestHitShadersCount
+Cluster object min projected size shadow scale.
+Cluster object min projected size.
+ClusterInstancing
+ClusterObjectMinSize
+ClusterObjectMinSizeShadowScale
+ClusterZoomFactorScale
+ClustersLodScale
+ClustersMaxCountMultiplier
+ClustersZPassMaxLOD
+CodeDepot
+Collection
+CollectionObject
+Color
+Color modifier for the flare element
+Color to be used as mask
+Color0
+Color1
+ColorBlackTransparentBorder
+ColorBlackTransparentBorderPoint
+ColorMask
+ColorType
+ColorWriteEnable
+ColorWriteEnable0
+ColorWriteEnable1
+ColorWriteEnable2
+ColorWriteEnable3
+ColorWriteEnable4
+Color_MaskID
+ColorblindnessMode
+Columbia
+Columns
+CombatChallenge
+CommandCbLog
+CommittedEmbeddedMemory
+CommittedMemory
+CompileDependency
+CompileRequest
+Completed      %s in %.1fs: %s
+Completely update a sector ambient texture in a single frame (speeds up debugging/editing).
+ComponentType
+ConditionSubTrees
+Conditional
+ConeMaxAngle
+Configuration
+Connected
+Connection
+ConnectionStatus
+ConsoleDeveloperOnly
+ConsoleFloat
+ConsoleGroup
+ConsoleHelp
+ConsoleInt
+ConsolePrefix
+ConsoleQualityMode
+ConstBuffer
+ConstBuffer::%s
+ConstNdString
+ConstraintInertiaFactorHint
+Container
+ContainerElement
+Contour
+Contrast
+Contrast of color
+Contrast.
+Control height of black border (in percent of screen height) optim for HD TVs
+Control height of black border (in percent of screen height) optim for SD TVs
+Control last LOD index present in depth pass
+Control the centre of the vignette (x coordinate)
+Control the centre of the vignette (y coordinate)
+Control the color of the vignette
+Control the gamma of the blues
+Control the gamma of the greens
+Control the gamma of the image
+Control the gamma of the reds
+Control the horizontal size of the vignette
+Control the vertical size of the vignette
+Control width of black border (in percent of screen width) optim for HD TVs
+Control width of black border (in percent of screen width) optim for SD TVs
+Control width of safe frame (in percent of screen width)
+Control width of safeframe (in percent of screen height)
+Controls contrast
+Controls the minimum projected ratio to skip objects in the shadow.
+Conversation
+CoopService
+Core_%llu - Thread %llu
+Could not allocate memory
+Could not determine tag type
+Count
+Count(
+Count(%d)
+CountX
+CountY
+CountersGO
+CrashHandlerConfig
+CrashListenerApplicationName
+CrashReporterApplicationName
+CrashServerRepository
+CreateDir
+CreateQueryPoolData::m_occlusionQueryResults
+CreateStaticObjects
+CreateTexture::DescriptorHeap
+CreationTime
+Critical operation timeout: %s
+Cross
+Cull clustering distance of decals
+CullMode
+CumulusCloudCoverage
+CurrentAction
+CurrentIndex
+CurrentStrategy
+Curvature
+Curvature of the effect, how much to apply to the edges only
+Curve
+CustomColorblindBaseMode
+CustomEntry
+CustomQuality
+CustomValue
+CyrixInstead
+Czech
+D3D12Fatal_PC
+D3DKMTQueryStatistics
+D3DOutOfMemory_PC
+DRED Breadcrumbs Info
+DREDBreadcrumbsInfo
+DX12 Error: return code 0x%X, call: %s
+DataDepot
+DataPath
+DataPaths
+DataRefCount
+DataRefCountHires
+Databases\\
+Deactivate
+Deactivating %s child of %s user ptr: %p
+Deactivating %s user ptr: %p
+DeathLog
+DebugServiceRLog
+DebuggerLog
+DecalClusterCullMaximum
+DecalClusterCullRadius
+DecrSat
+Default
+Default Height of the dynamic resolution in pixels
+Default width of the dynamic resolution in pixels
+DefaultAlternate
+DefaultCodeDepotPath
+DefaultFolder
+DefaultState
+DefaultValue
+DefenseCombatLog
+DeferredAmbient
+Deleting       %s %s
+Denmark
+DensityLodScale
+DensityLodScales
+DepLoad
+DepServiceLog
+Dependencies
+DepthBias
+DepthBoundsEnable
+DepthOfField
+DepthOfFieldForceCutsceneQuality
+DepthStencil
+DepthStencilFormat
+Description
+DescriptorSet
+DestAlpha
+DestBlend
+DestBlend0
+DestBlend1
+DestBlend2
+DestBlend3
+DestBlend4
+DestBlendAlpha
+DestColor
+DesyncLog
+DetailDistanceScaleModifier
+DetailMask
+Device3D::CreateBufferWithData
+Device3D::CreateEmptyBuffer
+Device3D::CreateEmptyBufferGpuOnly
+Device3D::CreateEmptyFormattedBuffer
+Device3D::CreateEmptyStructuredBuffer
+Device3D::CreateFormattedBufferWithData
+Device3D::CreateReadbackBuffer
+Device3D::CreateStagingBuffer
+Device3D::CreateStructuredBufferWithData
+DeviceObjectInstance_AsyncComputeGPUSync
+DeviceObjectInstance_AsyncRayTracing
+DeviceObjectInstance_Graphic
+DeviceObjectInstance_Transfer
+DeviceObserver
+DeviceResponseLightColor
+DeviceResponseRumble
+DeviceResponseTriggerEffects
+Dialog
+Difficulty
+DiffuseColor1
+DiffuseColor2
+DiffuseSampler
+Dimension
+Direction
+Direction of blur in image space
+DirectionalBlurFactor
+Dirty lens effect bias
+Dirty lens effect scale
+Disable
+Disable clusters.
+Disable loading of _mip0.xbt files.
+Disable local grass force (from helicopters, etc.)
+Disable mesh merging.
+Disable occlusion meshes.
+Disable rendering.
+Disable safe frame.
+Disable shadow specific night range.
+Disable the Fire Ui primitives.
+Disable the InGame Depth of Field.
+Disable the Motion Blur.
+Disable the Phoenix Ui primitives.
+Disable the artistic post.
+Disable the decals primitives.
+Disable the dynamic lights.
+Disable the lights effects.
+Disable the objects.
+Disable the particles.
+Disable the primitives.
+Disable the rain.
+Disable the shadow.
+Disable the sky.
+Disable the spline primitives.
+Disable the terrain grass.
+Disable the terrain.
+Disable trees.
+Disable visibility test.
+Disable volumetric clouds
+Disable water.
+DisableAutodriveWhileAiming
+DisableClusters
+DisableDecals
+DisableDynamicLights
+DisableEffectsEmissiveEVBias
+DisableFireUiPrimitives
+DisableGraphicObjectInstancing
+DisableLightEffects
+DisableLoadingMip0
+DisableLocalGrassForce
+DisableMeshMerging
+DisableObjects
+DisableOcclusionMeshes
+DisableParticles
+DisablePhoenixUiPrimitives
+DisablePrimitives
+DisableRain
+DisableRendering
+DisableShadow
+DisableShadowDithering
+DisableShadowNightRange
+DisableSky
+DisableSplinePrimitives
+DisableSunShadowDegradation
+DisableTerrain
+DisableTerrainGrass
+DisableThirdSlice
+DisableTrees
+DisableVisibilityTest
+DisableVolumetricClouds
+DisableWater
+Disabled
+Disables dithering on shadows
+Disables gfx obj instancing
+Disconnect
+Dispatching notification %s
+Display
+Display 4:3 (value 4) or 16:9 (value 16) area in every viewports.
+Display FPS level(0, 1, 2...)
+Display bounding sphere of visibility nodes.
+Display lines.
+Display text.
+DisplayAspectRatioArea
+DisplayDomain
+DisplayElementNumber
+DisplayLines
+DisplayName
+DisplayPrecision
+DisplaySafeFrame
+DisplayText
+DisplayVisibilityNodes
+DisplayVisibilityNodesDistance
+Dissect2_Tetra
+Distance at which the light effect completely fades out when getting closer. Use -1 to disable distance fade.
+Distance at which the light effect completely fades out. Use zero to disable distance fade.
+Distance over which the light effect will smoothly fade out when getting closer.
+Distance over which the light effect will smoothly fade out.
+DistanceAlphaCurve
+DistanceScaleCurve
+DistortionFactor
+DitherSettingArray
+DitherSettings
+DitheringDurationScale
+DitheringNoiseSampler
+DoCopyFile
+DoDeleteFile
+DoNotExposeInBT
+Don't load the key.
+DotProduct
+Draw water debug.
+DrivingAssist
+Drizzle (24)
+Dunia
+DurangoUser
+Dxr Reflections. 0 - Disabled, 1 - Enabled
+Dxr Shadows. 0 - Disabled, 1 - Enabled
+DxrReflections
+DxrShadows
+Dyn VB Alloc stats
+Dynamic resolution height increment step size in pixels
+Dynamic resolution width increment step size in pixels
+DynamicDistanceScaleScale
+DynamicKillDistanceScaleScale
+DynamicLoadingPositionLog
+DynamicQuadresParticlesGPUDropBudget
+DynamicQuadresParticlesGPURaiseBudget
+DynamicQuadresParticlesWaitFrames
+DynamicResolutionCPUBudget
+DynamicResolutionDefaultHeight
+DynamicResolutionDefaultWidth
+DynamicResolutionEnable
+DynamicResolutionEnabled
+DynamicResolutionFrameRateLimit
+DynamicResolutionGPUBudget
+DynamicResolutionGPUDropMargin
+DynamicResolutionGPUDropTarget
+DynamicResolutionGPUFixedCost
+DynamicResolutionGPURaiseMargin
+DynamicResolutionMaxHeight
+DynamicResolutionMaxRelaxedHeight
+DynamicResolutionMaxRelaxedWidth
+DynamicResolutionMaxWidth
+DynamicResolutionMinHeight
+DynamicResolutionMinWidth
+DynamicResolutionStepCountWarning
+DynamicResolutionStepX
+DynamicResolutionStepY
+DynamicResolutionWaitFrames
+DynamicUiType
+E3_HandsOnBooth_1
+E3_HandsOnBooth_2
+E3_HandsOnBooth_3
+E3_HandsOnVIP_1
+E3_HandsOnVIP_2
+E3_HandsOnVIP_3
+E3_HandsOnVIP_Client
+E3_MainMenuBooth
+E3_MainMenuVIP
+EAnotherEnumTest_0
+EAnotherEnumTest_1
+EAnotherEnumTest_2
+EEngineUserModuleState_Active
+EEngineUserModuleState_Deactivating
+EEngineUserModuleState_Inactive
+EEnumTest_0
+EEnumTest_1
+EEnumTest_2
+EJitCompileReturnCode
+EMPTY_CSceneLightEffect
+EOpenAccess
+EOpenAccess_Attributes_Read
+EOpenAccess_Attributes_Write
+EOpenAccess_DontWarn
+EOpenAccess_FormatSdat
+EOpenAccess_NoBadDisk
+EOpenAccess_Read
+EOpenAccess_Write
+EOpenAccess_WriteAppend
+ESeekMoveMode
+ESeekMoveMode_Begin
+ESeekMoveMode_Cur
+ESeekMoveMode_End
+ESeekMoveMode_Set
+EchoCtrlObject
+EchoCtrlPeer
+EchoCtrlPeerChannel
+EchoCtrlPunch
+EchoCtrlRouter
+EchoCtrlSession
+EchoCtrlSimulation
+EchoCtrlTracking
+EchoCtrlVoice
+EchoPerformance
+Edges
+EditorObjectiveType
+EffectData
+EffectDataFeedback
+EffectDataVibration
+EffectDataWeapon
+ElementValue
+EmbeddedMemory
+Emissive Value.
+EmissiveEV
+EmissiveTexture
+Emitting deactivation event for module %s user ptr: %p
+Enable
+Enable Under Water Irradiance Shadow.
+Enable Water Subdivision
+Enable additional pass for vehicles, allowing car bottoms to be reflected in SSLR
+Enable area lighting.
+Enable emissives in reflections. 0 - Disabled, 1 - Enabled
+Enable high quality BRDF.
+Enable high res cinematic particles.
+Enable particle tracing for SSLR(next-gen & PC only)
+Enable rendering to the sub resolution before scaling to native resolution
+Enable rendering with dynamic sub resolution
+Enable screen space local shadows.
+Enable some predicates to optimize the shadow pass.
+Enable subsurface scattering for skin.
+Enable the usage of FidelityFX CAS(Contrast Adaptive Sharpening)
+Enable the usage of FidelityFX Super Resolution
+Enable usage of the VRS buffer instead of the small particle buffer.
+Enable volumetric fog 4x downsampling above 1440p (default: 1)
+Enable volumetric fog gaussian blur instead of temporal blur
+Enable water refraction.
+EnableDeferredAmbient
+EnableEmissivesInReflections
+EnableSSLS
+EnableSubd
+EnableUnderWaterIrradianceShadow
+EnableVirtualTexture
+Enables addional RAM to cache dynamic lights.
+EndVectorFact
+EnemyOutlineColor
+Engine
+EngineConfig
+EnginePerformance
+EngineService_NS::FusionEalAssertCallback
+EngineService_NS::FusionEalLogCallback
+EngineServices
+EngineStatus
+EngineUser
+EntityBindingLog
+EntityFact
+EntityId
+EntityLibrarySharingStrategy
+EntityNetObject
+Entry
+EntryDefaultState
+EntryId
+EntryPoint
+EntryPoints
+Environment
+Environment map size (power of '2': 7->128, 8->256, ...)
+EnvironmentMapLOD
+EnvironmentQuality
+Equal
+EqualWithEpsilon
+Equals
+Error
+Error parsing CDATA section
+Error parsing PCDATA section
+Error parsing comment
+Error parsing document declaration/processing instruction
+Error parsing document type declaration
+Error parsing element attribute
+Error parsing end element tag
+Error parsing start element tag
+Error reading from file/stream
+Event
+Events
+ExcludedDialogActors
+Exec:
+Executing command ID (%s)(%s)
+ExitCondition
+Exponential base affecting the depth distribution, far from the camera
+Exposure
+Exposure of the frame from the past
+Extension
+External States/
+ExternalSpawnPoint
+ExternalSpawnPoints
+ExtractFilePartFromHandle
+EyeTrackingAimAtGazeMode
+EyeTrackingAlliedCommandingEnabled
+EyeTrackingBinocularsAtGazeEnabled
+EyeTrackingDynamicLightAdaptationEnabled
+EyeTrackingEnabled
+EyeTrackingEnemyTaggingEnabled
+EyeTrackingExtendedViewEnabled
+EyeTrackingExtendedViewEyeHeadTrackingRatio
+EyeTrackingExtendedViewGazeResponsiveness
+EyeTrackingExtendedViewHeadTrackingAutoReset
+EyeTrackingExtendedViewHeadTrackingSensitivity
+EyeTrackingExtendedViewInIronsightEnabled
+FAILED Operation (canceled) \"%s\" in %.1fs (wall %.1fs): %s
+FAILED Operation \"%s\" in %.1fs: %s%s%s
+FCLaunch_rt64.exe
+FCXMainMenu
+FCXPawn
+FaceDef
+Faces
+Fact containing end vector
+Fact containing start vector
+Fact that will hold the result of the operation.
+FactDestination
+FactName
+FactSource
+FactValue
+Factor
+Fade angle of the element when linked to a spot (in degrees).
+Fade to long range shadow range.
+FadeInDuration
+Failed
+Failed to activate platform user module. Complete failure of gamer profile activation.
+FallbackName
+Far Soft Distance.
+Far Soft Range.
+FarCry6
+Feedback
+FewClouds (4)
+FidelityFX Super Resolution Mode: 0 - UltraQuality, 1 - Quality, 2 - Balanced, 3 - Performance, 4 - Combined
+FidelityFxCASEnabled
+FidelityFxSuperResolutionEnabled
+FidelityFxSuperResolutionMode
+File was not found
+FileAttributes
+FileExist
+FileFilter
+FilePath
+FileSystemPrefetchItem
+FillMode
+Filled by GetDDSMetadata.
+FilterFlags
+FinallyBranch
+FindClose
+FindFiles
+FindFirst
+FindMatch
+FindMatchGame
+FindNext
+FindSessions
+Finland
+FireLog
+First color to separate
+FirstPartyStore
+Fixed CPU budget after which we disable dynamic resolution (ms)
+Fixed GPU budget that GPU performance tries to match (ms)
+Fixed GPU budget that GPU resolution tries to match (ms)
+Fixed lower GPU budget which is required for decrease quadres distance (ms)
+Flare
+Flare emissive EV
+Flare offset
+Flare opacity
+Flare scale X
+Flare scale Y
+FlareDiffuseSampler
+Flatten the tree LOD distance.
+Flatten the vista LOD distance.
+FlattenZ
+FleetUserModule
+Flicker animation lenght, if 4, the effect stays on 2 seconds and off 2 seconds.
+Flicker fade out animation lenght, if 4, the effect will fade to 0 intensity after 4 seconds.
+Float
+Float1
+Float2
+Float3
+Float4
+Float_16_2
+Float_16_4
+FlushFile
+Fog (15)
+FogDensity
+FogGlobalDensity
+FogLocalDensity
+Force Variation
+Force Variation Cycle (in seconds)
+Force, use to simulate wind-like effect on grass tip
+ForceOceanDamping
+Forcing a flush of logs
+Format
+FpsAvgPenalization
+FpsSamplingRateMs
+FpsThreshold
+FrameDump
+FrameRateLockEnabled
+FrameRateLockValue
+France
+Frequency
+Frequency (0 to 255) of the trigger vibration (vibrations per second).
+Friends
+FromScreenCenter
+FromSunPosition
+FrontEndUiEngineLog
+FullName
+Fusion
+FusionAssert
+GFSDK_Aftermath_DX12_CreateContextHandle
+GFSDK_Aftermath_DX12_Initialize
+GFSDK_Aftermath_DX12_RegisterResource
+GFSDK_Aftermath_DX12_UnregisterResource
+GFSDK_Aftermath_EnableGpuCrashDumps
+GFSDK_Aftermath_GetData
+GFSDK_Aftermath_GetDeviceStatus
+GFSDK_Aftermath_GetPageFaultInformation
+GFSDK_Aftermath_GetShaderDebugInfoIdentifier
+GFSDK_Aftermath_Lib.x64.dll
+GFSDK_Aftermath_ReleaseContextHandle
+GFSDK_Aftermath_SetEventMarker
+GMPlayableGameModePlayer
+GMPlayerStateDeath
+GMPlayerStateEntityActive
+GMPlayerStateEntityTeleporting
+GMPlayerStateSpectatorCamLog
+GMPlayerStateSpectatorCampaign
+GOSMStateDeath
+GPSFeedback
+GPU frame time unaffected by dynamic resolution for our compensation calculation (ms)
+GPUHeapAllocator::Chunk
+GPUId
+GRAPHIC queue
+GRStateLog
+GSFNoCaseStringID
+GSFPathID
+GSFPropertyName
+GSFStringID
+GSFVec3
+GainB
+GainG
+GainR
+GameDepthOfField
+GameFile
+GameFlow
+GameMode
+GameModeLog
+GameModeSysLog
+GameModes
+GameOpLog
+GameSaves\\
+Gameplay
+Gamescom_ArcadeAndEditor
+Gamescom_ArcadeOnly
+Gamma
+Gamma ramp.
+GammaB
+GammaG
+GammaMaximum
+GammaR
+GammaRamp
+GearString
+GenerateUplayTicket returned [%s].
+Generic
+GenuineIntel
+GenuineTMx86
+Geode By NSC
+Geometry
+Geometry LOD level. Higher values give  greater LOD distances.
+GeometryPickingID
+GeometryQuality
+German
+GetAngleDiffInDegrees
+GetAngleInDegrees
+GetChangedItems
+GetCurrentCallstack
+GetDoneCompileRequests
+GetFileAttributes
+GetFileInfo
+GetFileInfo2
+GetFileInfo3
+GetFileInfo4
+GetFileSize
+GetFileSize2
+GetFileTime
+GetFileTime2
+GetFileTime3
+GetFileTime4
+GetLength
+GetLogs
+GetProcessUserModeExceptionPolicy
+GetStatus
+GetUplayAccountId returned [%s].
+GetUplayPath returned [%ls].
+GetUplayUserName returned [%s].
+GgpPlayerSave
+Global fog height falloff multiplier.
+Global horizontal scaling factor.
+Global vertical scaling factor.
+GlobalFogHeightFalloff
+Granularity
+Graphic
+GraphicObjectMinSize
+GraphicObjectMinSizeShadowScale
+GraphicsDevice::SetTextureDat::staging
+Grass motion frequency on slope.
+Grass motion frequency.
+Grass motion frequency2.
+Grass motion perturbation radius1.
+Grass motion perturbation radius2.
+Grass motion perturbation sin1.
+Grass motion perturbation sin2.
+GrassClustersLodScale
+GrassMotionFrenquency
+GrassMotionFrenquency2
+GrassMotionOnSlope
+GrassMotionPerturbationRadius1
+GrassMotionPerturbationRadius2
+GrassMotionPerturbationSin1
+GrassMotionPerturbationSin2
+Greater
+GreaterEqual
+GreaterOrEquals
+GreaterThan
+Greece
+Green
+GreenOffset
+GreenScale
+GridMapSectors
+GridWorldMaps
+Grids
+GroupSession
+GroupSizeX
+GroupSizeY
+GroupSizeZ
+HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0
+HDR output maximum nits.
+HDR reference white nits.
+HDRCalibrationScreensShown
+HDROutputMaximumNits
+HDRReferenceWhiteNits
+HDTexturesEnabled
+HID::InputManager::PreUpdateMT(251)
+HID::InputManager::PreUpdateMT(269)
+HID::InputManager::SetExclusiveGamepadId
+Half resolution SSAO
+Handle
+HasBundle
+HasDescriptor
+HasDetails
+HasGrass
+HasMainSectorData
+HasNavMesh
+HasOccluderData
+HasRoadNetwork
+HasSerializationEvent
+HasTerrainData
+Haze (12)
+HdrCustomSettings
+HdrDefaultSettings
+Header
+HeavyIntensityRain (5)
+Height of the sub resolution as a scale of the native resolution
+Height of the sub resolution in pixels
+Hidden
+Hides all elements besides this one
+Hides the element when set to true
+HighLightColor
+HighLightColor3
+HighLightFlashingSpeed
+HighQualityBRDF
+HighResCinematicParticles
+Higher->Brighter UI
+HiresVista
+HitDir
+HitOrigin
+HongKong
+HorizonCloudCoverage
+HostMigration
+How much this effect should accumulate via an additive blend not an alpha blend
+How much to flatten vegetation.
+How much will the opacity be affected by the flickering.
+HudGroupOneColor
+HudGroupThreeColor
+HudGroupTwoColor
+Humidity
+Hungary
+IDcrc
+IFile
+IFileSystem
+IGeometryProvider
+IJitCompile
+INeuronLayer
+INode
+IPRange
+IStaticData
+If value is not zero, emmissive bias will then be applied
+Ignore
+Image will be desaturate except for this color
+ImageArrayed
+ImageDim
+ImageFormat
+In-game UI display mode on multimonitor systems
+InGameTeleportLog
+Inactive
+IncludeAbstract
+IncludeSubDirectories
+IncrSat
+Increase the brightness of the blues
+Increase the brightness of the greens
+Increase the brightness of the reds
+Increase the brightness the image
+Index
+India
+InitRPC
+InitRPCWithVersion
+Initializing Uplay manager - ExitProcessRequired.
+Initializing Uplay manager - Failed, unknown result.
+Initializing Uplay manager - InstallationError.
+Initializing Uplay manager.
+InputDeviceResponse
+InputManager
+InputParameters
+InputSignatureCRC
+InstallBfPath
+InstanceData
+InstanceStepRate
+Integer
+Intensity
+Intensity of bloom
+Intensity of the rain, from 0.0 (no rain) to 1.0 (max intensity).
+InteractionLog
+InterfacePreset
+Internal error occurred
+IntersectionShadersCount
+InvBlendFactor
+InvDestAlpha
+InvDestColor
+InvSrc1Alpha
+InvSrc1Color
+InvSrcAlpha
+InvSrcColor
+Invalid
+Invalid function call, calling a member function as a static function. (did you use '.' instead of ':'?)
+Invalid function call, parameter %d expected %s, but received %s.
+InvalidParameter
+InvalidSoundID
+InvalidSoundType
+InvalidTag
+InvasionLog
+InventoryLog
+Invert
+Invert_Pegasus_Pitch
+Invitation [%s] to game failed.
+Invites
+Ipasha
+Ireland
+IsAbstract
+IsActive
+IsDebug
+IsFilename
+IsInvalid
+IsLoaded
+IsLpmEnabled
+IsMySelfLoaded
+IsStarted
+IsUplayOfflineMode returned [%d].
+IssueMD5
+IssueSummary
+Italy
+Items
+Japan
+JsonBasic
+KillLodScale
+Knots
+Korea
+LANGUAGES/%s/oasisstrings.oasis.bin
+LLSMEnableDynamicLightsCaching
+LLSMFilteringQuality
+LLSMFrameDynamicUpdates
+LLSMMaxPCSSPenumbraSize
+LLSMPersistentDepthTextureHeight
+LLSMPersistentDepthTextureWidth
+LLSMSamplingOffsetDueToInaccuratePosition
+LLSMSamplingOffsetDueToInnacuratePositionOverride
+LLSMSamplingOffsetDueToTexelSize
+LLSMSamplingOffsetDueToTexelSizeOverride
+LLSMShadowDepthBias
+LLSMStaticShadowMapHeight
+LLSMStaticShadowMapWidth
+LLSMStaticShadowMapsRectHeight
+Large
+LaserSightColor
+Last cascade where grass is rendered.
+LastAccessTime
+LastErrorMsg
+LastGrassShadowCascade
+LastWriteTime
+LeakyReLU
+LeashService
+LeftStickResponsiveness
+LeftTrigger
+LegacyElementName
+LessEqual
+LessOrEquals
+LessThan
+LibName
+LibRanges
+Library
+LibraryId
+LibraryPathName
+LibraryVersion
+LifeTime
+Lift the blues
+Lift the greens
+Lift the image
+Lift the reds
+LiftB
+LiftG
+LiftR
+LightIntensityDrizzleRain (26)
+LightMaxDistanceScale
+LightProfilesPoolSize
+Lightning
+LightningDelay
+LightningDelayMax
+LightningDelayMin
+LightningDistanceRangeMax
+LightningDistanceRangeMin
+LightningFrequency
+LineList
+LineListAdj
+LineStrip
+Linear
+LinkManager
+LoadFailed
+LobbyLog
+Local fog height falloff multiplier.
+Local grass force lighting strength
+Local grass force noise scale
+Local grass force noise strength
+Local lights shadow map depth bias in texels.
+Local lights shadows quality of filtering.
+LocalFogHeightFalloff
+LocalGrassForceLightingStrength
+LocalGrassForceNoiseScale
+LocalGrassForceNoiseStrength
+LocalLightShadowClusterObjectMinSize
+LocalLightShadowGraphicObjectMinSize
+LocalLightShadowTreeNodeMinSize
+Location
+LodScale
+LoggerImpl::InternalThreadStart
+LongRangeShadowMinWSSize
+LootOutlineColor
+Lower bound zoom LOD scale.
+Lua 5.1
+Lua function expected
+MAIN command list
+MMPlayerProfile
+MainMonitor
+Managed
+ManagedObject
+MapName
+Margin below GPU budget at which we drop resolution (ms)
+Margin below GPU budget at which we raise resolution (ms)
+Mask Center
+Mask Offset
+Mask Shape
+Mask Size
+MaskCenter
+MaskOffset
+MaskShape
+MaskSize
+MassDensity
+MasterVolume
+MatchmakingOpsGame
+MaterialPickingID
+MaterialVariationPermutation
+Max decal count for all types
+Max decal count per type
+Max number of decals that can be in cluster range when a decal is placed.
+Max pending shaders to process per frame (loading)
+Max penumbra size in meters.
+Max range in m from the camera where the lightning can strike
+Max shaders to create per frame (in game)
+Max shaders to create per frame (loading)
+Max shaders to preload
+MaxDecalCount
+MaxDecalCountPerType
+MaxLifeTime
+MaxRolloffDiscarded
+MaxShaderObjectToCreateLoadtime
+MaxShaderObjectToCreateRuntime
+MaxShaderObjectToProcessLoadtime
+MaxShadersToPreload
+MaxValue
+Maximum
+Maximum delay between two consecutive lightning strikes, in seconds.
+Maximum distance where cloud shadows are rendered (-1 = entire range)
+Maximum height of the dynamic resolution in pixels
+Maximum height of the dynamic resolution in pixels when relaxed
+Maximum width of the dynamic resolution in pixels
+Maximum width of the dynamic resolution in pixels when relaxed
+Medium
+Member
+MemberDescription
+Members
+Memory
+MemoryMapName
+MeshDecompression
+Message
+Metas
+Mexico
+Min range in m from the camera where the lightning can strike
+Min world space size for the long range shadow pass.
+MinProjectedRatio
+MinValue
+MinZoomFactor
+Minimal penumbra scale for diffuse transmission.
+Minimap
+Minimum
+Minimum delay between two consecutive lightning strikes, in seconds.
+Minimum height of the dynamic resolution in pixels
+Minimum width of the dynamic resolution in pixels
+Minute
+Mip bias for clouds texture used for primary rays. (-4, 0)
+Mip bias for simplified clouds texture used for shadow rays. (-4, 0)
+Mirror
+MissShadersCount
+MissedPostEvent
+MissionName
+Mist (1)
+ModerateRain (13)
+Module state %s changed to %s. UserPtr: %p
+Month
+Morning end time for blending back to 3 CSM slices.
+Morning start time for blending back to 3 CSM slices.
+MotionBlur
+MouseAcceleration
+MultimonitorMode
+MultiplayerTeleport
+Multiplier for CellCountZ when high quality fog is enabled (default: 1.5)
+MultisampleCount
+MultisampleEnable
+Music
+MyPipe
+NAff`AfffA
+Native resolution height on console
+Native resolution width on console
+NativeResolutionX
+NativeResolutionY
+NavmeshLayers
+NbBranchPerJoint
+NbLevel
+NearPassZMax
+NearPassZMin
+NeedsVista
+NetChannel
+NetFireLog
+NetObject
+NetStateMachine
+Netherlands
+NetworkManager
+NetworkMessages
+Never
+New module added in user. Module type: %s ptr: %p
+NewSession
+NewZealand
+NexGenDriven
+Night start time for blending to 2 CSM slices.
+No document element found
+No error
+NodeOp
+NodesType
+NodesTypes
+NomadHandleSerializeHelper
+NomadLogicalCategoryLegacy
+NomadObject
+NomadPropertyHidden
+NomadTypeNotImplemented
+NomadWorkload
+NormalTexture
+Normalize
+NormalizedXYBBox
+Normals
+Norway
+NotEqual
+NotEquals
+NotLoaded
+Notifications
+NtQueryInformationProcess
+NtQuerySection
+NumChildren
+Number of elements ths lens flare effect is made from.
+Number of frames to wait before decreasubg distance of quadres particles
+Number of frames to wait before raising resolution
+Number of raymarch steps for primary cloud rays. (16, 256)
+Number of raymarch steps for shadow cloud rays. (2, 32)
+Number of samples taken from cloud density for the cloud shadows (1, 32)
+Number of samples to use for skin subsurface scattering.
+Number of slices in the texture. Texture must be a power of two.
+Number of steps to drop dynamic resolution before giving a QC warning
+Number of tiles of the color mask image
+Number skiped top mips. Applied on texture reloading.
+Object
+ObjectiveStayOnScreen
+OcclusionAlphaRemapCurve
+OcclusionMeshKillDistanceFromCenter
+OcclusionMeshKillDistanceScale
+OcclusionScaleCurve
+OcclusionTextureBlendRange
+Occurrences/GetFilteredIssues?Filters.SelectedDataElementName=GUID&Filters.SelectedDataAttributeName=&Filters.SelectedAttributeValue=%s
+Ocean
+Ocean FBM simulation buffer scale.
+Ocean FFT simulation buffer scale.
+Ocean simulation quality. 0 - disabled, 1 - full, 2 - fast
+OceanFBMBufferScale
+OceanFFTBufferScale
+OceanSimlationQuality
+Offset
+Offset for blue color channel
+Offset for chromatic aberration
+Offset for green color channel
+Offset for red color channel
+Offset for scaling the image
+OffsetX
+OffsetY
+OnActivate
+OnDeactivate
+OnDevPatchUpdate
+OnLoadProfile
+OnRPCConnection
+OnRenderstatesPartLoaded
+OnlineChallenges
+OnlineJson
+OnlineLogAppender
+OnlineLogger
+OnlineLoggerLog
+OnlinePlayerLog
+OnlineRemoteLogAppender
+OnlineSession
+Only use the global ambient
+OnlyGlobalAmbient
+OpCode
+OpCodeContainer
+OpCodes
+Opacity
+Opacity of the effect
+OpenAccess_ReadNoBuffering
+OpenAccess_ReadSequential
+OpenAccess_UseRawFilePath
+OpenCreateFile
+OpenCreateFileForWrite
+OpenFile
+Operation
+Operation failed: %s %s
+Operation throttled: %s %s
+Operation throttling threshold exceeded: %s
+Operator
+OutOfMemory
+Output\\x86-x64\\
+OvercastClouds (7)
+Override for shadow sampling offset multiplier for accounting distance to camera.
+Override for shadow sampling offset multiplier for accounting distance to light
+OverwriteSource
+P2PChannel
+P2PObject
+PCEditorExecNamePrefix
+PCEngineExecNamePrefix
+PCInGameEditorExecNamePrefix
+PCSSLightSize
+PCSSMaxPenumbraSize
+PCSSMinTransmissionPenumbraScale
+PCSSQuality
+ParallaxHeightAndOffset
+ParallelSubTrees
+Parameter
+ParameterNames
+Parameters
+Parent of %s is detaching itself
+ParentNode
+Parent_%s
+Particle
+ParticleBuffer
+ParticleOcclusionTexture
+ParticleQuadResBuffer
+ParticleWithDepth
+PartyService
+Patch_3
+Patch_4
+PathId
+PausedType
+PawnLog
+PawnNetComp
+PawnNetFuncLog
+PawnPlayer
+PeerChannel
+PeerManager
+PhotomodeCloseOnDamage
+PhysNetworkComponent
+PhysicalMemory
+Physics
+PickingID
+PickupModuleLog
+PixelShader
+Platform
+PlatformOp
+PlatformSession
+PlayPVPIntroVideo
+PlayerDepLog
+PlayerDesc
+PlayerLog
+PlayerServiceLog
+PlayerSpawnLog
+PlayerStateSpectatorUGCLog
+PlayerStateSpectatorUGCPvPLog
+Playtest
+PointClamp
+PointClampNoMip
+PointSpritesNotSupported
+PointWrap
+Poland
+Portugal
+Position
+Position offset towards the camera.
+PostFXLevel
+PostFxLog
+PostFxQuality
+PostLoad
+Prefetch
+PrefetchBatch
+PrefetchContent
+PreloadVideo
+PreloadVideoId
+PreloadVideoList
+Preview
+PrimitiveType
+Probability of lightining per second
+Profile
+ProfileDump
+Progress
+Project Name:
+Properties
+PublishCacheHits
+PublishTotal
+PunchClient
+PunchDetect
+PunchTraversal
+PunchUserModule
+Qkkbal
+QuadList
+QuadResParticleDistance
+QualifiedName
+Quality
+Quality Config is selectable in editor (0=off, 1=on
+QualityEditor
+Quark handler not implemented
+QuarkToSerializationNode
+Queuing notification %s
+R1h58
+RESOURCE TRANSFER command list
+RPCSync
+Races
+RadialBlurFactor
+Radius of the area used for occlusion testing.
+Radius to blur in pixels at 1080p
+RainIntensity
+RainParticleScale
+RainShadowMapRange
+RainShadowMapSize
+Raindrops lens effect bias
+Raindrops lens effect scale
+RandomEventUpdates
+RandomStartDelay
+Range
+Range override for shadow cascades. If value is not zero it should be greater for each next cascade
+Range0Scale
+Range1Scale
+Range2Scale
+Ranges
+RcpFadeInDuration
+RcpFadeOutDuration
+RdvLog
+ReadPrivateRPC
+ReadWriteMask
+RecordsPerHitGroupCount
+RectList
+RectMax
+RectMin
+RedOffset
+RedScale
+RefreshStateRequest
+RegisterSpace
+RejectedByDebug
+RejectedByEditor
+RejectedBySoundLimiter
+RejectedIsRoboVoice
+RelativeTime
+RemDir
+RemovePath
+Removing user %p
+Render
+Render cascaded shadow maps quarter res with 4xMSAA.
+Render particle with depth and use it when particle upscaling.
+RenderCapsLog.txt
+RenderQuality
+RenderTarget
+RenderTargetFormat0
+RenderTargetFormat1
+RenderTargetFormat2
+RenderTargetFormat3
+RenderTargetFormat4
+RepeatOperation
+Replace
+ReplaceExtension
+ReportTypes
+Reporter::GetInstance: Bloomberg has not been initialized yet.
+ReporterPort
+ResCompPower
+ResDef
+ResHandleSerializeObject
+ResId
+ResIds
+ResPack
+Reset
+ResetMembers
+Resolution
+Resolution compensation power. Use it to adjust look of non-1080p look if required.
+ResolutionConfig
+ResolutionQuality
+ResolutionScale
+Resource
+ResourceClass
+ResourceName
+Resources
+RespawnCondition
+ResultFact
+RetCode
+Retail
+Retention
+Reticle
+ReticleADSColor
+ReticleColor
+ReticleOnEnemyColor
+ReticlePosition
+ReticleSway
+ReticleThickness
+ReticleType
+RetrieveCacheHits
+RetrieveTotal
+Retry
+ReturnTrue
+ReturnValue=
+RevSubtract
+ReviveLog
+RichPresence
+RightStickResponsiveness
+RightTrigger
+RiseRiseRise
+RoadsOnTheMapColor
+RollBacking    %s after %.1fs reason %s
+Rollback       %s after %.1fs: %s
+RotateAroundZ
+RotateToDirAroundZ
+Russia
+SAssetStoreStatus
+SBinkCustomHDRSettings
+SBinkHDRSettings
+SCheckInstallMission
+SCityWeather
+SConvexVolume::SEdge
+SConvexVolume::SFace
+SDoneCompileItem
+SExternalSpawnPoint
+SFaceDefinition
+SFileInfo
+SFullFileInfo
+SMD5Digest
+SNomadDbLibLoader
+SNomadLibLoader
+SRepositoryStaticDataHandler not implemented
+SSAOHalfRes
+SSLR Mode. 0 - Disabled, 1 - Low, 2 - Normal, 3 - High
+SSLRDepth
+SSLREnableParticles
+SSLREnableVehiclesPass
+SSLRFadeoutDistance
+SSLRMode
+SUplayPCEventConnectionStateChanged
+SUplayPCEventOverlayStateChanged
+SUplayPCEventOwnershipAdded
+SUplayPCEventOwnershipRemoved
+SV_ClipDistance0
+SV_Coverage
+SV_CullDistance0
+SV_IsFrontFace
+SV_Position
+SV_SampleIndex
+SV_Target0
+SWeatherPreset
+SWeatherValue
+SWorld
+SWorldGridSerialize
+SafeAreaBlackBorderPercentHDX
+SafeAreaBlackBorderPercentHDY
+SafeAreaBlackBorderPercentSDX
+SafeAreaBlackBorderPercentSDY
+SafeFrameAreaHeight
+SafeFrameAreaWidth
+Sampler
+SamplerDescBundle
+Saturation
+Saturation of color mask
+SaudiArabia
+SaveGame
+Scalar
+Scalar amount for the start vector.
+Scale
+Scale occlusion mesh kill distance.
+Scale of effect
+Scale the distance at which dynamic lights fade out.
+Scale the duration of dithering effects
+Scale the radius used for skin subsurface scattering to control performance.
+Scale the rain particle effects.
+ScaleOffset
+ScaleRatio
+ScaleWithDistance
+Scaling factor for blue color channel
+Scaling factor for green color channel
+Scaling factor for red color channel
+Scaling for chromatic aberration
+ScatteredClouds (8)
+Scene object min projected size for depth pass.
+Scene object min projected size shadow scale.
+Scene object min projected size.
+SceneObjectDepthPassMinSize
+Scheduled      %s %s
+ScissorEnable
+ScreenParams
+Second color to separate
+SecondaryStore
+SectionLength
+SectorAmbientSingleFrame
+SectorId
+SectorOffsetX
+SectorOffsetY
+SecureKey
+SeekPos
+SelectableInEditor
+Semantic
+SemanticIndex
+SemanticName
+Semaphore unlocked %d %s
+Sensitivity
+SeparateAlphaBlendEnable
+SeparateImages
+SeparateSamplers
+SequenceLog
+SerialCategoryLegacy
+SerialNameLegacy
+SerialTransparentLegacy
+ServerIP
+ServerNotificationIp
+ServerPort
+Session
+SessionManager
+SessionOp
+SessionService
+Set FOV
+Set number of vsync frames.
+Set the postfx level (0 off, 1 sd, 2 hd).
+SetAutoSave
+SetEndOfFile
+SetFileAttributes
+SetFilePointer
+SetFileTime
+SetFileTime2
+SetInvalid
+SetLength
+SetNoRTDepAsDefault
+SetProcessUserModeExceptionPolicy
+SetProgression %s %f
+SetUseFolderWatch
+Settings
+Settings::GameSettings::AddChangelistInfo: can't add more than %d changelists. Increase BLOOMBERG_CHANGELIST_COUNT in configuration.h
+Settings::GameSettings::AddChangelistInfo: can't add more than BLOOMBERG_CHANGELIST_COUNT value. Increase BLOOMBERG_CHANGELIST_COUNT in configuration.h
+Settings::GameSettings::SetGroupingSuffix: groupingSuffix not initialized
+Settings::GameSettings::SetVersionInfo: version not initialized
+ShaderVariationGenerator
+ShaderViews
+Shaders
+Shadow
+Shadow Degradation Level
+Shadow sampling offset multiplier for accounting distance to camera.
+Shadow sampling offset multiplier for accounting distance to light.
+ShadowCinematicQuality
+ShadowCmpSampler
+ShadowCmpSamplerInv
+ShadowQuality
+Shadows
+ShearsExec DefaultWorkQueue
+Shift the hue of the image
+Shift the saturation of the image
+Shift the temperature of the image
+Shift the tint of the image
+Short2
+Short2N
+Short4
+Short4N
+ShowDamageFeedback
+ShowDynVBAllocStats
+ShowFPS
+ShowGFHControlsWidget
+ShowImmuneText_DLCY2
+ShowOnScreenControls
+ShowPVPTips
+ShowPerkUpdates
+ShowThroughWallsAlpha
+ShowThroughWallsBodyAlpha
+ShowThroughWallsHighLightColor
+ShowThroughWallsLineThickness
+ShowUplayStorePage product [%d].
+ShowVehicleIndicators
+ShowVehicleRepairGauge
+Shutdown Uplay...
+Sigmoid
+Signal
+Similar to KillLodScale, but affect trees only.
+Similar to KillLodScale, but affect vista only.
+Singapore
+Size covered by the rain shadow map in meters.
+Size(%u)
+SizeX
+SizeY
+SkinSubsurfaceScattering
+SkinSubsurfaceScatteringRadiusScale
+SkinSubsurfaceScatteringSampleCount
+SkipTopMips
+SkipableWarning
+Slider
+SlopeScaleDepthBias
+Slovakia
+SlowFrame
+Small
+SneakPeek
+SneakPeekClient
+SneakPeekHost
+Snowshoe
+Social
+Soft Range.
+Soft effect (only for Glow type).
+Softmax
+Solid
+SoundBigFileResult
+SoundDepot
+SoundSystemUnavailable
+SoundVisualization
+SourceAddValue
+SourceCheckValue
+SourceDivideValue
+SourceExist
+SourceExt
+SourceMultiplyValue
+SourceRemove
+SourceSetValue
+SourceSubtractValue
+SourceValid
+SouthAfrica
+Spain
+SpawnLog
+SpawnPointId
+SpawnServiceCoop
+Splitting one semaphore lock hierarchy into two. semaphoreId=%d originalHierarchySize=%u detachedHierarchySize=%u
+SpringDamping
+SpringStrength
+SprintType
+Src1Alpha
+Src1Color
+SrcAlpha
+SrcBlend
+SrcBlend0
+SrcBlend1
+SrcBlend2
+SrcBlend3
+SrcBlend4
+SrcBlendAlpha
+SrcColor
+StageInputs
+StageOutputs
+Start
+Start-end tags mismatch
+StartOffset
+StartProfile
+StartTime
+StartVectorFact
+Started
+Starting       %s%s
+Starting UPlayPCInviteToGameOperation. AccountId: %s
+State
+States
+StaticObjects
+StatsEnable
+StencilBackFail
+StencilBackFunc
+StencilBackPass
+StencilBackZFail
+StencilEnable
+StencilFail
+StencilFunc
+StencilMask
+StencilPass
+StencilRef
+StencilTwoSidedEnable
+StencilWriteMask
+StencilZFail
+Stop displaying bounding sphere of visibility nodes beyond this distance.
+StopProfile
+Stopped
+Stopping
+StoppingCurrentAction
+StorageBuffers
+StorageImages
+StormCore
+StormRouterLog
+StormUserModule
+Strategy
+Stream
+StreamerMode
+Streaming
+StreamingDecomp
+StreamingThread
+Strength
+Strength (0 to 8) of the trigger resistance feedback.
+Strength (0 to 8) of the trigger resistance.
+Strength (0 to 8) of the trigger vibration.
+Strength of effect
+Strength of the random size jittering.
+String
+StringPair
+Strings
+SubGraphFullNameRef
+SubResolutionEnable
+SubResolutionScaleX
+SubResolutionScaleY
+SubResolutionX
+SubResolutionY
+SubtitlesEnabled
+SubtitlesEnemyNameColor
+SubtitlesFontSize
+SubtitlesForBarksEnabled
+SubtitlesForPlayerBarks
+SubtitlesFriendlyNameColor
+SubtitlesFriendlyNameColorDLCY2
+SubtitlesLanguage
+SubtitlesPlayerNameColor
+SubtitlesPlayerNameColorDLCY2
+Subtract
+SubtractZ
+Succeed
+Success
+Summary:
+SunShadowDegradation
+SunShadowDegradationLevel
+SunShadowFadeRange
+SunShadowNightRange
+SunShadowNightRangeMorningBlendEndTime
+SunShadowNightRangeMorningBlendStartTime
+SunShadowNightRangeNightBlendEndTime
+SunShadowNightRangeNightBlendStartTime
+SunShadowRange0
+SunShadowRange1
+SunShadowRange2
+Support terrain virtual texture on this platform.
+Supported
+SwapChainTexture
+Sweden
+Switzerland
+SymbolPath
+System
+TEMP command list
+TRANSFER queue
+TagId
+Tagging
+TaggingNetService
+Taiwan
+Target
+Target below GPU budget to which we try to compensate when dropping resolution (ms)
+TargetExt
+TaskType_AITask
+TaskType_ComponentUpdates
+TaskType_EngineJobs
+TaskType_EngineThread
+TaskType_EngineThreadHighPrio
+TaskType_FluidPhysicsdTaskType_None
+TaskType_FreeThreads
+TaskType_HPEngineJobs
+TaskType_LPRenderJobs
+TaskType_PhysicJobs
+TaskType_RenderJobs
+TaskType_RenderThread
+TaskType_StreamingJobs
+Tasks
+Temperature
+Terrain
+TerrainGeometryLODBias
+TerrainQuality
+Test kill distance from center of occluder.
+Tetra
+Texture
+Texture formats|*.dds;*.png;*.xbt
+Texture size of the cascaded shadow maps.
+Texture size of the rain shadow map.
+TextureFilteringQuality
+TextureQuality
+Thailand
+The half amplitude of the broadcast wave
+This attribute has LegacyLoadOnly flag
+This class is used to automatically build a collection of database object, based on directory and class name.
+This is a singleton object - Do not instantiate
+Threshold
+Threshold of bloom
+Threshold of color intensity to be masked
+Throttling error
+Throttling warning
+ThunderstormWithHeavyRain (14)
+Tiling
+TimeDependentSettings
+TimeIndependentSettings
+TimeSec
+To include objects from sub directories in the collection
+To include only class that contains this substring
+Trace
+TraceLine
+TrackingSystem
+Tracks
+Trample Force, use to squash the grass to the ground
+Trans
+TransitionType
+TransmetaCPU
+TransmissionHistory
+Transparent
+TransportManager
+Trapper
+Tree leaves cluster LOD Scale.
+Tree min projected size shadow scale.
+Tree node min projected size.
+TreeKillDistanceScale
+TreeLODDistanceFlatteningFactor
+TreeLeavesClusterLODScale
+TreeLodScale
+TreeMinSizeShadowScale
+TreeNodeMinSize
+TriangleFan
+TriangleList
+TriangleStrip
+Trigger position (0 to 9) at which resistance feedback should activate.
+Trigger position (0 to 9) at which trigger trigger vibration is to activate.
+Trigger position (2 to 7) at which trigger resistance should activate (pulling the gun trigger starts).
+Trigger position (Start+1 to 8) at which trigger resistance should deactivate (the gun trigger has fired the weapon).
+TrunkStrengthFactor
+Turbidity
+Turkey
+Type of the trigger effect to use
+TypeCategory
+TypeDefinition
+TypeId
+TypeName
+UByte4
+UByte4N
+UI offscreen rendering resolution height on console
+UI offscreen rendering resolution width on console
+UIAssetFilter
+UIChildAsset
+UIEFlareScaleOffsetsDistanceModeEnum
+UILanguage
+UIOffscreenRenderingResolutionX
+UIOffscreenRenderingResolutionY
+UIResourceFilter
+UInt1
+UNorm_10_10_10_2
+UPlay Earned Achievement id: [%u].
+UPlay Enumerate Cloud Saves returned: [%llu] values.
+UPlay Get Achievements returned: [%llu] values.
+UPlay Get Friend List returned: [%llu] values.
+UPlay Open Cloud Save: %s, uplay mode [%d].
+UPlay Remove Cloud Save: [%s].
+UPlay Show Overlay section: [%d].
+UPlayPCInviteToGameOperation was created. AccountId: %s
+USUserModule
+UShort2N
+UShort4N
+UbiServicesClubPC
+UbiServicesOp
+Ubiservices
+UiAnimationQualityConfig
+UiAutoMinMax
+UiBTTaskWaitDataRandomDelayTypeEnum
+UiCategory
+UiClassSelectorType
+UiColorEditor
+UiDatabaseClassSelector
+UiDeclareDatabase
+UiDescription
+UiDisable
+UiDisplayName
+UiDoNotExposeInBT
+UiEWeatherTypeEnum
+UiEngineServicesConfigSpecialVersionTypeEnum
+UiEnumType
+UiFactOperationDataFactOperationEnum
+UiFileType
+UiGenericType
+UiHidTriggerEffectsEffectTypeEnum
+UiHidden
+UiHint
+UiLegacyData
+UiLightEffectSettingsLightEffectHideTypeEnum
+UiLightEffectSettingsLightEffectTypeEnum
+UiNodeAssertDataExpectedResultEnum
+UiNodeInterruptFinalResultEnum
+UiNodeParallelFinalResultEnum
+UiNomadConfigObject
+UiNullType
+UiScalingMode
+UiSlider
+UiSoundRegionType
+UiSoundTypeType
+UiTestTypeSerializationDataAnotherEnum
+UiTestTypeSerializationDataEnum
+UiTextureType
+UiTransparent
+UiTreeSizeEnum
+UiTypeAttribute
+UiTypePairBase
+UiVectorFactOperationDataVectorFactOperationEnum
+UnSupportedPlatforms
+Unable to append nodes: root is not an element or document
+Undefined
+UniformBuffers
+UnitedArabEmirates
+UnitedKingdom
+UnitedStates
+Unitless sun light size.
+Unknown
+Unknown Processor
+Unknown error
+Unknown file with ReadFile()
+UnlockMouseCursor
+Unnamed command list
+Unofficial-Version
+Unsupported
+Unused19
+Unused20
+Unused21
+Unused22
+Update all mips in terrain virtual texture.
+Update the culling camera.
+Update the rendering camera.
+UpdateCullingCamera
+UpdateRenderCamera
+UploadStagingBufferWithData
+Use SSAO
+Use fade distances ?
+Use more samples when blurring the bokeh.
+Use next-gen cinematic settings specified in cinema.
+Use offscreen buffer for particles.
+Use quad-res offscreen buffer for particles. 0 - disable, 1 - enable, 2 - enable dynamically on performance drop, 3 - as 2, but with adjusting distance
+UseInConfig
+UseInConsole
+UseInProfile
+UseNextGenCinematicSettings
+UseOutline
+UsePredicates
+User backed out of logging onto Ubisoft Connect. Complete failure of gamer profile activation.
+User ptr: %p
+User ptr: %p, module %s
+User ptr: %p, module %s, reason %s
+User ptr: %p, state: %u
+VSync
+VSyncCinematicQuality
+VSyncEnabled
+VSyncFrames
+VSyncPreset
+VSyncQuality
+VSyncWindow
+Validate
+ValidationError
+Value
+Variable penumbra soft shadows via PCSS : 0 - disabled, 1 - default quality, 2 - high quality.
+VariableCount
+VariableIndex
+VariablePatchCount
+VariablePatchIndex
+Variables
+Vecsize
+Vector
+VectorNoClear
+Vegetation
+VegetationQuality
+VehicleID
+VehicleLog
+VehicleNetComp
+VehicleWeapons
+Velocity m/s required to break bushes.
+Version
+Version:
+VersionMismatch
+Vertex
+VertexData
+VertexElement
+VertexShader
+Vibration
+VideoModeProfile
+VideoModeProfileFullscreen
+VideoModeProfileWindow
+View center horizontal offset [-1..1]
+View center vertical offset [-1..1]
+Virtual texture max rendering frame jobs per frame.
+Virtual texture max rendering time per frame.
+VirtualMemory
+VirtualTextureLODBias
+VirtualTextureRenderingFrameJobBudget
+VirtualTextureRenderingTimeThreshold
+VirtualTextureUpdateAll
+VisibilityParams
+VistaChunkInfosList
+VistaKillDistanceScale
+VistaLODDistanceFlatteningFactor
+VistaWorldInfo
+VistaWorldOverride
+Voice
+VoiceChatCaptureThreshold
+VoiceChatIndicator
+VoiceChatLog
+VoiceChatPlaybackVolume
+VoiceChatRuleLog
+VoiceChatServiceLog
+VolumeTextureLinearFilterWrapUVClampW
+Volumetric Water buffer scale.
+Volumetric clouds projected shadow texture size
+VolumetricClouds
+VolumetricCloudsMipBias
+VolumetricCloudsPrimaryStepCount
+VolumetricCloudsQuality
+VolumetricCloudsSecondaryStepCount
+VolumetricCloudsShadowCoverageDistance
+VolumetricCloudsShadowSampleCount
+VolumetricCloudsShadowTextureSize
+VolumetricCloudsSimpleMipBias
+VolumetricCloudsTemporalUpSample
+VolumetricFog
+VolumetricFogCellCountZ
+VolumetricFogCellCountZHqMultiplier
+VolumetricFogDepthDistributionDistanceScale
+VolumetricFogDepthDistributionExponentialBase
+VolumetricFogEnableDownsample4x
+VolumetricFogQuality
+VolumetricFogUseGaussianBlur
+VolumetricWaterScale
+VrsParticleBufferEnabled
+Vulkan
+WaitTime
+WaitUntilAllTasksDone
+Warning
+WarningMessage
+Water
+Water buffer scale relative to viewport.
+WaterBufferScale
+WaterDisplayDebug
+WaterQuality
+WaterRefraction
+WaterSurface
+WaveLimit
+Weapon
+WeaponEffectLodScale
+WeaponWheelType
+Weather
+WeatherPreset
+WeatherPresetsData
+WeatherType
+WeatherValue
+Whether to use Start position as trigger release threshold
+Width of bloom
+Width of the sub resolution as a scale of the native resolution
+Width of the sub resolution in pixels
+Will return false if fact value is greater than that
+Will return false if fact value is lower than that
+Wind intensity, from 0.0 (no wind) to 1.0 (max wind).
+WindDirection
+WindIntensity
+WindowMode
+WindowPosition
+WithState
+WolfskinSolverLog
+World
+WorldGrid
+WorldMapGpsPathColor
+WorldOffsetX
+WorldOffsetY
+WorldPosToUV
+Worlds
+Write Error
+WritePrivateRPC
+XboxLive
+XmlInfo
+ZEnable
+ZFunc
+ZWriteEnable
+ZoomSensitivity
+[%s: %d]
+[%s: %s]
+[%u]
+[-&LMb#{'
+[FusionAssert] %s expression: %s file: %s(%i)
+[ThrottlingGroup %s]
+[custom] Dust (25)
+[custom] HeavyIntensityDrizzle (27)
+[custom] HeavyIntensityShowerRain (22)
+[custom] LightIntensityDrizzle (20)
+[custom] LightIntensityShowerRain (0)
+[custom] LightRain (10)
+[custom] ProximityShowerRain (19)
+[custom] ProximityThunderstorm (11)
+[custom] ProximityThunderstormWithRain (17)
+[custom] Sand (28)
+[custom] ShowerRain (21)
+[custom] Smoke (29)
+[custom] Squalls (18)
+[custom] Thunderstorm (9)
+[custom] ThunderstormWithLightDrizzle (30)
+[custom] ThunderstormWithLightRain (6)
+[custom] ThunderstormWithRain (16)
+[custom] VeryHeavyRain (23)
+[no timeout]
+[string \"
+[timeout %.1fs]
+\"%llu\"
+\"[Bool=%d]\"
+\"[CFunction=%llu]\"
+\"[Invalid]\"
+\"[LightUsedData=%llu]\"
+\"[LuaFunction]\"
+\"[Nullptr]\"
+\"[Nullptr]\"}
+\"[Number=%f]\"
+\"[String=%s]\"
+\"[Table]\"
+\"[Thread]\"
+\"[Unknown]\"
+\\\\.\\pipe\\
+\\\\ubisoft.org\\projects\\FarCry3\\Dump\\CrashDump\\Symbols
+\\\\ubisoft.org\\projects\\FarCry3\\Dump\\CrashDump\\TemporaryStore
+\\levels\\
+\\worlds\\
+\a52F*
+\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a
+_2.dat
+_Multiplier_
+_TextureObject
+__SampObj__
+__TexObj__
+__add
+__call
+__close
+__concat
+__div
+__empty
+__index
+__len
+__metatable
+__mod
+__mode
+__mul
+__newindex
+__pow
+__script_buffer__
+__sub
+__tostring
+__unm
+_auto_container_
+_centroid
+_depload.dat
+_feminine
+_nomadclass:\"
+_pipelines.bin
+_trial%d
+_type:\"
+_type:database AND
+_type:generic AND
+`qT`Pql1
+activelines
+adapterIndex
+added_changelist
+addressu
+addressv
+addressw
+alias
+always
+ambiguous syntax (function call x new statement)
+anchor
+animation
+animation package
+animation pose
+anisotropic
+anonymous
+app-web-browser
+ar-AE
+ar-SA
+arabic
+archetype
+arrayParameter
+arraySize
+assert
+assertion failed!
+atan2
+attempt to %s %s '%s' (a %s value)
+attempt to %s a %s value
+attempt to compare %s with %s
+attempt to compare two %s values
+attempt to use a closed file
+attempt to yield across metamethod/C-call boundary
+bChannel0
+bChannel1
+bChannel2
+bChannel3
+bChannel4
+bCinematicQualityShadows
+bClipFarZ
+bCommon
+bCorrectAspectRatio
+bCutsceneQuality
+bDLC_Mars
+bDisableOnProxy
+bEnable2D
+bEnable3D
+bEnableBloom
+bEnableColorRemap
+bEnableDecals
+bEnableDoF
+bEnableDynamicShadows
+bEnableEnvironmentMapGI
+bEnableEyeAdaptation
+bEnableFog
+bEnableGI
+bEnableImpostors
+bEnableLongRangeShadows
+bEnableMotionBlur
+bEnableOcean
+bEnableParticles
+bEnablePostFx
+bEnablePostFxColorBurn
+bEnablePostFxColorGrading
+bEnablePostFxColorMask
+bEnablePostFxRGBSeparation
+bEnablePostFxSnapshot
+bEnablePostFxSourceDistortion
+bEnablePostFxVignette
+bEnableShowThroughWalls
+bEnableSimplePolygonRender
+bEnableSky
+bEnableSpline
+bEnableSun
+bEnableTerrain
+bEnableToneMapping
+bEnableVignette
+bEnableVolumetricClouds
+bEnableWater
+bEnabled
+bFirstPerson
+bForceLowQuality
+bGenerateAnimTech
+bHasFade
+bHide
+bHighQuality
+bIsBush
+bIsBushStimBreakable
+bLockDistanceX
+bLockDistanceY
+bLockOrientationTowardsLight
+bOverrideClusterObjectMinSize
+bOverrideShadowSamplingOffset
+bSinglePlayer
+bSoft
+bSolo
+bThirdPerson
+bUseStartPosAsReleaseThreshold
+bUseTexture
+bad argument #%d (%s)
+bad argument #%d to '%s' (%s)
+bad code
+bad constant
+bad header
+bad integer
+base out of range
+bbworkspace
+begin
+bfname
+binary string
+binormal
+blnOq
+bloomberg.listener.crash.exe
+bloomberg.reporter.crash.exe
+boolTestFalse
+boolTestTrue
+boolean
+boolean or proxy expected
+border
+bordercolor
+brazilian
+break
+c-aftermath
+calling '%s' on bad self (%s)
+cannot %s %s: %s
+cannot change a protected metatable
+cannot close standard file
+cannot resume %s coroutine
+cannot resume non-suspended coroutine
+cannot use '...' outside a vararg function
+category
+centroid
+changelist
+changelists
+char(%d)
+chunk has too many lines
+chunk has too many syntax levels
+clamp
+class
+clear
+clock
+close
+closed file
+clrColor
+cmdline: %s
+code size overflow
+code too deep
+codedepot
+collect
+collectgarbage
+color
+colorColor
+command
+commandset_results
+common.dat
+common_dbpatch.dat
+common_hd.dat
+comparisonfilter
+compiler
+computeshader
+computeshaderstage
+concat
+concatenate
+config
+connection
+const char*
+constant table overflow
+content
+control structure too long
+coroutine
+coroutine expected
+count
+cpath
+create
+cs-CZ
+currentShader
+currentline
+curveDistanceAlphaCurve
+curveDistanceScaleCurve
+curveOcclusionAlphaCurve
+curveOcclusionScaleCurve
+curveTimeOfDayEmissiveEVCurve
+curveTimeOfDayOpacityCurve
+curveTimeOfDayScaleXCurve
+curveTimeOfDayScaleYCurve
+custom
+czech
+d3d12
+d72bad75-18af-4dca-b5b7-069036d3bbd6
+da-DK
+danish
+data\\
+data_final
+data_tmp
+database
+datapaths
+db/%llu.dbt.fcb
+dbghelp.dll
+de-DE
+debug
+debugName
+debugline
+debugtext
+dedicated
+defaultvalue
+define
+defineSet
+depLoads
+deprecation
+deque<T> too long
+description
+developerOnly
+device.GetD3DDevice()->CreateHeap(&heapDesc, IID_GRAPHICS_PPV_ARGS(&res.D3D12Heap))
+deviceId=%llu, deviceFound=%d, prevDeviceId=%llu
+dialogbundle
+difftime
+disDbObjectName
+disEntryId
+disLibItemId
+disNomadObjectId
+disWorldId
+displayIndex
+distortion factor
+dlc_joseph
+dlc_pagan
+dlc_trials
+dlc_vaas
+dofile
+domain
+domainshader
+domino
+durango
+duration
+dutch
+earlydepthstencil
+editor
+effectFeedback
+effectVibration
+effectWeapon
+elseif
+emptyattr
+en-GB
+en-UK
+en-US
+encounterprefab
+engine/ResourceConfig.xml
+engine/shaders/materialdescriptors/
+engine/shaders/materialdescriptors/material_list.txt
+engine/shaders/materialdescriptors/memorylayouts/
+engine/shaders/parameters/
+engine\\settings\\DefaultEngineServicesConfig.xml
+engine\\settings\\DefaultRenderConfig.xml
+engine\\settings\\EngineDataConversion.xml
+engine\\settings\\OverrideEngineServicesConfig.xml
+engine\\settings\\OverrideRenderConfig.xml
+engine\\shaders
+engine\\shaders\\
+engine\\shaders\\%s\\usage.bin
+engine\\shaders\\SamplerStates.xml
+engine\\shaders\\meta\\CommonOptions.xml
+engine\\shaders\\meta\\commonoptions.xml
+engine\\shaders\\meta\\metafile_list.txt
+engine\\shaders\\usage.bin
+engine_status
+english
+entity
+entityarchetypeslibrary\\%llu.ark.fcb
+enumGSF_Object_Type
+equal
+error
+error in error handling
+error:unknown type
+errorCode
+errorid
+es-419
+es-ES
+es-MX
+escape sequence too large
+event
+exclusion
+external hook
+fBloomIntensity
+fBloomThreshold
+fBloomWidth
+fBroadcastAnimationCycle
+fBroadcastAttenuationDistance
+fCloseFadeDistance
+fCloseFadeLength
+fClusterObjectMinSize
+fContrast
+fDirtyLensBias
+fDirtyLensScale
+fDistance
+fEmissiveEV
+fFadeAngle
+fFadeDistance
+fFadeLength
+fFarSoftDistance
+fFarSoftRange
+fFlattenForce
+fFocalLengthInMm
+fFocusDistance
+fForce
+fForceVariation
+fForceVariationCycle
+fGamma
+fIntensity
+fMaxBlurModifier
+fMidPoint
+fOffsetToCamera
+fOffsetX
+fOffsetY
+fOpacity
+fOverrideEmissiveBias
+fOverrideEyeAdaptation
+fRaindropsLensBias
+fRaindropsLensScale
+fRange
+fReferenceWhiteMultiplier
+fResCompPower
+fRotationOffset
+fScaleNoise
+fScaleX
+fScaleY
+fSizeX
+fSizeY
+fSoftRange
+fTrampleForce
+fVisibilitySize
+failed
+false
+family
+fc2editor
+fc6_main
+fctworlds
+ffNumber
+fi-FI
+field
+field '%s' missing in date table
+file (%p)
+file (closed)
+file descriptor
+file is already closed
+fileTexture
+filename
+finnish
+first
+flash
+flnSu
+float
+float4
+floatTest
+floor
+flush
+foreach
+foreachi
+format
+fr-CA
+fr-FR
+fragment
+french
+frexp
+function
+function arguments expected
+function at line %d has more than %d %s
+function or expression too complex
+function or level expected
+gcinfo
+generated
+generic
+generic.
+generic\\
+geometry
+geometryInputCompressed
+geometryInputs
+geometryshaderstage
+gequal
+german
+get length of
+getfenv
+gethook
+getinfo
+getlocal
+getmetatable
+getregistry
+getupvalue
+gfind
+giP9giP9giP9giP9
+global
+gmatch
+gradGradientTimeOfDayColorMultiplierGradient
+graphics
+greater
+group
+gsfprop
+h%02X\\
+height
+hidAllowedTypes
+hidDistance
+hidEventName
+hidFacesDefs
+hidName
+hidNormal
+hidNumKnots
+hidSharedFace0
+hidSharedFace1
+hidSingleObject
+hidVertex0
+hidVertex1
+hidVertexIndices
+hidVertices
+hid_ArchRefId
+hid_DTCTH_ClassName
+hid_DbRefId
+hid_DbRefT
+https://tetra.bloom.ubisoft.org/
+hu-HU
+hullshader
+hungarian
+iFlareNbDivision
+iFrequency
+iStart
+iStrength
+i\\)7.
+idGenerator
+ige_map
+in function '%s'
+in function <%s:%d>
+in main chunk
+in parallel with
+index
+index out of range
+index.
+input
+insert
+installpkg_%s.dat
+instance
+intTest
+interval is empty
+invalid capture index
+invalid format
+invalid format (repeated flags)
+invalid format (width or precision too long)
+invalid key to 'next'
+invalid level
+invalid long string delimiter
+invalid option
+invalid option '%%%c' to 'format'
+invalid option '%s'
+invalid order function for sorting
+invalid pattern capture
+invalid replacement value (a %s)
+invalid stoi argument
+invalid value
+invalid value (%s) at index %d in table for 'concat'
+invalid_lang_tag
+invalid_language
+ipairs
+iphlpapi.dll
+isColorType
+isSectorAccessible
+isdst
+it-IT
+italian
+items in a constructor
+ja-JP
+japanese
+kernel32.dll
+ko-KO
+ko-KR
+korean
+koreana
+languages/%s/%s.oasis.bin
+lastlinedefined
+layer
+ldexp
+legacy
+lequal
+level
+level must be non-negative
+level out of range
+levels\\
+lexical element too long
+linear
+linedefined
+lines
+linux
+list<T> too long
+loaddep
+loaded
+loaders
+loadfile
+loadlib
+loadstring
+local
+local variables
+locid
+log10
+logicMaterial
+loop in gettable
+loop in settable
+loop or previous error loading module '%s'
+lower
+lua_debug>
+luaopen_%s
+m_Fence.GetD3DFence()->SetEventOnCompletion(m_Fence.GetD3DFenceValue(), m_FenceEvent)
+m_batchInsert
+m_flickeringFadeOutLenght
+m_flickeringIntensity
+m_flickeringLenght
+m_resPackNode
+magfilter
+main function has more than %d %s
+malformed number
+malformed pattern (ends with '%%')
+malformed pattern (missing ']')
+manuallyApproved
+match
+material
+materialList
+materialdescriptor
+max_value
+maxanisotropy
+mblock
+medium
+memory allocation error: block too big
+memorystreambinklist.fcb
+mesh_error
+meta\\
+metadata\\AssetIndexerMetaData.bin
+metafile_list.txt
+metas
+method
+mexican
+microsoft
+minfilter
+mipfilter
+mipmaplodbias
+mirror
+missing '[' after '%%f' in pattern
+mission
+module
+module '%s' not found:%s
+month
+motion cloth
+mouse.
+multicommon
+multiplier
+name conflict for module '%s'
+nameless
+namewhat
+nb-NO
+nbChildren
+nbChildrenLoaded
+ndColor3
+ndColor4
+ndQuat
+ndSoundType
+ndString
+ndVec2
+ndVec2i
+ndVec3
+ndVec4
+ndVector<int>
+nesting of [[...]] is deprecated
+never
+newchild
+newproxy
+nil or table expected
+nl-NL
+no calling environment
+no function environment for tail call at level %d
+no loop to break
+no value
+nointerp
+nointerpolation
+nomad
+nomad.loc
+nopersp
+noperspective
+normal
+normalize
+norwegian
+not enough memory
+not_pack_regs
+notequal
+ntdll.dll
+number
+oasis string
+oasisLineId
+oasisstrings
+object
+objects
+opName
+opacity of the original image
+optimal
+option
+optional
+options
+orbis
+orbis.
+outTest
+output
+override
+package
+pairs
+param
+param1
+param2
+param3
+param4
+param5
+param6
+param7
+parameter
+parameterprovider
+parent
+particle
+patch.dat
+patch_%lang%.dat
+patchshadersobj.dat
+pc_hd\\
+pcall
+perform arithmetic on
+pixel
+pixel offset
+pl-PL
+platform
+point
+polish
+popen
+portuguese
+position
+ppd_service
+ppd_service_slot_
+ppd_service_slotprovider
+prefab
+preload
+preloadpriority
+prev_added_changelist
+print
+prospero
+prospero.
+proto
+provideronly
+psfsgi
+psfsmd
+pspsgi
+pspsmd
+psvscsgi
+psvscsmd
+pt-BR
+pt-PT
+p}?\\`
+quality
+qualityBias
+random
+randomseed
+rawequal
+rawget
+rawset
+raytracingshader
+raytracingshaderstage
+reader function must return a string
+refState
+refreshRateDenominator
+refreshRateNumerator
+remove
+renderPass
+reopen
+repeat
+replaceTexture
+require
+resolve
+resource
+resrefBinkFile
+restart
+result
+resume
+return
+reverse
+ru-RU
+running
+russian
+sample
+sampler2D
+sampler2DArray
+sampler2DArray_handle
+sampler2D_handle
+sampler3D
+sampler3D_handle
+samplerCUBE
+samplerCUBE_handle
+samplerstate
+scale
+scarlett
+schinese
+script
+second
+sectorIdsList
+sectorwatervisibilitytest
+seeall
+selDistanceMode
+selEffectType
+selExpectedResult
+selFactOperation
+selFinalResult
+selLightEffectHideType
+selLightEffectType
+selRandomDelayType
+selSpecialVersionType
+selTreeSize
+selVectorFactOperation
+selWeatherType
+selanotherEnumTest
+select
+selenumTest
+semanticIndex
+semanticName
+setfenv
+sethook
+setlocal
+setmetatable
+setpause
+setstepmul
+settings
+setupvalue
+setvbuf
+shader
+shadermodel
+short_src
+signed int
+signed long
+signed short
+skeleton
+sndreg
+sndtp
+sound
+source
+spanish
+stack overflow
+stack overflow (%s)
+stack traceback:
+stadia.
+standard %s file is closed
+start
+state
+status
+stderr
+stdin
+stdout
+steam.
+stoi argument out of range
+stream
+string
+string length overflow
+string slice too long
+string too long
+string/function/table expected
+stringIDTest
+subDiagrams
+subgraphFullName
+support1Bone
+support8Bones
+suspended
+sv-SE
+swedish
+switch_pro.
+syntax error
+table
+table index is nil
+table overflow
+tail return
+tangent
+tangentSign
+target
+tchinese
+template
+terrainskyocclusion
+tessellation
+testSubObject
+tetra.bloom.ubisoft.org
+texelType
+texture
+th-TH
+this.
+thread
+throttlingGroupId
+throttlingPrecedingOps
+timeOfDayEmissiveEVCurve
+timeOfDayOpacityCurve
+timeOfDayScaleXCurve
+timeOfDayScaleYCurve
+tl\a}x#\a3|
+tmpfile
+tonumber
+too many arguments
+too many arguments to resume
+too many captures
+too many local variables
+too many nested functions
+too many results to resume
+too many results to unpack
+tostring
+tr-TR
+traceback
+turkish
+u32Test
+uFlags
+ui spx
+uiTextureSliceCount
+ultrahigh
+unable to dump given function
+unable to get ModuleFileName
+unbalanced pattern
+undefined
+unexpected end
+unexpected symbol
+unfinished capture
+unfinished long comment
+unfinished long string
+unfinished string
+unknown
+unpack
+unsigned char
+unsigned int
+unsigned long
+unsigned long long
+unsigned short
+until
+upper
+upval
+upvalue
+useDefine
+userdata
+uvChannels
+v3irgb
+v4irgba
+validOverrides
+value
+value expected
+variables in assignment
+vector<T> too long
+vectorSunShadowsRangeOverride
+version
+version.xml
+vertex
+vertexDeclaration
+vertexElement
+veryhigh
+w+OQvr
+warning
+waterskyocclusion
+while
+width
+win32
+windowMode
+wn>Jj
+wolfskin
+world
+worlds\\
+worlds\\%s
+worlds\\installpkg.dat
+worlds\\installpkg_%lang%.dat
+worlds\\installpkg_hd.dat
+worlds_list.xml
+write
+wrong number of arguments
+wrong number of arguments to 'insert'
+x%08llX%s
+x360.
+xboxone.
+xboxseries.
+xi:include
+xpcall
+yield
+zfilter
+zh-CN
+zh-TW
+},\"Metatable\":

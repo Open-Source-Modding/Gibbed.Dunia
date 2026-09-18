@@ -1,4 +1,0 @@
-<class name="CEncounterMarkerManager">
-	<inherit name="CEncounterManager" />
-	<field name="fDistanceUntilMarkerReused" type="Float32" />
-</class>

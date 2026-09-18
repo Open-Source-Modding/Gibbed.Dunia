@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Gibbed.Dunia.GeometryFormats/1.0.0": {
+        "dependencies": {
+          "Gibbed.IO": "1.0.0"
+        },
+        "runtime": {
+          "Gibbed.Dunia.GeometryFormats.dll": {}
+        }
+      },
+      "Gibbed.IO/1.0.0": {
+        "runtime": {
+          "Gibbed.IO.dll": {
+            "assemblyVersion": "1.2.0.0",
+            "fileVersion": "1.2.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Gibbed.Dunia.GeometryFormats/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Gibbed.IO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

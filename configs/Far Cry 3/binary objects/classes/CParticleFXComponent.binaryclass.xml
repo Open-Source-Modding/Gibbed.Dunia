@@ -1,6 +1,0 @@
-<class name="CParticleFXComponent">
-	<inherit name="CEntityComponent" />
-	<field name="bAutoStart" type="Boolean" />
-	<object name="ParticleSystems" />
-	<object name="SavedParticleSystems" />
-</class>

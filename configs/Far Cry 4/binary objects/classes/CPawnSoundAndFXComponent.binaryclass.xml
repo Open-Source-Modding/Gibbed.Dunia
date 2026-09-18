@@ -1,4 +1,0 @@
-<class name="CPawnSoundAndFXComponent">
-	<inherit name="CCreatureSoundAndFXComponent" />
-	<object name="PawnSoundAndFXComponent" />
-</class>

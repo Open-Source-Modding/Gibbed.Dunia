@@ -1,5 +1,0 @@
-<class name="CEntityLayer">
-	<inherit name="CNomadObject" />
-	<field name="layerId" type="Id64" />
-	<field name="layerName" type="String" />
-</class>

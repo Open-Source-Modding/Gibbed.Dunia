@@ -1,8 +1,0 @@
-<class name="SUnlockUIAttributeList">
-	<inherit name="CNomadObject" />
-	<object name="UIAttributes">
-		<object name="UIAttribute">
-			<inherit name="SUnlockUIAttribute" />
-		</object>
-	</object>
-</class>

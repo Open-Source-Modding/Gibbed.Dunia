@@ -1,6 +1,0 @@
-<class name="CCameraMarketingComponent">
-	<inherit name="CCameraComponent" />
-	<field name="fDampRelease" type="Float32" />
-	<field name="fDampPush" type="Float32" />
-	<field name="fFovChangeSpeed" type="Float32" />
-</class>
