@@ -3730,3 +3730,7 @@ MoveBinDataChunk
 ReadListHashes
 ReadListFiles
 CompressedFCB
+CLinearAnimationTrack<ndVec3>
+CLinearAnimationTrack<ndQuat>
+CLinearAnimationTrack<float>
+TimePrecise
