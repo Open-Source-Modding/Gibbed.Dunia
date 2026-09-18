@@ -3723,10 +3723,6 @@ PorosityFactorsArray
 PackedSkinPropertiesColorModeArray
 PackedPropertiesArray
 GlassPackedPropertiesArray
-CLinearAnimationTrack<ndVec3>
-CLinearAnimationTrack<ndQuat>
-CLinearAnimationTrack<float>
-TimePrecise
 hidConvexVolume
 CollectionZoneData
 InstancesSectorData

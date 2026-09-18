@@ -1,9 +1,4 @@
 
-<!-- FCBConverter type variants (hid_DTCTH_ClassName → Key.Value type):
-     6829B7AC = CLinearAnimationTrack<ndVec3>  → Value: Vector3
-     4BAF32F2 = CLinearAnimationTrack<ndQuat>  → Value: Vector4
-     43768129 = CLinearAnimationTrack<float>   → Value: Float32
-     TimePrecise is always Float32. -->
 <file name="animtrackcol" extension="animtrackcol.rml">
 <object hash="01AD984F">
   <field hash="70A1EA5F" name="Version" type="Int32"></field>
