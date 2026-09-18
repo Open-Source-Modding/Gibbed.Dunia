@@ -1,0 +1,20 @@
+<class name="CMaterialSlotsMap">
+	<inherit name="#11E152C8" />
+	<object name="MaterialSlots">
+		<object name="Material">
+			<field hash="F792AA50" type="String" /> <!-- added by Steve64 -->
+			<field name="text_disSlotId" type="String" />
+			<field name="disSlotId" type="Hash32" />
+			<field name="text_matMaterial" type="String" />
+			<field name="matMaterial" type="Hash64" />
+            <field hash="8BBC37A1" type="Hash64" />
+            <field hash="3C0BE965" name="filename" type="Hash64"></field>
+            <field hash="3F9FF7EB" type="BinHex"></field>
+            <field hash="8A496577" name="text_filename" type="String"></field>
+            <field hash="8BA0291C" name="text_type" type="String"></field>
+            <field hash="8CDE5729" name="type" type="Hash32"></field>
+            <field hash="BBFFA3C2" type="String"></field>
+            <field hash="ED4B199F" name="class" type="BinHex"></field>
+		</object>
+	</object>
+</class>

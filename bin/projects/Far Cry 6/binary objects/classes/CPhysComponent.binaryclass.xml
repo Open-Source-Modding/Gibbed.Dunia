@@ -1,0 +1,15 @@
+<class name="CPhysComponent">
+	<inherit name="CEntityComponent" />
+	<field name="text_hidResourceId" type="String" />
+	<field name="hidResourceId" type="Hash64" />
+	<object name="LogicMaterialOverrides">
+		<object name="LogicMaterial">
+			<field hash="C20A23BF" type="String" /> <!-- added by Steve64 -->
+			<field name="logmatLogicMaterial" type="Int32" />
+			<field name="disSlotName" type="Hash32" /> <!-- Steve64: String gave a problem in "fcc_d90_dlc\entityarchetypeslibrary\7817199268895.ark.fcb" -->
+		</object>
+	</object>
+	<object name="PartType" />
+	<object name="Velocity" />
+	<object name="Enable" />
+</class>

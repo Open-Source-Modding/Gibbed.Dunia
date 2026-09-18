@@ -1,0 +1,11 @@
+<!--Steve64 generated XML files based on files/analyze dd. 2017-01-29T17:03:10+00:00 -->
+<file name="5C6253956C657124" extension=".fcb">
+<object hash="6207DF7B">
+  <object hash="2B61F6EF">
+    <object hash="63243E40" name="Archetype">
+      <field hash="11D3633A" name="ID" type="UInt64" />
+      <field hash="8532AF57" type="BinHex" />
+    </object>
+  </object>
+</object>
+</file>

@@ -1,0 +1,5 @@
+<class name="CNomadDbObject">
+	<inherit name="CNomadObject" />
+	<field name="hidSingleObject" type="Boolean" />
+	<field name="bCanBeShared" type="Boolean"  />
+</class>

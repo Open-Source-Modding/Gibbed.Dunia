@@ -1,0 +1,6 @@
+<class name="CPhysRagdollFloating">
+	<inherit name="CNomadObject" />
+	<field name="text_BoneName" type="String" />
+	<field name="BoneName" desc="the name of the bone" type="Hash32" />
+	<field name="fFloatingRatio" desc="between 0 and 1" type="Float32" />
+</class>

@@ -118,7 +118,7 @@ namespace Gibbed.Dunia.ConvertXml
             else if (mode == Mode.ToXML)
             {
                 string inputPath = extras[0];
-                string outputPath = extras.Count > 1 ? extras[1] : Path.ChangeExtension(Path.ChangeExtension(inputPath, null) + "_converted", ".xml");
+                string outputPath = extras.Count > 1 ? extras[1] : Path.ChangeExtension(inputPath, ".xml");
 
                 var rez = new XmlResourceFile();
                 using (var input = File.OpenRead(inputPath))

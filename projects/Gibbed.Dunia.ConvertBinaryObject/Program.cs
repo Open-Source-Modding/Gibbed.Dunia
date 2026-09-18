@@ -168,8 +168,7 @@ namespace Gibbed.Dunia.ConvertBinaryObject
                 }
                 else
                 {
-                    outputPath = Path.ChangeExtension(inputPath, null);
-                    outputPath += "_converted.fcb";
+                    outputPath = Path.ChangeExtension(inputPath, ".fcb");
                 }
 
                 var basePath = Path.ChangeExtension(inputPath, null);
@@ -244,9 +243,8 @@ namespace Gibbed.Dunia.ConvertBinaryObject
                 }
                 else
                 {
-                    outputPath = Path.ChangeExtension(inputPath, null);
-                    outputPath += "_converted";
-                    basePath = outputPath;
+                    outputPath = Path.ChangeExtension(inputPath, ".xml");
+                    basePath = Path.ChangeExtension(inputPath, null);
                     outputPath += ".xml";
                 }
 

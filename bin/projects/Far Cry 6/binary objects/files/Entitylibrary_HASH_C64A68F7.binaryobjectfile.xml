@@ -1,0 +1,19 @@
+<file name="entitylibrary" extension=".fcb">
+	<object hash="C64A68F7">
+	  <object hash="63243E40" name="Archetype">
+		<field hash="1BA57278" type="UInt64"/>
+		<field hash="B435B769" type="String"/>
+		<field hash="2D90D933" type="Hash64"/>
+		<field hash="FE11D138" name="Name" type="String"/>
+		<field hash="15193718" type="String"/>
+	  </object>
+	</object>
+	<object hash="256A1FF9">
+		<field name="disLibItemId" type="Id64" />
+		<field hash="B435B769" type="String"/>
+		<field hash="2D90D933" type="Hash64"/>
+		<field name="Name" type="Hash32" />
+		<field hash="6EA390DB" type="String" />
+		<object name="Entity" class_field_name="hidEntityClass" />
+	</object>
+</file>

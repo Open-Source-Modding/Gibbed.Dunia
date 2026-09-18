@@ -1,0 +1,18 @@
+<class name="CParticleFXComponent">
+	<inherit name="CEntityComponent" />
+	<field name="bAutoStart" type="Boolean" />
+	<object name="ParticleSystems">
+		<object name="ParticleSystem">
+            <field hash="04932318" type="Boolean" />
+            <field hash="089AE5BB" name="text_disFXName" type="String" />
+            <field hash="132A6ADB" name="psEmitter" type="Hash64" />
+            <field hash="326FDA0D" type="BinHex" />
+            <field hash="84CAB079" type="BinHex" />
+            <field hash="94677378" name="bFollowEntity" type="BinHex" />
+            <field hash="ABCAB457" type="BinHex" />
+            <field hash="E025591F" name="text_psEmitter" type="String" />
+            <field hash="FB95D67F" name="disFXName" type="Hash32" />
+		</object>
+	</object>
+	<object name="SavedParticleSystems" />
+</class>

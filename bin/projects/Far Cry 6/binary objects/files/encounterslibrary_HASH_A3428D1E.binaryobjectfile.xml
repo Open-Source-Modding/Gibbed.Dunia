@@ -1,0 +1,77 @@
+
+<file name="encounterslibrary" extension=".fcb">
+<object hash="A3428D1E">
+  <object hash="98048FC1">
+    <object hash="D9C50D17">
+      <field hash="44186B66" name="Count" type="BinHex" />
+      <object hash="0AD3AB2C">
+        <field hash="6F0AC77A" name="ResIds" type="BinHex" />
+        <field hash="9C5891A6" name="TypeId" type="BinHex" />
+      </object>
+    </object>
+  </object>
+  <object hash="9E9A3F4E">
+    <field hash="8EDB0295" name="disLibItemId" type="Id64" />
+    <field hash="B9295CC7" name="hidName" type="String" />
+    <object hash="439B3973">
+      <field hash="06ADCB5A" type="Boolean" />
+      <field hash="1091111E" type="Boolean" />
+      <field hash="21C75A20" type="BinHex" />
+      <field hash="2D2D1925" type="BinHex" />
+      <field hash="47FE9EF6" type="BinHex" />
+      <field hash="5CEFEDAF" type="BinHex" />
+      <field hash="606B87D3" type="BinHex" />
+      <field hash="6070C4A4" type="BinHex" />
+      <field hash="6645A423" type="BinHex" />
+      <field hash="6CA9A83B" type="BinHex" />
+      <field hash="76E5A11A" type="BinHex" />
+      <field hash="7D624C3D" type="BinHex" />
+      <field hash="7E99089B" type="BinHex" />
+      <field hash="80BBCCF4" type="BinHex" />
+      <field hash="92F598B0" type="BinHex" />
+      <field hash="982D4358" type="BinHex" />
+      <field hash="9D4559D8" type="BinHex" />
+      <field hash="9E7C60CD" type="BinHex" />
+      <field hash="A2C08ECF" type="BinHex" />
+      <field hash="BC454D47" type="BinHex" />
+      <field hash="DA1BF56D" type="BinHex" />
+      <field hash="DC49F52C" type="BinHex" />
+      <field hash="DE3318BB" type="BinHex" />
+      <field hash="EB652BA2" type="BinHex" />
+      <field hash="F34DFF9F" type="BinHex" />
+      <field hash="F8CE4A1A" type="BinHex" />
+      <object hash="6B5864AA">
+        <object hash="9D861D36">
+          <field hash="3F364B4D" type="BinHex" />
+          <field hash="45CB9377" type="BinHex" />
+          <field hash="F4366C3F" name="Difficulty" type="BinHex" />
+          <field hash="F83B63EA" type="BinHex" />
+        </object>
+      </object>
+      <object hash="80493E41">
+        <object hash="6DB1AAA5" name="Archetypes">
+          <field hash="17344594" type="BinHex" />
+          <field hash="1BA57278" type="UInt64" />
+        </object>
+      </object>
+      <object hash="BEBF56A7">
+        <field hash="1AFE8264" name="bNoonToSunset" type="Boolean" />
+        <field hash="9784F7E5" type="BinHex" />
+        <field hash="B37C8714" type="BinHex" />
+        <field hash="DF00DDC4" type="BinHex" />
+      </object>
+    </object>
+    <object hash="89701139">
+      <field hash="B5DAEB83" name="ResId" type="BinHex" />
+    </object>
+    <object hash="98048FC1">
+      <object hash="B6444F1A">
+        <field hash="CF8A22E7" type="BinHex" />
+      </object>
+      <object hash="CE0AFD2A">
+        <field hash="CF8A22E7" type="BinHex" />
+      </object>
+    </object>
+  </object>
+</object>
+</file>

@@ -1,0 +1,7 @@
+<class name="CFileDescriptorComponent">
+	<inherit name="CEntityComponent" />
+	<field name="text_fileName" type="String" />
+	<field name="fileName" type="Hash64" />
+	<field name="hidDescriptor" type="Rml" />
+	<field name="hidCrcCheck" type="Hash32" />
+</class>

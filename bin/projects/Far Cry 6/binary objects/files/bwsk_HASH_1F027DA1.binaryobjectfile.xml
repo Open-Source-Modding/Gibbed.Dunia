@@ -1,0 +1,143 @@
+<!--Steve64 generated XML files based on files/analyze dd. 2017-01-29T17:03:10+00:00 -->
+<file name="item" extension=".item.fcb">
+<object hash="1F027DA1" name="NomadObject">
+  <field hash="723A4D89" name="SpawnThreadSafe" type="Boolean" />
+  <object hash="1F027DA1" name="NomadObject">
+    <field hash="CF68E402" name="text_hid_DTCTH_ClassName" type="String" />
+    <field hash="25368426" name="hid_DTCTH_ClassName" type="Hash32" />
+    <field hash="BCCA0A94" name="isVariantList" type="Boolean" />
+    <field hash="733D8EDB" name="isSolvedDNA" type="Boolean" />
+    <object hash="D3262A4A" name="Config">
+		<field hash="2C172EB4" name="text_ResourcePath" type="String" />
+		<field hash="DE65687A" name="ResourcePath" type="Hash64" />
+	</object>	 
+    <object hash="0C3C8F59" name="Slot">
+		<field hash="F96FAF0D" name="text_Name" type="String" />
+		<field hash="FE11D138" name="Name" type="Hash32" />
+	</object>	 
+    <object hash="E0AA2284" name="Versions" />
+    <object hash="7F1ED78E" name="SkinVersions" />
+    <object hash="A31A4BC5" name="SubItems">
+		<object hash="A921C137" name="SubItem">
+		<field hash="CF68E402" name="text_hid_DTCTH_ClassName" type="String" />
+		<field hash="25368426" name="hid_DTCTH_ClassName" type="Hash32" />
+		<field hash="2C172EB4" name="text_ResourcePath" type="String" />
+		<field hash="DE65687A" name="ResourcePath" type="Hash64" />
+		</object>
+    </object>
+    <object hash="8DA0A406" name="EnumValues">
+      <object hash="A7C3834A" name="EnumValue">
+        <field hash="CF68E402" name="text_hid_DTCTH_ClassName" type="String" />
+        <field hash="25368426" name="hid_DTCTH_ClassName" type="Hash32" />
+        <field hash="8A02CD6D" name="text_Value" type="String" />
+        <field hash="DCB67730" name="Value" type="Hash32" />
+        <object hash="0C3C8F59" name="Slot">
+          <field hash="F96FAF0D" name="text_Name" type="String" />
+          <field hash="FE11D138" name="Name" type="Hash32" />
+        </object>
+      </object>	  
+    </object>	
+    <object hash="330B8D6B" name="BoolValues" />
+    <object hash="4AEE31B7" name="Variants" />
+    <object hash="CD86BAE5" name="PrecomputedSkeleton">
+      <field hash="EEE3E0F8" name="GeomResourcesChecksum" type="Hash64" />	
+        <object hash="149B422F" name="Bones">
+        <object hash="95741049" name="Bone">
+          <field hash="A41E65EC" name="BindLocalToParentPosition" type="Vector4" />
+          <field hash="CB4E19E8" name="BindLocalToParentRotation" type="Vector4" />
+          <field hash="E2145A61" name="text_NameID" type="String" />
+          <field hash="F798C392" name="NameID" type="Hash32" />
+          <field hash="A7E8817D" name="ParentIndex" type="Int16" />
+          <field hash="6F36A7AF" name="NumChildren" type="Int16" />
+          <field hash="48E4B20B" name="NumDescendants" type="Int16" />
+          <field hash="9B589D92" name="BoneLODDistance" type="Int16" />
+        </object>
+      </object>
+	  <object hash="C89EBA91" name="BoneIDToBoneIndexList">
+        <object hash="03A09052" name="BoneIDToBone">
+          <field hash="03A09052" name="BoneIDToBone" type="Id64" />
+        </object>
+      </object>	 
+      <object hash="C1E3FA3C" name="ProceduralNodes" />	  	  
+   </object>	
+    <object hash="5068DA43" name="PreSolvedVersions">
+      <object hash="62C10F25" name="PreSolvedVersion">
+        <field hash="CF68E402" name="text_hid_DTCTH_ClassName" type="String" />
+        <field hash="25368426" name="hid_DTCTH_ClassName" type="Hash32" />
+        <field hash="0B42F16C" name="text_Slot" type="String" />
+        <field hash="0C3C8F59" name="Slot" type="Hash32" />
+        <field hash="4623EB5D" name="text_Mesh" type="String" />
+        <field hash="415D9568" name="Mesh" type="Hash64" />
+        <object hash="BA81D3E1" name="Qualifiers" /> 
+        <object hash="0FA60B61" name="MaterialOverrides">
+          <object hash="A998251C" name="MaterialOverride">
+            <field hash="CF68E402" name="text_hid_DTCTH_ClassName" type="String" />
+            <field hash="25368426" name="hid_DTCTH_ClassName" type="Hash32" />
+            <field hash="4C9D9764" name="text_OriginalMat" type="String" />
+            <field hash="5CDB1737" name="OriginalMat" type="Hash64" />
+            <field hash="5A2DC333" name="text_OverrideMat" type="String" /> 			
+            <field hash="4A6B4360" name="OverrideMat" type="Hash64" />	
+            <object hash="F7F32425" name="ParamOverrides">
+              <field hash="CF68E402" name="text_hid_DTCTH_ClassName" type="String" />
+              <field hash="25368426" name="hid_DTCTH_ClassName" type="Hash32" />		
+            <object hash="763CFEA3" name="ColorOverrides">
+                <object hash="EFD54315" name="ColorOverride">
+                  <field hash="CF68E402" name="text_hid_DTCTH_ClassName" type="String" />
+                  <field hash="25368426" name="hid_DTCTH_ClassName" type="Hash32" />
+                  <field hash="7DBD661C" name="text_ParamName" type="String" />
+                  <field hash="8EB255D8" name="ParamName" type="Hash32" />
+                  <field hash="19E91DD3" name="Input" type="BinHex" />
+                  <field hash="EFF42612" name="UseOverrideValue" type="BinHex" />
+                <object hash="B3193FBF" name="ColorValue">
+                    <field hash="A79767ED" name="Color" type="Vector4" />
+                    <field hash="E8C0431D" name="Multiply" type="BinHex" />
+                    <field hash="CA6F3C74" name="MultiplyValue" type="Float32" />
+                    <field hash="4CA341E8" name="Normalize" type="BinHex" />
+                </object>
+            </object>
+            </object>	
+            <object hash="F7F32425" name="ParamOverrides"/>
+            <object hash="A06C11AA" name="TextureOverrides" />
+            <object hash="840B9F25" name="IntOverrides" >
+			    <object hash="BAB48B46" name="IntOverride">
+                  <field hash="CF68E402" name="text_hid_DTCTH_ClassName" type="String" />
+                  <field hash="25368426" name="hid_DTCTH_ClassName" type="Hash32" />
+                  <field hash="7DBD661C" name="text_ParamName" type="String" />
+                  <field hash="8EB255D8" name="ParamName" type="Hash32" />
+                  <field hash="19E91DD3" name="Input" type="BinHex" />
+                  <field hash="EFF42612" name="UseOverrideValue" type="BinHex" />
+                  <field hash="025EFEED" name="IntValue" type="BinHex" />
+                </object>
+            </object>
+			<object hash="67A375B1" name="FloatOverrides">
+				<object hash="71550DCE" name="FloatOverride">
+                  <field hash="CF68E402" name="text_hid_DTCTH_ClassName" type="String" />
+                  <field hash="25368426" name="hid_DTCTH_ClassName" type="Hash32" />
+                  <field hash="7DBD661C" name="text_ParamName" type="String" />
+                  <field hash="8EB255D8" name="ParamName" type="Hash32" />
+                  <field hash="19E91DD3" name="Input" type="BinHex" />
+                  <field hash="EFF42612" name="UseOverrideValue" type="BinHex" />
+                  <field hash="6454579D" name="FloatValue" type="Float32" />
+                </object>				
+            </object>
+            <object hash="8E67A2E3" name="Float2Overrides" />
+            <object hash="8379D2A4" name="Float4Overrides" />
+            <object hash="2F805BEC" name="BoolOverrides">
+				<object hash="E04D1B69" name="BoolOverride">
+                  <field hash="CF68E402" name="text_hid_DTCTH_ClassName" type="String" />
+                  <field hash="25368426" name="hid_DTCTH_ClassName" type="Hash32" />
+                  <field hash="7DBD661C" name="text_ParamName" type="String" />
+                  <field hash="8EB255D8" name="ParamName" type="Hash32" />
+                  <field hash="19E91DD3" name="Input" type="BinHex" />
+                  <field hash="EFF42612" name="UseOverrideValue" type="BinHex" />
+                  <field hash="929ACF7A" name="BoolBalue" type="BinHex" />
+                </object>		  
+		    </object>	 
+		</object>	 
+	</object>	 
+</object>	 
+</object>	 
+</object>	 
+</object>	 
+</object>	 
+</file>

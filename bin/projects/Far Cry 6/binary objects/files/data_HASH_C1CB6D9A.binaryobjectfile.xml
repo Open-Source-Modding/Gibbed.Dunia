@@ -1,0 +1,1151 @@
+<!--Steve64 generated XML files based on files/analyze dd. 2017-01-29T20:26:49+00:00 -->
+<file name="data" extension=".fcb">
+<object hash="C1CB6D9A" name="WorldSector">
+  <field hash="2ABD43F2" name="Id" type="UInt32" />
+  <field hash="B7B2364B" name="X" type="UInt32" />
+  <field hash="C0B506DD" name="Y" type="UInt32" />
+  <object hash="494C09F2" name="MissionLayer">
+    <field hash="017AEDD9" type="BinHex" />
+    <field hash="40F01A7D" type="BinHex" />
+    <field hash="A9A085C4" type="BinHex" />
+    <field hash="B83F9910" type="BinHex" />
+    <field hash="B88F49FD" type="BinHex" />
+    <field hash="F39352CD" type="BinHex" /> <!-- Possibly Rml, but fcc_main worldsector_1009 doesn't work -->
+    <object hash="0984415E" name="Entity">
+      <field hash="052A103F" name="disEntityId" type="UInt64" />
+      <field hash="1875AE89" name="hidEntityClass" type="Hash32" />
+      <field hash="1DD79FAD" type="String" />
+      <field hash="252EEDD6" type="BinHex" />
+      <field hash="2D90D933" type="Hash64" />
+      <field hash="32D620A2" name="hidPos" type="Vector3" />
+      <field hash="3629E73B" name="fHeight" type="Float32" />
+      <field hash="4073DD31" name="hidShapePoints" type="BinHex" />
+      <field hash="6553B60B" name="hidAngles" type="Vector3" />
+      <field hash="6760B008" name="selGameRegionType" type="BinHex" />
+      <field hash="7D7860C6" name="hidPos_precise" type="Vector3" />
+      <field hash="ADC3BD93" name="hidResourceCount" type="Int32" />
+      <field hash="B435B769" type="String" />
+      <field hash="B554978A" name="hidConstEntity" type="Boolean" />
+      <field hash="B9295CC7" name="hidName" type="String" />
+      <field hash="C74190B6" type="BinHex" />
+      <field hash="D2B3429E" name="text_hidEntityClass" type="String" />
+      <field hash="E9DCE64C" name="hidIsLargeEntity" type="Boolean" />
+      <field hash="F5C425C9" name="bEnabled" type="Boolean" />
+      <field hash="FB4CAFEF" type="BinHex" />
+      <object hash="1A06028B">
+        <field hash="64C8F74B" type="BinHex" />
+      </object>
+      <object hash="58E1D3EC" name="Children">
+        <object hash="E3727B2D" name="Child">
+          <field hash="11D3633A" name="ID" type="Int64" />
+          <field hash="FE11D138" name="Name" type="String" />
+        </object>
+      </object>
+      <object hash="A115F62D" name="Components">
+        <object hash="035982C6" name="CGraphicComponent">
+          <field hash="00C2DD80" type="BinHex" />
+          <field hash="0315431A" name="bCastAmbientShadow" type="Boolean" />
+          <field hash="1BBE7E7E" name="bReceiveShadow" type="Boolean" />
+          <field hash="22CB46E0" name="bUseCurrentSkin" type="Boolean" />
+          <field hash="2CAEC0CE" name="bShowInReflection" type="Boolean" />
+          <field hash="3182766C" name="text_fileModel" type="String" />
+          <field hash="3D5AC03A" name="hidMeshName" type="String" />
+          <field hash="430471E5" name="bBackDrop" type="Boolean" />
+          <field hash="431EBA8E" name="hidComponentClassName" type="String" />
+          <field hash="5A39DD06" name="bHighLight" type="Boolean" />
+          <field hash="5AEB5E41" name="bAllowCullBySize" type="Boolean" />
+          <field hash="6CF79F05" name="hidIndex" type="Int32" />
+          <field hash="9EE14321" name="olgLightGroup" type="Int32" />
+          <field hash="A44AF3A2" name="bCastShadow" type="Boolean" />
+          <field hash="C28D45A8" name="fileModel" type="Hash64" />
+          <field hash="C768C8C1" name="bAlwaysShowInReflection" type="Boolean" />
+          <field hash="C7B76B1D" name="bMotionBlurExclusion" type="Boolean" />
+          <field hash="CB8FE15B" name="matIntuitionMaterialName" type="String" />
+          <field hash="D644428B" name="bShowThroughWithFlashing" type="Boolean" />
+          <field hash="E00D6FE5" name="bLodDitheringEnable" type="Boolean" />
+          <field hash="E6DC21EC" name="currentSkin" type="Hash32" />
+          <field hash="ECA8B839" type="BinHex" />
+          <field hash="F41DCC4F" type="BinHex" />
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+          <object hash="0C176DC5" />
+          <object hash="0FA60B61" name="MaterialOverrides">
+            <field hash="8ACC3499" type="BinHex" />
+            <object hash="B3864C0F" name="MaterialSlots">
+              <object hash="85C817C3" name="Material">
+                <field hash="83475FEE" name="matMaterial" type="Hash64" />
+                <field hash="8BBC37A1" type="Hash64" />
+                <field hash="9301DFBD" name="text_matMaterial" type="String" />
+              </object>
+            </object>
+          </object>
+          <object hash="672DC5E3" />
+          <object hash="8576A3A6" name="MaterialLightSwitch">
+            <field hash="8ACC3499" type="BinHex" />
+            <object hash="B3864C0F" name="MaterialSlots" />
+          </object>
+          <object hash="A8ADABEC" name="object">
+            <field hash="3D5AC03A" name="hidMeshName" type="String" />
+            <field hash="6CF79F05" name="hidIndex" type="Int32" />
+            <field hash="8D88DEAA" name="hidDetailObject" type="Boolean" />
+            <field hash="8E85C831" name="hidNodeNameLOD0" type="Hash32" />
+            <field hash="C28D45A8" name="fileModel" type="Hash64" />
+            <field hash="F1E66E05" name="hidNodeName" type="Hash32" />
+          </object>
+          <object hash="E1FF9F74" />
+          <object hash="FB7D2CD7" name="SkinList">
+            <object hash="A24BC720" name="Skin">
+              <field hash="5E237E06" name="name" type="BinHex" />
+              <field hash="A3E8C329" name="bIsExcludedFromRandomSkin" type="Boolean" />
+              <field hash="EDC1CA84" name="locSkinNameId" type="Int32" />
+              <object hash="0FA60B61" name="MaterialOverrides">
+                <object hash="B3864C0F" name="MaterialSlots" />
+              </object>
+            </object>
+          </object>
+        </object>
+        <object hash="037FB709" name="CStaticPhysComponent">
+          <field hash="0C838A6E" name="bAnimateable" type="Boolean" />
+          <field hash="18308F01" type="Boolean" />
+          <field hash="245BEC5F" type="BinHex" />
+          <field hash="28429047" type="BinHex" />
+          <field hash="2E50EB85" name="hidResourceId" type="Hash64" />
+          <field hash="349D3B10" type="BinHex" />
+          <field hash="387811D0" name="bLargeEntity" type="BinHex" />
+          <field hash="527E7674" name="text_hidResourceId" type="String" />
+          <field hash="5BABAAC6" name="bUseMaxTerrainSlope" type="BinHex" />
+          <field hash="622700D2" type="BinHex" />
+          <field hash="703D17B2" type="BinHex" />
+          <field hash="706E541C" type="BinHex" />
+          <field hash="70AC1CCF" type="BinHex" />
+          <field hash="A8699EF0" name="hidResourceIndex" type="Int32" />
+          <field hash="AAFA0C31" type="BinHex" />
+          <field hash="BF1EB181" type="BinHex" />
+          <field hash="C784A41F" type="BinHex" />
+          <field hash="CFA0AA41" name="bIgnoreInExplosions" type="BinHex" />
+          <field hash="DFF6CC88" type="BinHex" />
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+          <object hash="18327EA1" name="LogicMaterialOverrides">
+            <object hash="A39C4461" name="LogicMaterial">
+              <field hash="876B6B21" name="logmatLogicMaterial" type="Int32" />
+              <field hash="C20A23BF" type="String" />
+              <field hash="D24CA3EC" name="disSlotName" type="Hash32" /><!-- String in FC3 map-->
+            </object>
+          </object>
+          <object hash="C6CC131E">
+            <field hash="8ACC3499" type="BinHex" />
+          </object>
+        </object>
+        <object hash="049C7D70" name="CFileDescriptorComponent">
+          <field hash="2A7BCA49" name="text_fileName" type="String" />
+          <field hash="9C39465B" name="fileName" type="Hash64" />
+          <field hash="A137E136" name="hidDescriptor" type="Rml" />
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+        </object>
+        <object hash="084769B5">
+          <object hash="4EA4BBD9" name="Particles">
+            <field hash="62DEF0AA" name="bAutoStart" type="Boolean" />
+          </object>
+        </object>
+        <object hash="0D18D3C8">
+          <field hash="17464871" type="BinHex" />
+          <field hash="446C504A" name="vectorSize" type="BinHex" />
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+          <object hash="AE1EAC87" name="ConnectionsList" />
+          <object hash="C5205222" name="EntrancesList">
+            <object hash="7EAC03DF" name="Entrance">
+              <field hash="33EBF13A" name="entEntrance" type="BinHex" />
+            </object>
+          </object>
+        </object>
+        <object hash="154000CA">
+          <field hash="0EB495F5" type="Boolean" />
+          <field hash="B485C6C7" type="BinHex" />
+          <field hash="B890B4C8" type="BinHex" />
+          <field hash="D79BA938" name="vectorScale" type="BinHex" />
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+          <object hash="43465BFA">
+            <object hash="20D8E03D">
+              <field hash="A3E5433F" type="BinHex" />
+              <field hash="AC497D21" name="disName" type="BinHex" />
+              <field hash="C13CBD7A" type="BinHex" />
+              <object hash="369B9A98">
+                <object hash="091C008F" name="Faces">
+                  <object hash="A526D459">
+                    <field hash="26042805" type="BinHex" />
+                    <field hash="2D2B1E3D" type="BinHex" />
+                  </object>
+                </object>
+                <object hash="70AB38D1">
+                  <object hash="EE5D7C03">
+                    <field hash="EE5D7C03" type="BinHex" />
+                  </object>
+                </object>
+                <object hash="7E6B22B1">
+                  <object hash="D5347C58">
+                    <field hash="028C8943" type="BinHex" />
+                    <field hash="200C5A04" type="BinHex" />
+                    <field hash="570B6A92" type="BinHex" />
+                    <field hash="758BB9D5" type="BinHex" />
+                  </object>
+                </object>
+                <object hash="EB03720E">
+                  <object hash="60BD37FD">
+                    <object hash="7C018510">
+                      <object hash="EE5D7C03">
+                        <field hash="EE5D7C03" type="BinHex" />
+                      </object>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <object hash="EF00AC10">
+                <object hash="D4CF0BBB">
+                  <field hash="49BF3666" name="selType" type="Enum" />
+                  <object hash="7E2B928C">
+                    <field hash="1347491A" type="BinHex" />
+                    <field hash="1B62E853" type="Boolean" />
+                    <field hash="22F4E787" type="String" />
+                    <field hash="25368426" name="hid_DTCTH_ClassName" type="Hash32" />
+                    <field hash="39C4FF40" type="BinHex" />
+                    <field hash="3BD68D8B" name="sndReverb" type="BinHex" />
+                    <field hash="6F0F3C3B" type="BinHex" />
+                    <field hash="798255B6" type="BinHex" />
+                    <field hash="8D1C55FF" type="BinHex" />
+                    <field hash="A902E427" type="BinHex" />
+                    <field hash="CF68E402" name="text_hid_DTCTH_ClassName" type="String" />
+                    <field hash="DAEA3C74" type="BinHex" />
+                    <field hash="E3D51AF2" type="String" />
+                    <field hash="F558C318" type="BinHex" />
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+        <object hash="1C222C20">
+          <field hash="3D8B41CE" type="BinHex" />
+          <field hash="7C064F01" type="BinHex" />
+          <field hash="88652F8A" type="BinHex" />
+          <field hash="A032C7D9" type="BinHex" />
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+          <object hash="112C7809">
+            <field hash="1B042A4B" type="BinHex" />
+            <field hash="3268814C" type="BinHex" />
+            <field hash="4A868419" type="BinHex" />
+            <field hash="6EB82531" type="BinHex" />
+            <field hash="83475FEE" name="matMaterial" type="Hash64" />
+            <field hash="BFE0C705" type="BinHex" />
+            <field hash="C30D4AFC" type="BinHex" />
+            <field hash="DF05FFCF" type="BinHex" />
+            <object hash="8D670A2E">
+              <object hash="606DAB4A">
+                <field hash="6BBB9E69" name="Info" type="BinHex" />
+                <field hash="E74B3F4E" type="BinHex" />
+                <field hash="F5C425C9" name="bEnabled" type="Boolean" />
+              </object>
+            </object>
+          </object>
+          <object hash="F68F03C7" name="Sounds">
+            <field hash="3173C819" name="sndGetIn" type="String" />
+            <field hash="372B705B" type="String" />
+            <field hash="4C8B3688" name="sndGetOut" type="String" />
+            <field hash="5575CAEE" type="String" />
+            <field hash="8FE662AD" name="sndtpSoundType" type="Int32" />
+            <field hash="9739914E" type="String" />
+            <field hash="E3D60A59" type="String" />
+            <field hash="F6AEDDE2" name="sndmlSpeedMultilayer" type="BinHex" />
+          </object>
+        </object>
+        <object hash="2D40B333">
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+          <object hash="F721F484" name="Covers">
+            <object hash="4CC9A9C1" name="Cover">
+              <field hash="5AA72CCC" type="BinHex" />
+              <field hash="8DCCF32F" type="BinHex" />
+              <field hash="B554C78E" type="BinHex" />
+              <field hash="C7C8897C" type="BinHex" />
+              <object hash="BB6282B1">
+                <object hash="4F172AFF" name="hidState">
+                  <object hash="618C7EC1">
+                    <field hash="6252FDFF" name="State" type="BinHex" />
+                    <object hash="36E7B43E" />
+                    <object hash="9BDE1331" />
+                    <object hash="F5506EC1">
+                      <object hash="50C0E602">
+                        <field hash="49BF3666" name="selType" type="Enum" />
+                        <field hash="A41DBF02" name="Next" type="BinHex" />
+                        <field hash="B894A04C" name="Pos" type="Vector3" />
+                        <field hash="F2E1E039" name="Height" type="BinHex" />
+                        <field hash="FBB9FF8A" type="BinHex" />
+                      </object>
+                    </object>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+        <object hash="2D603C0D" name="CDynamicLightComponent">
+          <field hash="05375BA4" name="fFlickeringFrequency" type="BinHex" />
+          <field hash="0F164929" type="BinHex" />
+          <field hash="11861037" type="BinHex" />
+          <field hash="210D364E" name="bUseTimeOfDay" type="Boolean" />
+          <field hash="24DEE30A" type="BinHex" />
+          <field hash="2EFAFA98" name="fFadeOutTime" type="Float32" />
+          <field hash="48E57BA6" name="fFlickeringAmplitude" type="BinHex" />
+          <field hash="4D1C67A7" type="BinHex" />
+          <field hash="500F629A" name="clrColor" type="Vector3" />
+          <field hash="66C2B87B" name="fFadeInTime" type="Float32" />
+          <field hash="68F738EF" type="String" />
+          <field hash="6BD475E8" name="hidType" type="Int32" />
+          <field hash="74F99E54" type="BinHex" />
+          <field hash="76266073" type="BinHex" />
+          <field hash="788F7BDA" name="fInnerAngle" type="BinHex" />
+          <field hash="7A01519D" type="BinHex" />
+          <field hash="7F10B812" name="fFlickeringNoise" type="BinHex" />
+          <field hash="97053A77" name="fTurnOffFallOff" type="BinHex" />
+          <field hash="B23932DE" name="fIntensity" type="Float32" />
+          <field hash="B67FFAD2" name="fOuterAngle" type="BinHex" />
+          <field hash="C17FC318" name="fTurnOffDistance" type="BinHex" />
+          <field hash="D9B784E6" type="String" />
+          <field hash="F5C425C9" name="bEnabled" type="Boolean" />
+          <field hash="F8186C6E" name="fRadius" type="Float32" />
+          <field hash="F838CAF7" type="String" />
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+          <object hash="7AA93603">
+            <field hash="8E7E0A02" type="BinHex" />
+            <object hash="0D05E14C" />
+            <object hash="5ADCF592">
+              <object hash="00720284" name="Plane">
+                <field hash="1D775834" name="value" type="Float32" />
+              </object>
+            </object>
+          </object>
+        </object>
+        <object hash="30AADACC">
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+          <object hash="439B3973">
+            <field hash="06ADCB5A" type="Boolean" />
+            <field hash="1091111E" type="Boolean" />
+            <field hash="21C75A20" type="BinHex" />
+            <field hash="2D2D1925" type="BinHex" />
+            <field hash="47FE9EF6" type="BinHex" />
+            <field hash="5CEFEDAF" type="BinHex" />
+            <field hash="606B87D3" type="BinHex" />
+            <field hash="6070C4A4" type="BinHex" />
+            <field hash="6645A423" type="BinHex" />
+            <field hash="6CA9A83B" type="BinHex" />
+            <field hash="76E5A11A" type="BinHex" />
+            <field hash="7D624C3D" type="BinHex" />
+            <field hash="7E99089B" type="BinHex" />
+            <field hash="80BBCCF4" type="BinHex" />
+            <field hash="92F598B0" type="BinHex" />
+            <field hash="982D4358" type="BinHex" />
+            <field hash="9D4559D8" type="BinHex" />
+            <field hash="9E7C60CD" type="BinHex" />
+            <field hash="A2C08ECF" type="BinHex" />
+            <field hash="BC454D47" type="BinHex" />
+            <field hash="DA1BF56D" type="BinHex" />
+            <field hash="DC49F52C" type="BinHex" />
+            <field hash="DE3318BB" type="BinHex" />
+            <field hash="EB652BA2" type="BinHex" />
+            <field hash="F34DFF9F" type="BinHex" />
+            <field hash="F8CE4A1A" type="BinHex" />
+            <object hash="6B5864AA" />
+            <object hash="80493E41">
+              <object hash="6DB1AAA5" name="Archetypes">
+                <field hash="17344594" type="BinHex" />
+                <field hash="1BA57278" type="UInt64" />
+              </object>
+            </object>
+            <object hash="995515F0">
+              <field hash="7DBF1598" type="BinHex" />
+              <object hash="14EE5C8E">
+                <object hash="E06AB149" name="Variation">
+                  <field hash="7E99089B" type="BinHex" />
+                  <field hash="DDE1C00A" type="BinHex" />
+                  <object hash="9B59A94E" />
+                </object>
+              </object>
+            </object>
+            <object hash="BEBF56A7">
+              <field hash="1AFE8264" type="Boolean" />
+              <field hash="9784F7E5" type="BinHex" />
+              <field hash="B37C8714" type="BinHex" />
+              <field hash="DF00DDC4" type="BinHex" />
+            </object>
+          </object>
+        </object>
+        <object hash="317002BD">
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+          <object hash="0CFBC54D">
+            <field hash="86E66FB4" type="BinHex" />
+          </object>
+          <object hash="0FA3067F" name="Animation">
+            <field hash="121FB82B" type="Boolean" />
+          </object>
+          <object hash="2765EE2E">
+            <object hash="C5C13DE1">
+              <field hash="E699C051" type="BinHex" />
+              <object hash="485BB638" name="Rules">
+                <object hash="E6EA03F2">
+                  <field hash="49BF3666" name="selType" type="Enum" />
+                  <object hash="E6EA03F2">
+                    <field hash="011F0879" type="BinHex" />
+                    <field hash="9346C635" type="BinHex" />
+                    <object hash="6585F68A">
+                      <field hash="56A6598D" type="BinHex" />
+                      <field hash="C4A95775" type="BinHex" />
+                    </object>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object hash="42CDDD54" name="Dialog">
+            <object hash="3B3CA4EE">
+              <field hash="12DEB816" type="BinHex" />
+              <field hash="64448690" type="BinHex" />
+              <field hash="83EC6C6D" name="SoundID" type="BinHex" />
+              <field hash="D5D636C1" name="Trigger" type="BinHex" />
+            </object>
+            <object hash="D97597F8">
+              <field hash="12DEB816" type="BinHex" />
+              <field hash="64448690" type="BinHex" />
+              <field hash="83EC6C6D" name="SoundID" type="BinHex" />
+              <field hash="D5D636C1" name="Trigger" type="BinHex" />
+            </object>
+            <object hash="F2F178BF">
+              <object hash="14EDDF87">
+                <field hash="9B22EAB8" type="BinHex" />
+                <field hash="F75CCC0C" type="BinHex" />
+              </object>
+            </object>
+          </object>
+          <object hash="6086515F">
+            <field hash="10D72A9D" type="BinHex" />
+            <field hash="EAC76C67" type="BinHex" />
+          </object>
+          <object hash="61D1D79A">
+            <field hash="8789C2F2" type="BinHex" />
+            <field hash="9179E290" type="BinHex" />
+            <object hash="60FE278F">
+              <object hash="41C32ACA" name="Target">
+                <field hash="7F2C5982" type="BinHex" />
+                <field hash="DDBA1D9D" type="BinHex" />
+              </object>
+            </object>
+          </object>
+          <object hash="63700E34">
+            <field hash="011F0879" type="BinHex" />
+            <field hash="3F5ED5F6" type="BinHex" />
+            <field hash="6DFAE523" type="BinHex" />
+            <field hash="D69EF760" type="BinHex" />
+          </object>
+          <object hash="65EDFB89">
+            <field hash="68BDBB33" type="BinHex" />
+            <field hash="B58F8386" type="BinHex" />
+            <field hash="DB6797EA" type="BinHex" />
+          </object>
+          <object hash="7C161A2B" name="Idle">
+            <field hash="7F247B73" type="BinHex" />
+            <field hash="D6AB50E4" type="BinHex" />
+            <field hash="FB81BAC9" type="BinHex" />
+          </object>
+          <object hash="7E862352">
+            <field hash="16EA4B52" type="BinHex" />
+            <object hash="90EA3449">
+              <field hash="E00DF099" type="BinHex" />
+              <object hash="C574A48F">
+                <field hash="9BD0BE71" name="Priority" type="UInt32" />
+                <object hash="039494CB">
+                  <field hash="BF207B8F" name="selOperation" type="BinHex" />
+                  <object hash="DCB67730" name="Value">
+                    <field hash="01197BBD" type="Boolean" />
+                    <field hash="238739CA" type="Boolean" />
+                    <field hash="3A9069A6" type="BinHex" />
+                    <field hash="453559F0" type="BinHex" />
+                    <field hash="8D0620E9" type="BinHex" />
+                    <field hash="E72FCAB8" type="BinHex" />
+                  </object>
+                </object>
+                <object hash="2FF5DACD">
+                  <field hash="BF207B8F" name="selOperation" type="BinHex" />
+                  <object hash="DCB67730" name="Value">
+                    <field hash="01197BBD" type="Boolean" />
+                    <field hash="238739CA" type="Boolean" />
+                    <field hash="3A9069A6" type="BinHex" />
+                    <field hash="453559F0" type="BinHex" />
+                    <field hash="8D0620E9" type="BinHex" />
+                    <field hash="E72FCAB8" type="BinHex" />
+                  </object>
+                </object>
+                <object hash="4133DDEA">
+                  <field hash="BF207B8F" name="selOperation" type="BinHex" />
+                  <object hash="DCB67730" name="Value">
+                    <field hash="01197BBD" type="Boolean" />
+                    <field hash="238739CA" type="Boolean" />
+                    <field hash="3A9069A6" type="BinHex" />
+                    <field hash="453559F0" type="BinHex" />
+                    <field hash="8D0620E9" type="BinHex" />
+                    <field hash="E72FCAB8" type="BinHex" />
+                  </object>
+                </object>
+              </object>
+            </object>
+            <object hash="AC138008" name="Army">
+              <field hash="639BC87F" type="BinHex" />
+              <field hash="E5ECD4F4" type="BinHex" />
+            </object>
+          </object>
+          <object hash="8AFDE6AE" name="Combat">
+            <field hash="10CAEF9B" type="Boolean" />
+            <field hash="18A4F735" type="BinHex" />
+            <field hash="191DE256" type="Boolean" />
+            <field hash="1F033217" type="Boolean" />
+            <field hash="2306C0AE" type="BinHex" />
+            <field hash="35A9EF6F" type="BinHex" />
+            <field hash="3CCDD0D7" type="BinHex" />
+            <field hash="426F8945" type="BinHex" />
+            <field hash="5F9B4720" type="BinHex" />
+            <field hash="6E56962A" type="BinHex" />
+            <field hash="8A1BB66F" type="BinHex" />
+            <field hash="941CEE21" type="BinHex" />
+            <field hash="9659090B" type="BinHex" />
+            <field hash="9B5ADC38" type="Float32" />
+            <field hash="AA519F15" type="BinHex" />
+            <field hash="B352E6E8" type="BinHex" />
+            <field hash="EADE2298" type="BinHex" />
+            <field hash="FFFAED85" type="BinHex" />
+            <object hash="8A762CCF">
+              <field hash="03AA89A5" type="Boolean" />
+              <field hash="116C3DF1" type="Boolean" />
+              <field hash="81512E12" type="BinHex" />
+              <field hash="9A914B18" type="BinHex" />
+              <field hash="E41F280A" type="BinHex" />
+            </object>
+          </object>
+          <object hash="97AB596B">
+            <field hash="09208AA0" type="Boolean" />
+            <field hash="885B24F1" type="BinHex" />
+            <object hash="E5574D48">
+              <field hash="9BD0BE71" name="Priority" type="UInt32" />
+              <object hash="789B1AA1">
+                <object hash="BCFF8FB4" name="Burst">
+                  <field hash="BD4D465B" type="BinHex" />
+                  <object hash="49EE4486">
+                    <field hash="BF207B8F" name="selOperation" type="BinHex" />
+                    <field hash="DCB67730" name="Value" type="BinHex" />
+                  </object>
+                  <object hash="D99D546C">
+                    <field hash="BF207B8F" name="selOperation" type="BinHex" />
+                    <field hash="DCB67730" name="Value" type="BinHex" />
+                  </object>
+                </object>
+                <object hash="BDA2815D">
+                  <field hash="BF207B8F" name="selOperation" type="BinHex" />
+                  <field hash="DCB67730" name="Value" type="BinHex" />
+                </object>
+              </object>
+            </object>
+          </object>
+          <object hash="A30B01C8" name="Mood">
+            <field hash="D5808A53" type="BinHex" />
+          </object>
+          <object hash="B35CDE91">
+            <field hash="2D787F98" type="Float32" />
+            <field hash="DF3C2E1C" type="BinHex" />
+          </object>
+          <object hash="F5D7855E">
+            <field hash="4491D715" type="BinHex" />
+            <object hash="8F9C8C7A">
+              <field hash="881126B8" type="BinHex" />
+              <field hash="99D0B39F" type="BinHex" />
+              <field hash="B1B459A9" type="BinHex" />
+              <field hash="ED18EFCC" type="BinHex" />
+            </object>
+          </object>
+          <object hash="F7C13C46" name="Groups">
+            <object hash="AC016BC1" name="Group">
+              <field hash="B219A218" type="BinHex" />
+            </object>
+          </object>
+          <object hash="FFBB2A12">
+            <field hash="0C8D10FE" type="Boolean" />
+            <field hash="45D30DB1" type="BinHex" />
+            <field hash="48BE054C" type="BinHex" />
+            <field hash="7114478D" type="BinHex" />
+            <field hash="93C1F910" type="BinHex" />
+            <field hash="F85619C9" type="BinHex" />
+          </object>
+        </object>
+        <object hash="35FD2B44" name="CSoundComponent">
+          <field hash="8EA089E8" name="bStopSoundOnStateChange" type="Boolean" />
+          <field hash="8F8A0C11" name="bAlwaysUpdate" type="Boolean" />
+          <field hash="EEACC4D5" name="sndptSoundPoint" type="BinHex" />
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+        </object>
+        <object hash="40B958BA" name="CRigidPhysComponent">
+          <object hash="18327EA1" name="LogicMaterialOverrides">
+            <object hash="A39C4461" name="LogicMaterial">
+              <field hash="876B6B21" name="logmatLogicMaterial" type="Int32" />
+              <field hash="C20A23BF" type="String" />
+              <field hash="D24CA3EC" name="disSlotName" type="Hash32" />
+            </object>
+          </object>
+          <object hash="C6CC131E">
+            <field hash="8ACC3499" type="BinHex" />
+          </object>
+        </object>
+        <object hash="42CD39BC">
+          <object hash="F7A3772D">
+            <object hash="EAE0B274" name="Entry">
+              <field hash="25368426" name="hid_DTCTH_ClassName" type="Hash32" />
+              <field hash="307475CE" type="BinHex" />
+              <field hash="3FC01940" type="BinHex" />
+              <field hash="A184EEE8" type="BinHex" />
+              <field hash="B1C26EBB" type="BinHex" />
+              <field hash="CF68E402" name="text_hid_DTCTH_ClassName" type="String" />
+              <object hash="74E0B8FC" />
+              <object hash="9CEB0EB9" name="Binding">
+                <field hash="34306B62" name="EntityID" type="BinHex" />
+                <field hash="9555ED04" type="BinHex" />
+              </object>
+            </object>
+          </object>
+        </object>
+        <object hash="48E09FE5" name="CEditableEventComponent">
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+        </object>
+        <object hash="4BBBAA06">
+          <field hash="20F95E69" type="BinHex" />
+          <field hash="92128295" type="BinHex" />
+        </object>
+        <object hash="51B7C30D">
+          <field hash="C48BEE15" name="bEnable" type="Boolean" />
+        </object>
+        <object hash="53D53912" name="CNewParticlesComponent">
+          <field hash="1106289E" name="fLifeTimeRatio" type="Float32" />
+          <field hash="1943B130" type="String" />
+          <field hash="34EBDC32" name="fAlphaRatio" type="Float32" />
+          <field hash="399835F0" type="BinHex" />
+          <field hash="45193060" name="fSizeYRatio" type="Float32" />
+          <field hash="5805F3BE" name="fSpeedRatio" type="Float32" />
+          <field hash="60E5271D" name="fVolumeDim2Ratio" type="Float32" />
+          <field hash="62DEF0AA" name="bAutoStart" type="Boolean" />
+          <field hash="84CAB079" type="Float32" />
+          <field hash="8A8C40BD" type="Float32" />
+          <field hash="8C5A2F80" name="nPriority" type="BinHex" />
+          <field hash="8E45E3C5" name="fSizeXRatio" type="Float32" />
+          <field hash="9AE15EE8" type="BinHex" />
+          <field hash="A13EFDBD" type="Float32" />
+          <field hash="A25A2A04" type="Float32" name="fLodRatio" />
+          <field hash="ABB9F4B8" name="fVolumeDim3Ratio" type="Float32" />
+          <field hash="B52EE092" type="Vector3" />
+          <field hash="D99E2269" type="BinHex" />
+          <field hash="E67155B3" name="fVolumeDim1Ratio" type="Float32" />
+          <field hash="EA4C82F4" name="psPartSys" type="Hash64" />
+          <field hash="FE66509A" name="fGravityRatio" type="Float32" />
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+          <field hash="FF846468" type="BinHex" />
+        </object>
+        <object hash="5458A825" name="CProximityTriggerComponent">
+          <field hash="39EC413A" type="BinHex" />
+          <field hash="446C504A" name="vectorSize" type="BinHex" />
+          <field hash="5F2DBFBD" name="bUsable" type="Boolean" />
+          <field hash="B5B85233" name="selUsableBy" type="BinHex" />
+        </object>
+        <object hash="69696FD1" name="CCollectionIgnitorComponent">
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+          <object hash="08B6BCCC" name="IgnitorZonesList">
+            <object hash="EDB62214" name="IgnitorZone">
+              <field hash="17E7C62E" name="bboxMin" type="BinHex" />
+              <field hash="28FBC3C3" type="BinHex" />
+              <field hash="2BEAF977" name="bboxMax" type="BinHex" />
+              <field hash="C68EBF26" name="fireNodesList" type="BinHex" />
+              <field hash="FCBAFC1C" type="BinHex" />
+              <field hash="FE98B76E" name="zoneId" type="BinHex" />
+              <object hash="BE9EBCF1" />
+            </object>
+          </object>
+        </object>
+        <object hash="7240ED7D" name="COcclusionQueryComponent">
+          <field hash="2FDC68BD" name="bComponentEnabled" type="Boolean" />
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+        </object>
+        <object hash="766C8880">
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+          <object hash="6FCC4F0F">
+            <field hash="6FC7498D" type="BinHex" />
+            <field hash="803D3C05" type="BinHex" />
+            <field hash="CD31F7E8" type="BinHex" />
+            <field hash="F1678918" type="BinHex" />
+            <field hash="F39F2AD2" type="BinHex" />
+            <field hash="F5C425C9" name="bEnabled" type="Boolean" />
+          </object>
+          <object hash="A39C120F">
+            <field hash="CB4EEDED" type="BinHex" />
+          </object>
+          <object hash="B4299C12">
+            <field hash="4EFD8CBD" type="BinHex" />
+            <field hash="57AFDD08" type="BinHex" />
+            <object hash="D0C3E6FD">
+              <field hash="14517B34" type="BinHex" />
+              <field hash="24E01207" type="BinHex" />
+              <field hash="3F116DF6" type="BinHex" />
+              <field hash="43140C6E" type="BinHex" />
+              <field hash="49BF3666" name="selType" type="Enum" />
+              <field hash="5936D40D" type="BinHex" />
+              <field hash="A195DDD1" type="BinHex" />
+              <field hash="B3CBD883" type="BinHex" />
+              <field hash="B47B31AD" type="BinHex" />
+              <field hash="C03ED7F8" type="BinHex" />
+              <field hash="C30CFC14" type="BinHex" />
+              <field hash="CC8DD18C" type="BinHex" />
+              <field hash="D07A849A" type="BinHex" />
+              <field hash="D2D2FC59" type="BinHex" />
+              <field hash="D6EE4549" type="BinHex" />
+              <field hash="F40CCD04" name="Enable" type="BinHex" />
+              <object hash="4666305B">
+                <object hash="B8FA0578" name="DialogEvent">
+                  <field hash="2D47E3E8" type="BinHex" />
+                  <field hash="37BDC430" type="BinHex" />
+                  <field hash="7F2C5982" type="BinHex" />
+                  <field hash="AD7915F2" type="BinHex" />
+                  <field hash="C48BEE15" name="bEnable" type="Boolean" />
+                  <field hash="CDC6F993" type="BinHex" />
+                  <field hash="D84D903C" type="BinHex" />
+                  <field hash="E8C9C5E5" type="BinHex" />
+                  <object hash="C02D6F96">
+                    <object hash="EA0124C6">
+                      <field hash="83EC6C6D" name="SoundID" type="BinHex" />
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <object hash="49CE4B2E" name="Parameters">
+                <field hash="0DF53624" type="BinHex" />
+                <field hash="18366F1F" type="Boolean" />
+                <field hash="1B509DB6" type="BinHex" />
+                <field hash="1D7A8546" type="Boolean" />
+                <field hash="231DB768" type="BinHex" />
+                <field hash="25D4BD4B" name="FOVOverride" type="BinHex" />
+                <field hash="2920B19F" type="BinHex" />
+                <field hash="2C12F725" type="BinHex" />
+                <field hash="304A477C" type="BinHex" />
+                <field hash="3335F1C9" type="BinHex" />
+                <field hash="39743EF5" type="BinHex" />
+                <field hash="398E8BCB" type="BinHex" />
+                <field hash="4C7326B5" type="BinHex" />
+                <field hash="4CE7D2C9" type="BinHex" />
+                <field hash="6839D78F" type="BinHex" />
+                <field hash="6DD0B4CF" type="BinHex" />
+                <field hash="7AB4F5AE" type="BinHex" />
+                <field hash="7D6F3147" type="BinHex" />
+                <field hash="7E737B61" type="BinHex" />
+                <field hash="7F29E296" name="Duration" type="BinHex" />
+                <field hash="893EB827" type="BinHex" />
+                <field hash="8A04AE35" type="BinHex" />
+                <field hash="91A46B4A" type="BinHex" />
+                <field hash="9F9DD68D" type="BinHex" />
+                <field hash="A7AD58A1" type="BinHex" />
+                <field hash="B56E3B13" type="BinHex" />
+                <field hash="BA544ABD" type="BinHex" />
+                <field hash="BA7196C9" type="BinHex" />
+                <field hash="BA71FA1F" type="BinHex" />
+                <field hash="C71D294E" type="BinHex" />
+                <field hash="CACBBF7A" type="BinHex" />
+                <field hash="D02C8781" type="BinHex" />
+                <field hash="D89DED12" type="BinHex" />
+                <field hash="DBCAAE03" type="BinHex" />
+                <field hash="DF28176E" type="BinHex" />
+                <field hash="E2ABDB80" type="BinHex" />
+                <field hash="E2AFBFEF" type="BinHex" />
+                <field hash="E47A7DA2" type="BinHex" />
+                <field hash="E765CAC3" type="BinHex" />
+                <field hash="F1B88C82" type="BinHex" />
+                <field hash="F5C0D6EA" type="BinHex" />
+                <field hash="FFB22D22" type="BinHex" />
+                <object hash="2649EC03">
+                  <field hash="2CECF817" name="Type" type="BinHex" />
+                  <field hash="BE2306CD" type="BinHex" />
+                  <field hash="FE11D138" name="Name" type="Hash32" />
+                </object>
+              </object>
+              <object hash="5C899720">
+                <object hash="5C899720">
+                  <field hash="5C899720" type="BinHex" />
+                </object>
+              </object>
+              <object hash="7C161A2B" name="Idle">
+                <field hash="0EE82BBA" type="BinHex" />
+                <field hash="2DFB7F96" type="BinHex" />
+                <field hash="3CD06B6C" name="Radius" type="Float32" />
+                <field hash="4AEB350B" type="BinHex" />
+                <field hash="6B5100F5" type="BinHex" />
+                <field hash="7F2C5982" type="BinHex" />
+                <field hash="96B9B735" type="BinHex" />
+                <field hash="D7CAF823" type="BinHex" />
+                <field hash="DD4A25E8" type="BinHex" />
+                <field hash="ED40DD01" type="BinHex" />
+                <field hash="F007646B" type="BinHex" />
+                <field hash="F223B268" type="BinHex" />
+                <object hash="112A7174" name="Usage">
+                  <field hash="1CEECF6D" type="Boolean" />
+                  <field hash="33723F9E" type="BinHex" />
+                  <field hash="7DFCAA42" type="BinHex" />
+                  <field hash="84E324F9" type="BinHex" />
+                  <field hash="892CADB4" type="BinHex" />
+                  <field hash="8D50932D" type="BinHex" />
+                  <field hash="99036EEC" type="BinHex" />
+                  <field hash="F91A123C" type="BinHex" />
+                </object>
+                <object hash="6869B740">
+                  <field hash="16AC26ED" type="Boolean" />
+                  <field hash="A0167C21" type="BinHex" />
+                </object>
+                <object hash="BEBF56A7">
+                  <field hash="1AFE8264" type="Boolean" />
+                  <field hash="9784F7E5" type="BinHex" />
+                  <field hash="B37C8714" type="BinHex" />
+                  <field hash="DF00DDC4" type="BinHex" />
+                </object>
+              </object>
+              <object hash="ADF3F363" name="data">
+                <field hash="8ACC3499" type="BinHex" />
+              </object>
+              <object hash="BB3B0A79" name="Conditions">
+                <field hash="39886E63" type="BinHex" />
+                <field hash="652BE4A5" type="BinHex" />
+                <field hash="E16F0B94" type="BinHex" />
+              </object>
+              <object hash="BF0DE1EF">
+                <field hash="40166056" type="BinHex" />
+                <field hash="8B5DEFEA" type="BinHex" />
+              </object>
+              <object hash="C02421DA">
+                <object hash="9127072A">
+                  <field hash="0F5E4BAA" name="EntityId" type="BinHex" />
+                </object>
+              </object>
+              <object hash="C86C08A8">
+                <field hash="082EC331" type="Boolean" />
+                <field hash="0CA676CA" type="Boolean" />
+                <field hash="5416B3AA" type="BinHex" />
+              </object>
+              <object hash="EF7CD3E9">
+                <field hash="8ACC3499" type="BinHex" />
+              </object>
+            </object>
+          </object>
+        </object>
+        <object hash="7A0E61F7">
+          <field hash="B3F80271" name="bAffectedLightPickup" type="BinHex" />
+        </object>
+        <object hash="7C34E822">
+          <field hash="06844377" type="BinHex" />
+          <field hash="6C1AAC52" type="BinHex" />
+          <field hash="718373E1" type="BinHex" />
+          <field hash="D69FE57C" name="positions" type="BinHex" />
+          <field hash="D6C81723" type="Vector3" />
+          <field hash="EAC5287A" type="Vector3" />
+          <field hash="EFE7E642" type="BinHex" />
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+        </object>
+        <object hash="7D47618E" name="CCollectionComponent">
+          <field hash="868EE421" type="BinHex" />
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+          <object hash="2547921B">
+            <field hash="17E7C62E" name="bboxMin" type="BinHex" />
+            <field hash="2BEAF977" name="bboxMax" type="BinHex" />
+            <field hash="E96C3CC5" name="dataVersion" type="BinHex" />
+            <object hash="EEB132A1">
+              <field hash="6AE57B6B" type="BinHex" />
+              <field hash="FE98B76E" name="zoneId" type="BinHex" />
+            </object>
+          </object>
+        </object>
+        <object hash="812F7998">
+          <field hash="446C504A" name="vectorSize" type="BinHex" />
+          <field hash="7CA12E2F" type="BinHex" />
+          <field hash="C5C9629C" type="BinHex" />
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+        </object>
+        <object hash="82AF15BC" name="CDominoComponent">
+          <field hash="13C5E346" name="hidStartOnLoad" type="Boolean" />
+          <field hash="4CEBFEE4" type="BinHex" />
+          <field hash="CCA8F15C" type="BinHex" />
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+          <object hash="19FA0226">
+            <field hash="6ADDD90F" type="String" />
+            <object hash="52D51A7F">
+              <object hash="19E91DD3" name="Input">
+                <field hash="25368426" name="hid_DTCTH_ClassName" type="Hash32" />
+                <field hash="6230A1F2" type="BinHex" />
+                <field hash="CF68E402" name="text_hid_DTCTH_ClassName" type="String" />
+                <field hash="DCB67730" name="Value" type="BinHex" />
+                <field hash="FE11D138" name="Name" type="String" />
+              </object>
+            </object>
+          </object>
+        </object>
+        <object hash="8DAB48CC">
+          <field hash="05A9DB42" name="fSizeY" type="BinHex" />
+          <field hash="0CFFF5D2" name="fileTexture" type="String" />
+          <field hash="15E2FF25" type="BinHex" />
+          <field hash="160F3BD0" type="BinHex" />
+          <field hash="3166F8B3" type="BinHex" />
+          <field hash="378AFF83" type="BinHex" />
+          <field hash="4291D307" type="BinHex" />
+          <field hash="49BF3666" name="selType" type="Enum" />
+          <field hash="500F629A" name="clrColor" type="Vector3" />
+          <field hash="6BD475E8" name="hidType" type="Int32" />
+          <field hash="72AEEBD4" name="fSizeX" type="BinHex" />
+          <field hash="8D4DBEBD" type="BinHex" />
+          <field hash="A1585FB6" type="BinHex" />
+          <field hash="C48BEE15" name="bEnable" type="Boolean" />
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+        </object>
+        <object hash="91A8B4A4">
+          <field hash="3B96C2B8" name="selShape" type="BinHex" />
+          <field hash="446C504A" name="vectorSize" type="BinHex" />
+          <field hash="525ABB85" type="BinHex" />
+          <field hash="94481B57" type="BinHex" />
+          <field hash="CA968181" type="BinHex" />
+          <field hash="DAD001D2" type="BinHex" />
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+        </object>
+        <object hash="AA13F142" name="CCompoundPhysComponent">
+          <object hash="18327EA1" name="LogicMaterialOverrides">
+            <object hash="A39C4461" name="LogicMaterial">
+              <field hash="876B6B21" name="logmatLogicMaterial" type="Int32" />
+              <field hash="C20A23BF" type="String" />
+              <field hash="D24CA3EC" name="disSlotName" type="Hash32" />
+            </object>
+          </object>
+          <object hash="C6CC131E">
+            <field hash="8ACC3499" type="BinHex" />
+          </object>
+          <object hash="FE267439" name="RootNode">
+            <object hash="366E727B" name="States">
+              <object hash="8F2D56E0">
+                <object hash="DB83EFB8" name="StateSubNode">
+                  <object hash="23C20EF1" name="NodeList">
+                    <object hash="254D477B" name="Node">
+                      <field hash="3D255EB4" name="fMass" type="Float32" />
+                      <field hash="69466E0D" name="hidResIndex" type="UInt32" />
+                    </object>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+        <object hash="AC9A6073" name="CObjectSoundAndFXComponent">
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+          <object hash="3AF23BDE" name="Water">
+            <field hash="0B1C135D" name="fZMaxSplashScale" type="BinHex" />
+            <field hash="147B67CE" name="fZSpeedForMaxSplashVolume" type="BinHex" />
+            <field hash="62210CA0" name="fZMinSpeedToTriggerSplash" type="BinHex" />
+            <field hash="66BB3D8A" name="fZMaxSpeedToTriggerSplash" type="BinHex" />
+            <field hash="B23A882C" name="fZMinSplashScale" type="BinHex" />
+          </object>
+          <object hash="3B83D348" name="Falling">
+            <field hash="32145F6F" name="fSpeedToPlayFallingSound" type="BinHex" />
+            <field hash="498F1610" name="sndtpFallingType" type="BinHex" />
+            <field hash="88C7BCA2" name="sndFallingSound" type="BinHex" />
+            <field hash="A1B5C273" name="FallingSoundTimeTrigger" type="BinHex" />
+            <field hash="FE2AB381" name="bAllowAfterCollision" type="BinHex" />
+          </object>
+          <object hash="74059CE1" name="WaterWave">
+            <field hash="2A2CFAB4" type="BinHex" />
+            <field hash="3F6EF29D" type="BinHex" />
+            <field hash="46AE69C3" type="BinHex" />
+            <field hash="4D557CB6" type="BinHex" />
+            <field hash="4F161AF7" type="BinHex" />
+            <field hash="50E24D25" type="BinHex" />
+            <field hash="5325BD31" type="BinHex" />
+            <field hash="5E109A1D" type="BinHex" />
+            <field hash="799CB03D" type="BinHex" />
+            <field hash="7E79CD1B" type="BinHex" />
+            <field hash="89126D82" type="BinHex" />
+            <field hash="94A94910" type="BinHex" />
+            <field hash="A06C909A" type="BinHex" />
+            <field hash="E7FA2737" type="BinHex" />
+          </object>
+          <object hash="C3A5C531" name="Impact">
+            <field hash="0D713BF1" name="fMinimalCollisionSpeed" type="BinHex" />
+            <field hash="7862FEF3" name="bIsSingleDropImpactObject" type="BinHex" />
+            <field hash="86A8A2DC" name="fSpeedForMaxDropImpactVolume" type="BinHex" />
+            <field hash="CBCF835A" name="matimpDropImpact" type="BinHex" />
+            <object hash="0F3AB874" name="MovementSound">
+              <field hash="21E2902E" name="sndtpSlidingSoundType" type="BinHex" />
+              <field hash="4057D6C6" name="sndtpRollingSoundType" type="BinHex" />
+              <field hash="4BC9F599" name="sndmlObjectMovementMultilayer" type="BinHex" />
+              <field hash="7401DE02" name="sndSlidingSoundEnd" type="BinHex" />
+              <field hash="8A190215" name="sndSlidingSound" type="BinHex" />
+              <field hash="AAB8E5DC" name="sndRollingSoundEnd" type="BinHex" />
+              <field hash="D5AF4127" name="sndRollingSound" type="BinHex" />
+            </object>
+          </object>
+        </object>
+        <object hash="B3A99CB8" name="CEventComponent">
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+          <object hash="3D06591C" name="hidLinks" />
+        </object>
+        <object hash="B4C8A24E">
+          <field hash="5F11CB3F" type="BinHex" />
+          <field hash="626CD9AB" type="BinHex" />
+          <field hash="7942F936" type="BinHex" />
+          <field hash="7F1AE214" type="BinHex" />
+          <field hash="82531D17" type="BinHex" />
+          <field hash="9035A13E" name="hidInjected" type="Boolean" />
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+        </object>
+        <object hash="C3FFAF5F">
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+        </object>
+        <object hash="D18498C8" name="CMissionComponent">
+          <field hash="136C40D8" name="ForceMerge" type="Boolean" />
+          <field hash="27B31D2E" name="text_hidCategory" type="String" />
+          <field hash="37F59D7D" name="hidCategory" type="Hash32" />
+          <field hash="D4320216" name="hidMissionLayerId" type="Hash64" />
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+        </object>
+        <object hash="D5CB8253">
+          <field hash="9BD0BE71" name="Priority" type="UInt32" />
+          <field hash="C28D45A8" name="fileModel" type="Hash64" />
+          <field hash="E57468B1" type="BinHex" />
+          <field hash="F5C425C9" name="bEnabled" type="Boolean" />
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+        </object>
+        <object hash="DEB1FE16">
+          <field hash="010A3776" type="Boolean" />
+          <field hash="B3C740E6" type="String" />
+          <field hash="F5C425C9" name="bEnabled" type="Boolean" />
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+        </object>
+        <object hash="E213C35C">
+          <object hash="8EC0A392" name="Lines">
+            <object hash="8EC0A392" name="Lines">
+              <field hash="825581A3" type="BinHex" />
+              <field hash="A0769371" type="BinHex" />
+              <field hash="FC7D6D85" type="BinHex" />
+            </object>
+          </object>
+        </object>
+        <object hash="E2FD401E" name="CSplinePrimitiveComponent">
+          <field hash="1D710FCC" name="MaterialName" type="BinHex" />
+          <field hash="32AA9181" name="LOD0Distance" type="Float32" />
+          <field hash="33492F89" name="IsRiver" type="BinHex" />
+          <field hash="4E0BA1D8" name="SortingLayer" type="BinHex" />
+          <field hash="56FF0AED" name="DistanceMax" type="BinHex" />
+          <field hash="810D595B" name="SectorID" type="BinHex" />
+          <field hash="A1967975" name="SnapToTerrain" type="BinHex" />
+          <field hash="A39C4461" name="LogicMaterial" type="Int32" />
+          <field hash="EF034902" type="String" />
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+          <object hash="DFB8B97F" name="Segments">
+            <object hash="D73CCCF9" name="Segment">
+              <field hash="546E67DF" name="Positions" type="BinHex" />
+              <field hash="96F35D9E" type="BinHex" />
+              <field hash="B115A242" name="Alphas" type="BinHex" />
+              <field hash="E0387957" name="TexCoords" type="BinHex" />
+            </object>
+          </object>
+        </object>
+        <object hash="E683B521">
+          <field hash="2BA6E1A6" type="BinHex" />
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+        </object>
+        <object hash="EA3C3E1D" name="CSoundLineComponent">
+          <field hash="27163DAD" name="fFadeTime" type="BinHex" />
+          <field hash="4073DD31" name="hidShapePoints" type="BinHex" />
+          <field hash="43D010AB" type="BinHex" />
+          <field hash="8FE662AD" name="sndtpSoundType" type="Int32" />
+          <field hash="B5471C88" name="fAudibleDistance" type="BinHex" />
+          <field hash="C74190B6" type="BinHex" />
+          <field hash="FB4CAFEF" type="BinHex" />
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+          <object hash="270FAAFB" name="SpeakerSet">
+            <object hash="DE59633C" name="Set">
+              <field hash="2EA08F8F" name="sndUpStreamSound" type="BinHex" />
+              <field hash="390893F7" name="sndDownStreamSound" type="BinHex" />
+            </object>
+          </object>
+        </object>
+        <object hash="EE14EE79" name="CStaticDecalComponent">
+          <field hash="61642904" type="BinHex" />
+          <field hash="7C58C94E" name="fRotation" type="BinHex" />
+          <object hash="546E67DF" name="Positions">
+            <object hash="B894A04C" name="Pos">
+              <field hash="B894A04C" name="Pos" type="Vector3" />
+            </object>
+          </object>
+        </object>
+        <object hash="FC753917" name="CGroupComponent">
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+          <object hash="F7C13C46" name="Groups">
+            <object hash="6DC044C5" name="group">
+              <field hash="6DC044C5" name="group" type="Hash32" />
+            </object>
+          </object>
+        </object>
+        <object hash="FE03C7D2" name="CTaggableComponent">
+          <field hash="434101C1" name="bDisableTaggingByCameraAndIronsight" type="Boolean" />
+          <field hash="5A22C81B" name="fIdentificationRadiusModifier" type="Float32" />
+          <field hash="5DCCBAFF" name="selTagType" type="Enum" />
+          <field hash="C48BEE15" name="bEnable" type="Boolean" />
+          <field hash="DEC3CA7C" type="BinHex" />
+          <field hash="F82F6C08" name="fHighlightFadeOutTime" type="Float32" />
+          <field hash="FEE21F0D" name="hidHasAliasName" type="Boolean" />
+          <object hash="5305FA53" name="TagIndicator">
+            <field hash="0AA73FA0" name="fVerticalOffset" type="Float32" />
+            <field hash="41B02262" type="BinHex" />
+            <field hash="632F9A4F" type="BinHex" />
+            <field hash="71C2A70A" name="bSizeDependsOnDistance" type="Boolean" />
+            <field hash="8C57213F" name="sMinimapFrameLabel" type="String" />
+            <field hash="97835A08" name="sTexturePath" type="Hash64" />
+            <field hash="9C53C07D" type="BinHex" />
+            <field hash="9DCC5BBC" type="BinHex" />
+            <field hash="9EEF3563" name="fScaleX" type="Float32" />
+            <field hash="B6DB85F0" type="BinHex" />
+            <field hash="BA57C28D" type="BinHex" />
+            <field hash="E9E805F5" name="fScaleY" type="Float32" />
+            <field hash="F5AA3DDB" type="BinHex" />
+          </object>
+        </object>
+      </object>
+    </object>
+    <object hash="E2C5EA2C" name="BindingHierarchy">
+      <object hash="B6C65665" name="Root">
+        <field hash="033DAB5D" type="String" />
+        <field hash="0F5E4BAA" name="EntityId" type="BinHex" />
+        <field hash="16B132AE" name="BoneId" type="BinHex" />
+        <field hash="8211A17E" name="LogicalBind" type="BinHex" />
+        <field hash="EF68A6B8" name="MeshIndex" type="BinHex" />
+        <object hash="19447430" name="LayerId">
+          <field hash="4978F785" type="BinHex" />
+          <field hash="97C466CB" type="BinHex" />
+          <field hash="FF3A7B97" name="Category" type="BinHex" />
+        </object>
+        <object hash="58E1D3EC" name="Children">
+          <object hash="E3727B2D" name="Child">
+            <field hash="033DAB5D" type="String" />
+            <field hash="0F5E4BAA" name="EntityId" type="BinHex" />
+            <field hash="16B132AE" name="BoneId" type="BinHex" />
+            <field hash="8211A17E" name="LogicalBind" type="BinHex" />
+            <field hash="EF68A6B8" name="MeshIndex" type="BinHex" />
+            <object hash="19447430" name="LayerId">
+              <field hash="4978F785" type="BinHex" />
+              <field hash="97C466CB" type="BinHex" />
+              <field hash="FF3A7B97" name="Category" type="BinHex" />
+            </object>
+            <object hash="58E1D3EC" name="Children" />
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+</object>
+</file>
