@@ -1,0 +1,38 @@
+<!-- FCBConverter material parameter definitions (FC6) -->
+<!-- Source: FCBConverterDefinitions.xml material.bin section -->
+<!-- Primary key: name hash determines parameter type -->
+<file name="material" extension=".material.bin">
+  <object hash="parameter">
+    <field hash="74C1B63C" name="BaseColorArray" type="Vector4" />
+  </object>
+  <object hash="parameter">
+    <field hash="7FCF66E6" name="PaintBaseColorArray" type="Vector4" />
+  </object>
+  <object hash="parameter">
+    <field hash="2FBC5E53" name="UndercoatBaseColorArray" type="Vector4" />
+  </object>
+  <object hash="parameter">
+    <field hash="E3EC982B" name="GlassColorArray" type="Vector4" />
+  </object>
+  <object hash="parameter">
+    <field hash="24C77693" name="TilingArray" type="Vector4" />
+  </object>
+  <object hash="parameter">
+    <field hash="857A7F35" name="MaterialPropertiesArray" type="Vector4" />
+  </object>
+  <object hash="parameter">
+    <field hash="66CAC6BA" name="PaintMaterialPropertiesArray" type="Vector4" />
+  </object>
+  <object hash="parameter">
+    <field hash="9F549D07" name="PorosityFactorsArray" type="Vector3" />
+  </object>
+  <object hash="parameter">
+    <field hash="91490EDD" name="PackedSkinPropertiesColorModeArray" type="Vector4" />
+  </object>
+  <object hash="parameter">
+    <field hash="B4FDCDC7" name="PackedPropertiesArray" type="Vector4" />
+  </object>
+  <object hash="parameter">
+    <field hash="550B4012" name="GlassPackedPropertiesArray" type="Vector4" />
+  </object>
+</file>
