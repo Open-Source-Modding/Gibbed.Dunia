@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- move.bin animation state machine type definitions -->
+<!-- Source: MabTools/CombinedMoveFile.cs, WDL leak XML files -->
+<!-- Maps classNameType values and field hashes to names -->
+
+<class name="CMoveState">
+  <field name="headerValueA" type="UInt8" />
+  <field name="headerValueB" type="UInt8" />
+</class>
+
+<class name="CMoveBranch">
+  <field name="headerValueA" type="UInt8" />
+  <field name="headerValueB" type="UInt8" />
+</class>
+
+<class name="CMoveBracket">
+  <field name="headerValueA" type="UInt8" />
+  <field name="headerValueB" type="UInt8" />
+</class>
+
+<class name="CMoveBlendRef">
+  <field name="BlendDurationFrame" type="UInt16" />
+  <field name="BlendDisplacementDurationFrame" type="UInt16" />
+  <field name="BlendDisplacementMode" type="UInt8" />
+  <field name="selBlendType" type="UInt8" />
+  <field name="BlendFactor" type="Float32" />
+  <field name="BlendInc" type="UInt8" />
+  <field name="MoveBlendID" type="String" />
+</class>
+
+<class name="CMoveSingleAnim">
+  <field name="headerValueA" type="UInt8" />
+  <field name="headerValueB" type="UInt8" />
+  <field name="AnimID" type="String" />
+  <field name="ClipStartFrame" type="UInt32" />
+  <field name="ClipEndFrame" type="UInt32" />
+  <field name="Loop" type="UInt8" />
+</class>
+
+<class name="CMoveSpeedScaledAnim">
+  <field name="headerValueA" type="UInt8" />
+  <field name="headerValueB" type="UInt8" />
+  <field name="AnimID" type="String" />
+  <field name="AnimSpeedParam" type="UInt32" />
+</class>
+
+<class name="CMoveTimeControlledAnim">
+  <field name="headerValueA" type="UInt8" />
+  <field name="headerValueB" type="UInt8" />
+  <field name="AnimID" type="String" />
+  <field name="TimeScale" type="Float32" />
+</class>
+
+<class name="CMoveRandomOffsetAnim">
+  <field name="headerValueA" type="UInt8" />
+  <field name="headerValueB" type="UInt8" />
+  <field name="AnimID" type="String" />
+  <field name="RandomOffset" type="Float32" />
+</class>
+
+<class name="CMoveComparisonOpe">
+  <field name="headerValue" type="UInt8" />
+  <field name="Value" type="UInt32" />
+</class>
+
+<class name="CMoveIntervalOpe">
+  <field name="headerValue" type="UInt8" />
+  <field name="Min" type="Float32" />
+  <field name="Max" type="Float32" />
+</class>
+
+<class name="CMovePMSSelector">
+  <field name="headerValueA" type="UInt8" />
+  <field name="headerValueB" type="UInt8" />
+</class>
+
+<class name="CMoveFacialAnim">
+  <field name="headerValueA" type="UInt8" />
+  <field name="headerValueB" type="UInt8" />
+</class>
+
+<class name="CMoveSequence">
+  <field name="headerValueA" type="UInt8" />
+  <field name="headerValueB" type="UInt8" />
+  <field name="BlendParam" type="UInt32" />
+</class>
+
+<class name="CMoveProcedural">
+  <field name="headerValueA" type="UInt8" />
+  <field name="headerValueB" type="UInt8" />
+</class>
+
+<class name="CMoveTransition">
+  <field name="headerValueA" type="UInt8" />
+  <field name="headerValueB" type="UInt8" />
+  <field name="TransitionParam" type="UInt32" />
+</class>
+
+<class name="CMoveMotionMatching">
+  <field name="headerValueA" type="UInt8" />
+  <field name="headerValueB" type="UInt8" />
+</class>
+
+<class name="CMoveAnimTechIKPath">
+  <field name="headerValueA" type="UInt8" />
+  <field name="headerValueB" type="UInt8" />
+  <field name="PartID" type="String" />
+  <field name="ParentID" type="String" />
+  <field name="TechStartFrame" type="UInt32" />
+  <field name="TechEndFrame" type="UInt32" />
+</class>
